@@ -30,6 +30,7 @@ public:
     int getMaxComp(char lang);
     void setMainComp();
     int dijkstra(int source, int target, int z, char lang);
+    int dijkstra2(int source, int target, int z, char lang);
     void countLocs();
     void printSimilarLocs(); // podaje potencjalne tlumaczenia
     void countPair(int i); //use carefully!

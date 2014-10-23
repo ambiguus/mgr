@@ -98,15 +98,17 @@ void NodesFactory::setMarkers() {
         std::advance(it, rand() % size);
         int trans = it->second->getLinksTrans();
         if (it->second->getDegree() == 1 && trans > 0){
-            if (it->second->getLang() == Node::pl){
-                markers_pl_[set] = it->first;
-                markers_en_[set] = trans;
-            }else if (it->second->getLang() == Node::en){
-                markers_en_[set] = it->first;
-                markers_pl_[set] = trans;
+            if ((it->second->getLang() == Node::pl && it->second->getComp() == max_comp_pl_) || it->second->getLang() == Node::en && it->second->getComp() == max_comp_en_) {
+                if (it->second->getLang() == Node::pl) {
+                    markers_pl_[set] = it->first;
+                    markers_en_[set] = trans;
+                } else if (it->second->getLang() == Node::en) {
+                    markers_en_[set] = it->first;
+                    markers_pl_[set] = trans;
+                }
+                // std::cout<<markers_en_[set]<<std::endl;
+                set++;
             }
-            // std::cout<<markers_en_[set]<<std::endl;
-            set++;
         }
     }
     markers_en_exist_=true;
@@ -227,9 +229,68 @@ void NodesFactory::setMainComp() {
     std::cout<<"pl: "<<pl<<std::endl;
     std::cout<<"en: "<<en<<std::endl;
 }
-int NodesFactory::dijkstra(int source, int target, int z, char lang) { //z - liczba wierzcholkow
+int NodesFactory::dijkstra(int source, int target, int z, char lang) {
+    int inf = 1000000000;
+    int* dist = new int[z];
+    int* prev = new int[z];
+    source = nodes_[source]->getIndex();
+    target = nodes_[target]->getIndex();
+    int min=inf, imin=0, key, index;
+    for (int i=0;i<z;++i){
+        dist[i]=inf;
+        prev[i]=-1;
+    }
+    std::vector<int> q;
+    std::vector<int> nn;
+    q.push_back(source);
+    dist[source] = 0;
+    std::vector<int> s;
+    while (!q.empty()){
+        min=inf;
+        imin=0;
+        for (std::vector<int>::iterator it=q.begin();it != q.end(); ++it){
+            if (dist[*it] < min){
+                min = dist[*it];
+                imin = *it;
+            }
+        }
+        q.erase(std::remove(q.begin(),q.end(), imin), q.end());
+        s.push_back(imin);
+        nn.clear();
+        if (lang == Node::pl){
+            key = keys_pl_[imin];
+        }else{
+            key = keys_en_[imin];
+        }
+        nn = nodes_[key]->getLinksInside();
+        for (std::vector<int>::iterator it=nn.begin();it != nn.end(); ++it){
+            index = nodes_[*it]->getIndex();
+            if (std::find(s.begin(), s.end(), index) == s.end()){ //nie zawiera
+                if (dist[imin] + 1 < dist[index]){
+                    dist[index] = dist[imin]+1;
+                    prev[index] = imin;
+                    q.push_back(index);
+                }
+
+            }
+            if (index == target){
+                return dist[index];
+            }
+        }
+    }
+    return dist[target];
+
+}
+int NodesFactory::dijkstra2(int source, int target, int z, char lang) { //z - liczba wierzcholkow
     if (source == target) //uzywamy tlumaczonych keys
         return 0;
+    if (lang == Node::pl){
+        source = keys_pl_[source];
+        target = keys_pl_[target];
+    }else{
+        source = keys_en_[source];
+        target = keys_en_[target];
+    }
     int* dist = new int[z];
     int* prev = new int[z];
     int* visited = new int[z];
@@ -242,7 +303,6 @@ int NodesFactory::dijkstra(int source, int target, int z, char lang) { //z - lic
     int tmp=10000000, visited_nodes=0, current=source, index, iw;
     std::vector<int> nn;
     while (visited_nodes<z){
-        std::cout<<visited_nodes<<std::endl;
         for (int w=0;w<z;w++){
             if (visited[w]==0){
                 nn.empty();
@@ -295,12 +355,14 @@ void NodesFactory::countPair(int i){
         i = trans;
         trans = tmp;
     }
+    i = 25691;
+    trans = 284799;
     int* locp = new int[markers_count_];
     int* loce = new int[markers_count_];
     for (int j=0;j<markers_count_;++j){
-        locp[j]=dijkstra(i, markers_pl_[j], size_max_pl_, Node::pl);
+        locp[j]=dijkstra(i, markers_pl_[j], 111824, Node::pl);
         std::cout<<locp[j]<<std::endl;
-        loce[j]=dijkstra(trans, markers_en_[j], size_max_en_, Node::en);
+        loce[j]=dijkstra(trans, markers_en_[j], 82192, Node::en);
         std::cout<<loce[j]<<std::endl;
     }
     std::cout<<cosine(locp, loce, markers_count_)<<std::endl;

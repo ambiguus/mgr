@@ -16,7 +16,8 @@ int main() {
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
     nodes->printSample(25691);
-    nodes->printSample(328924);
+//    nodes->printSample(328924);
+    nodes->printSample(284799);
     nodes->countSizeMax();
     nodes->setMainComp();
     nodes->setMarkers();
