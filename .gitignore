@@ -1,0 +1,7 @@
+.idea/
+CMakeLists.txt
+Node.o
+NodesFactory.o
+main
+main.o
+
