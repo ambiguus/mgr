@@ -59,9 +59,6 @@ bool Node::getInMax() {
 }
 void Node::setInMax(bool in_max) {
     in_max_=in_max;
-    if (linksTrans_ > 0){
-        main_ = true;
-    }
 }
 void Node::setMain(bool main) {
     main_ = main;
@@ -77,6 +74,27 @@ int Node::getIndex() {
 }
 Node::~Node() {
     linksInside_.clear();
+}
+void Node::clearLoc() {
+    loc_.clear();
+}
+void Node::addLoc(int i){
+    loc_.push_back(i);
+}
+std::vector<int> Node::getLoc() {
+    return loc_;
+}
+void Node::addRanking(double v) {
+    if (v > trans_cos_){
+        trans_pos_++;
+    }
+}
+void Node::addTransCos(double v) {
+    trans_cos_ = v;
+    trans_pos_ = 1;
+}
+int Node::getTransPos() {
+    return trans_pos_;
 }
 //int* getLoc(NodesFactory &factory){}
 //int* countLoc(NodesFactory &factory);

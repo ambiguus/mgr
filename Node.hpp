@@ -30,6 +30,13 @@ public:
     bool getMain();
     void setIndex(int index);
     int getIndex();
+    void addLoc(int i);
+    void clearLoc();
+    std::vector<int> getLoc();
+    double countCosine(Node &node);
+    void addRanking(double v);
+    void addTransCos(double v);
+    int getTransPos(); //szuka pozycji tlumaczenia w rankingu
     ~Node();
 //    int* getLoc(NodesFactory::NodesFactory &factory);
 //    int* countLoc(NodesFactory::NodesFactory &factory);
@@ -43,12 +50,14 @@ protected:
     std::string sample_;
     std::vector<int> linksInside_; // lista sasiedztwa z wezłami tego samego jezyka
     int linksTrans_; // polaczenie pomiedzy jezykami
-    int* loc_; //polozenie wzgledem markerow - tablica o zadanej wielkosci
+    std::vector<int> loc_; //polozenie wzgledem markerow - tablica o zadanej wielkosci
     int k_;
     bool loc_counted_, k_changed_;
     int comp_; //k - stopien, comp_ - numer komponentu
     bool in_max_, main_;
     int index_;
+    int best_i_, trans_pos_;
+    double trans_cos_;
 
 };
 #endif

@@ -30,15 +30,18 @@ public:
     int getMaxComp(char lang);
     void setMainComp();
     int dijkstra(int source, int target, int z, char lang);
-    int dijkstra2(int source, int target, int z, char lang);
+    void dijkstraFrom(int source, int z, char lang, int j);
     void countLocs();
     void printSimilarLocs(); // podaje potencjalne tlumaczenia
     void countPair(int i); //use carefully!
+    void countPaths();
     void countSizeMax();
     int getSizeMaxPl();
     int getSizeMaxEn();
     double cosine(int* v, int* u, int size);
+    void countCos(int i);
     void printSample(int id);
+    void clearMarkers();
     ~NodesFactory();
 
 protected:
@@ -52,7 +55,9 @@ protected:
     std::vector<int> comps_pl_, comps_en_; //wektor: numer komponentu -> liczba wierzcholkow
     int max_comp_pl_, max_comp_en_;
     std::vector<int> keys_pl_, keys_en_;
-    int** paths_pl_, paths_en_;
+    int** paths_pl_;
+    int** paths_en_;
     int size_max_pl_, size_max_en_;
+    int count_pl_, count_en_;
 };
 #endif
