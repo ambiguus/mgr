@@ -4,4 +4,8 @@ Node.o
 NodesFactory.o
 main
 main.o
-
+*.png
+przyklady.txt
+ranking*
+*.svg
+skrypt*

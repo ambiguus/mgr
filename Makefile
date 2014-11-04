@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-O2 -Wall -pedantic
+CXXFLAGS=-O2 -Wall -pedantic -std=c++11
 main:	main.o Node.o NodesFactory.o
 		$(CXX) -o main Node.o NodesFactory.o main.o $(CXXFLAGS)
 main.o:	main.cpp

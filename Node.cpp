@@ -1,10 +1,10 @@
 #include "Node.hpp"
-Node::Node():id_(0),lang_(Node::pl), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false){
+Node::Node():id_(0),lang_(Node::pl), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
 
 }
-Node::Node(int id, char lang):id_(id),lang_(lang), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false){
+Node::Node(int id, char lang):id_(id),lang_(lang), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
 }
-Node::Node(int id, char lang, std::string sample):id_(id),lang_(lang), sample_(sample), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false){
+Node::Node(int id, char lang, std::string sample):id_(id),lang_(lang), sample_(sample), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
 }
 char Node::getLang(){
     return lang_;

@@ -3,8 +3,9 @@ select synset_id, count(*) from synlex group by synset_id;
 select * from synlex;
 select * from relationtypes;
 select * from lexicalrelations where relation = 209;
-select parent, child from synsetrelations where relation = 173 limit 1000000;
-select synset.id, sample from synset join synlex on synset_id = synset.id join lexicalunit on lexical_id = lexicalunit.id;
+select * from synsetrelations where parent = 312270;
+
+select synset.id, sample from synset join synlex on synset_id = synset.id join lexicalunit on lexical_id = lexicalunit.id where synset.id = 328924;
 328924, 25691
 en 27741
 838, 727, 994, 366, 926, 315, 289, 470

@@ -41,8 +41,8 @@ void NodesFactory::addNodes(std::string nazwa, char lang){
             cEn++;
         }
     }
-    std::cout<<"cPl: "<<cPl<<std::endl;
-    std::cout<<"cEn: "<<cEn<<std::endl;
+//    std::cout<<"cPl: "<<cPl<<std::endl;
+//    std::cout<<"cEn: "<<cEn<<std::endl;
     file.close();
 }
 void NodesFactory::addLinksInside(std::string nazwa){
@@ -58,7 +58,7 @@ void NodesFactory::addLinksInside(std::string nazwa){
             nodes_[id2]->addLinkInside(id1);
         }
     }
-    std::cout<<nazwa<<": "<<i<<std::endl;
+//    std::cout<<nazwa<<": "<<i<<std::endl;
     file.close();
 }
 void NodesFactory::addLinksTrans(std::string nazwa){
@@ -92,32 +92,33 @@ int* NodesFactory::getMarkersEn() {
 void NodesFactory::setMarkers() {
     markers_en_ = new int[markers_count_];
     markers_pl_ = new int[markers_count_];
-    //dorobic
     int set=0, size = nodes_.size();
     std::cout<<"markery: "<<std::endl;
+    srand(time(NULL));
     while (set < markers_count_){
-        std::map<int, Node*>::iterator it = nodes_.begin();
+        std::unordered_map<int, Node*>::iterator it = nodes_.begin();
         std::advance(it, rand() % size);
         int trans = it->second->getLinksTrans();
-        if (it->second->getMain()){
+        if (it->second->getMain() && it->second->getDegree() == 1){
                 if (it->second->getLang() == Node::pl) {
                     markers_pl_[set] = it->first;
                     markers_en_[set] = trans;
+                    std::cout<<set<<"\t"<<it->first<<": "<<it->second->getSample()<<"\t, "<<trans<<": "<<nodes_[trans]->getSample()<<std::endl;
                 } else if (it->second->getLang() == Node::en) {
                     markers_en_[set] = it->first;
                     markers_pl_[set] = trans;
+                    std::cout<<set<<"\t"<<trans<<": "<<nodes_[trans]->getSample()<<"\t, "<<it->first<<": "<<it->second->getSample()<<std::endl;
                 }
                 // std::cout<<markers_en_[set]<<std::endl;
                 set++;
-                std::cout<<markers_en_[set-1]<<", ";
+//                std::cout<<markers_en_[set-1]<<": "<<it->second->getComp()<<std::endl;
 
         }
     }
-    std::cout<<std::endl;
 }
 int NodesFactory::getMaxDegree() {
     int max = 0, m;
-    for (std::map<int, Node*>::iterator it=nodes_.begin(); it!=nodes_.end(); ++it){
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it!=nodes_.end(); ++it){
         m=it->second->getDegree();
         if (max < m){
             max = m;
@@ -131,7 +132,7 @@ void NodesFactory::printDegrees(int max) {
         hist[i]=0;
     }
     int m;
-    for (std::map<int, Node*>::iterator it=nodes_.begin(); it!=nodes_.end(); ++it){
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it!=nodes_.end(); ++it){
             m=it->second->getDegree();
             if (m < max){
                 hist[m]++;
@@ -183,7 +184,7 @@ void NodesFactory::countComps(char lang) {
     }
     int size, i=0, max = 0, isize=-1;
 
-    for (std::map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end();++it){
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end();++it){
         if (it->second->getComp() < 0 && it->second->getLang() == lang){
             size = DFS(it->first, i);
             if (size > max){
@@ -205,7 +206,7 @@ void NodesFactory::countComps(char lang) {
         max_comp_en_ = isize;
         size_max_en_ = max;
     }
-    std::cout<<lang<<": "<<max<<std::endl;
+//    std::cout<<lang<<": "<<max<<std::endl;
 }
 
 int NodesFactory::getMaxComp(char lang){
@@ -216,31 +217,33 @@ int NodesFactory::getMaxComp(char lang){
 
 void NodesFactory::setMainComp() {
     int pl=0, en=0, trans;
-    std::cout<<max_comp_pl_<<" "<<max_comp_en_<<std::endl;
-    for (std::map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end();++it) {
-        if ((it->second->getComp() == max_comp_en_ && it->second->getLang() == Node::en) || (it->second->getComp() == max_comp_pl_ && it->second->getLang() == Node::pl)) {
-            if (it->second->getLang() == Node::pl){
-                pl++;
-                    trans = it->second->getLinksTrans();
-                if (trans > 0){
-                    if (nodes_[trans]->getComp() == max_comp_en_){
-                        it->second->setMain(true);
-                    }
+//    std::cout<<max_comp_pl_<<" "<<max_comp_en_<<std::endl;
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end();++it) {
+        if ((it->second->getComp() == max_comp_en_ && it->second->getLang() == Node::en)) {
+            en++;
+            trans = it->second->getLinksTrans();
+            if (trans > 0){
+                if (nodes_[trans]->getComp() == max_comp_pl_){
+                    it->second->setMain(true);
+                    nodes_[trans]->setMain(true);
                 }
-            }else if (it->second->getLang() == Node::en){
-                en++;
-                    trans = it->second->getLinksTrans();
-                    if (trans > 0){
-                    if (nodes_[trans]->getComp() == max_comp_pl_){
-                        it->second->setMain(true);
-                    }
+            }
+            it->second->setInMax(true);
+        }
+        if ((it->second->getComp() == max_comp_pl_ && it->second->getLang() == Node::pl)) {
+            pl++;
+            trans = it->second->getLinksTrans();
+            if (trans > 0){
+                if (nodes_[trans]->getComp() == max_comp_en_){
+                    it->second->setMain(true);
+                    nodes_[trans]->setMain(true);
                 }
             }
             it->second->setInMax(true);
         }
     }
-    std::cout<<"pl: "<<pl<<std::endl;
-    std::cout<<"en: "<<en<<std::endl;
+//    std::cout<<"pl: "<<pl<<std::endl;
+//    std::cout<<"en: "<<en<<std::endl;
 }
 int NodesFactory::dijkstra(int source, int target, int z, char lang) {
     int inf = 1000000000;
@@ -363,9 +366,7 @@ void NodesFactory::countPair(int i){
     int* loce = new int[markers_count_];
     for (int j=0;j<markers_count_;++j){
         locp[j]=dijkstra(i, markers_pl_[j], 111824, Node::pl);
-        std::cout<<locp[j]<<std::endl;
         loce[j]=dijkstra(trans, markers_en_[j], 82192, Node::en);
-        std::cout<<loce[j]<<std::endl;
     }
     std::cout<<cosine(locp, loce, markers_count_)<<std::endl;
 }
@@ -390,6 +391,7 @@ void NodesFactory::countPaths(){
     }
 }
 void NodesFactory::countCos(int i) {
+    std::cout<<nodes_[i]->getSample()<<std::endl;
     int trans = nodes_[i]->getLinksTrans();
     int* v = new int[markers_count_];
     int index = nodes_[i]->getIndex();
@@ -417,8 +419,64 @@ void NodesFactory::countCos(int i) {
             mkey = j;
         }
     }
-    std::cout<<nodes_[i]->getSample()<<std::endl;
-    std::cout<<markers_count_<<" markerow, pos: "<<trans_pos<<", wartość: "<<tcos<<", max: "<<mcos<<", "<<nodes_[keys_en_[mkey]]->getSample()<<", "<<nodes_[trans]->getSample()<<std::endl;
+    std::cout<<markers_count_<<" markerow, "<<nodes_[i]->getSample()<<std::endl;
+    std::cout<<"pozycja: \twartosc\tmax_cos\tnajlepszy\tprawdziwy"<<std::endl;
+    std::cout<<trans_pos<<"\t"<<tcos<<"\t"<<mcos<<"\t"<<nodes_[keys_en_[mkey]]->getSample()<<"\t"<<nodes_[trans]->getSample()<<std::endl;
+    std::cout<<"wektory: "<<std::endl;
+    std::cout<<"szukany - "<<i<<": "<<nodes_[i]->getSample()<<std::endl;
+    for (int j=0;j<markers_count_; ++j){
+        std::cout<<paths_pl_[index][j]<<" ";
+    }
+    std::cout<<std::endl;
+    std::cout<<"najlepszy - "<<mkey<<": "<<nodes_[keys_en_[mkey]]->getSample()<<std::endl;
+    for (int j=0;j<markers_count_; ++j){
+        std::cout<<paths_en_[mkey][j]<<" ";
+    }
+    std::cout<<std::endl;
+    std::cout<<"prawdziwy - "<<trans<<": "<<nodes_[trans]->getSample()<<std::endl;
+    for (int j=0;j<markers_count_; ++j){
+        std::cout<<paths_en_[trans_in][j]<<" ";
+    }
+    std::cout<<std::endl;
+    std::cout<<cosine(paths_en_[mkey], paths_pl_[index], markers_count_)<<std::endl;
+}
+void NodesFactory::countAvgCos() { //cos tu nie bangla - pamięć pada
+    int *v = new int[markers_count_];
+    int trans, index, trans_pos, trans_in, i, count=0, avg=0;
+    double cos, tcos, mcos = -10.0;
+    for (int ii=0; ii<count_pl_; ++ii) {
+        i = keys_pl_[ii];
+        if (nodes_[i]->getInMax()) {
+            trans = nodes_[i]->getLinksTrans();
+            index = ii;
+            for (int j = 0; j < markers_count_; ++j) {
+                v[j] = paths_pl_[index][j];
+            }
+            mcos = -10.0;
+            trans_pos = 0;
+            trans_in = nodes_[trans]->getIndex();
+            tcos = cosine(v, paths_en_[trans_in], markers_count_);
+            if (isnan(tcos)) {
+                std::cout << "nan: " << trans_in << ", " << trans << std::endl;
+                std::cout << "slowo\ttrans\tmarkers" << std::endl;
+                for (int i = 0; i < markers_count_; ++i) {
+                    std::cout << v[i] << "\t" << paths_en_[trans_in][i] << "\t" << markers_en_[i] << std::endl;
+                }
+            }
+            for (int j = 0; j < count_en_; ++j) {
+                cos = cosine(v, paths_en_[j], markers_count_);
+                if (cos > tcos) {
+                    trans_pos++;
+                }
+                if (cos > mcos) {
+                    mcos = cos;
+                }
+            }
+            count++;
+            avg += trans_pos;
+        }
+    }
+    std::cout << markers_count_ << "\t"<<avg<< std::endl;
 }
 
 void NodesFactory::countSizeMax() {
@@ -426,7 +484,7 @@ void NodesFactory::countSizeMax() {
     char lang;
     size_max_en_ = 0;
     size_max_pl_ = 0;
-    for (std::map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         comp = it->second->getComp();
         lang = it->second->getLang();
         if (comp == max_comp_pl_ && lang == Node::pl){
@@ -446,14 +504,14 @@ int NodesFactory::getSizeMaxPl() {
 }
 
 double NodesFactory::cosine(int *v, int *u, int size) {
-    int sum=0;
+    double sum=0.0;
     double qv=0.0, qu=0.0, q;
     for (int i=0;i<size;++i){
         sum += (v[i]*u[i]);
         qv += (v[i]*v[i]);
         qu += (u[i]*u[i]);
     }
-    q = sqrt(qv*qu);
+    q = sqrt(qv)*sqrt(qu);
     return double(sum)/q;
 }
 
@@ -468,7 +526,7 @@ void NodesFactory::clearMarkers() {
     delete paths_pl_;
 }
 NodesFactory::~NodesFactory() {
-    for (std::map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         delete it->second;
     }
     nodes_.clear();

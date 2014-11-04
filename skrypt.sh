@@ -1,5 +1,5 @@
 #!/bin/bash
-for ((i=25; $i <= 200; i+=10)) ; do
+for ((i=2; $i <= 150; i+=1)) ; do
         echo "$i"
         ./main $i >> ranking.txt
 done

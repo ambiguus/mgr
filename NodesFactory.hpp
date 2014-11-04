@@ -3,7 +3,7 @@
 
 #include "Node.hpp"
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -42,10 +42,11 @@ public:
     void countCos(int i);
     void printSample(int id);
     void clearMarkers();
+    void countAvgCos();
     ~NodesFactory();
 
 protected:
-    std::map<int, Node*> nodes_;
+    std::unordered_map<int, Node*> nodes_;
     int pl_id_; // "pierwszy" z polskich
     int en_id_; // "pierwszy" z angielskich
     int markers_count_; //liczba markerow
