@@ -43,6 +43,7 @@ public:
     void printSample(int id);
     void clearMarkers();
     void countAvgCos();
+    double distance(int *v, int *u, int size);
     ~NodesFactory();
 
 protected:

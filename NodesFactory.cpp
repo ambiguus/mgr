@@ -398,10 +398,10 @@ void NodesFactory::countCos(int i) {
     for (int j=0;j<markers_count_;++j){
         v[j] = paths_pl_[index][j];
     }
-    double cos, tcos, mcos=-10.0;
+    double cos, tcos, mcos=100000.0;
     int trans_pos = 1, mkey=1;
     int trans_in = nodes_[trans]->getIndex();
-    tcos = cosine(v, paths_en_[trans_in], markers_count_);
+    tcos = distance(v, paths_en_[trans_in], markers_count_);
     if (isnan(tcos)){
         std::cout<<"nan: "<<trans_in<<", "<<trans<<std::endl;
         std::cout<<"slowo\ttrans\tmarkers"<<std::endl;
@@ -410,11 +410,11 @@ void NodesFactory::countCos(int i) {
         }
     }
     for (int j=0;j<count_en_;++j){
-        cos = cosine(v, paths_en_[j], markers_count_);
-        if (cos > tcos){
+        cos = distance(v, paths_en_[j], markers_count_);
+        if (cos < tcos){
             trans_pos++;
         }
-        if (cos > mcos){
+        if (cos < mcos){
             mcos = cos;
             mkey = j;
         }
@@ -438,7 +438,7 @@ void NodesFactory::countCos(int i) {
         std::cout<<paths_en_[trans_in][j]<<" ";
     }
     std::cout<<std::endl;
-    std::cout<<cosine(paths_en_[mkey], paths_pl_[index], markers_count_)<<std::endl;
+    std::cout<<distance(paths_en_[mkey], paths_pl_[index], markers_count_)<<std::endl;
 }
 void NodesFactory::countAvgCos() { //cos tu nie bangla - pamięć pada
     int *v = new int[markers_count_];
@@ -513,6 +513,14 @@ double NodesFactory::cosine(int *v, int *u, int size) {
     }
     q = sqrt(qv)*sqrt(qu);
     return double(sum)/q;
+}
+double NodesFactory::distance(int *v, int *u, int size) {
+    double sum=0.0;
+    for (int i=0;i<size;++i){
+        sum += ((v[i]-u[i])*(v[i]-u[i]));
+    }
+    sum = double(sum);
+    return sqrt(sum)/size;
 }
 
 void NodesFactory::printSample(int id){

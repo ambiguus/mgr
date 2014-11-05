@@ -1,6 +1,6 @@
 #!/bin/bash
-for ((i=2; $i <= 150; i+=1)) ; do
+for ((i=5; $i <= 100; i+=5)) ; do
         echo "$i"
-        ./main $i >> ranking.txt
+        ./main $i >> ranking_euklides.txt
 done
 

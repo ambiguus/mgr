@@ -126,3 +126,3190 @@ markery:
 5	75404: 	jeszybot	,329956: 	yeshivah
 6	259935: 	"wilczomlecz groszkowy"	,353966: 	Euphorbia lathyris
 7	37656: 	polaryzacja	,347304: 	polarisation
+	show biz
+8 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+7199	0.992654	0.995522		single shell		show-business
+wektory: 
+szukany - 328924: 	show biz
+11 13 11 10 13 13 11 11 
+najlepszy - 22355: 	single shell
+17 19 21 20 22 21 19 19 
+prawdziwy - 25687: 	show-business
+13 13 15 16 17 17 15 14 
+0.995522
+	show biz
+1
+markery: 
+0	255945: 	"grzechotnik kropiaty"	,293827: 	Crotalus mitchellii
+1	29152: 	satrapa	,342032: 	satrap
+2	76298: 	pecylki	,292173: 	family Poeciliidae
+3	25418: 	kapitularz	,301045: 	chapterhouse
+4	7898: 	pasierb	,342624: 	stepson
+5	77462: 	"rynek sprzedawcy"	,290410: 	sellers' market
+6	19951: 	pukanie	,324823: 	knocking
+7	227236: 	"stolik na jednej nodze"	,306359: 	pedestal table
+8	73838: 	mukopolisacharyd	,365058: 	mucopolysaccharide
+	show biz
+9 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+7864	0.985801	0.994158		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+12 13 14 9 14 13 13 11 12 
+najlepszy - 70179: 	panicle
+21 16 19 13 17 19 18 15 18 
+prawdziwy - 25687: 	show-business
+19 14 15 9 15 13 14 9 12 
+0.994158
+	show biz
+1
+markery: 
+0	226431: 	"ropucha zwyczajna"	,293230: 	Bufo bufo
+1	8678: 	scena	,322784: 	stage
+2	395684: 	"kwas heksakozanowy"	,363126: 	hexacosanoic acid
+3	249351: 	kurusz	,358017: 	piastre
+4	32629: 	purytanin	,341670: 	Puritan
+5	35336: 	adenina	,363609: 	A
+6	6933: 	napletek	,315247: 	foreskin
+7	247913: 	gaża	,355762: 	salary
+8	20872: 	"postęp geometryczny"	,330833: 	geometric progression
+9	19925: 	wyrocznia	,321269: 	divination
+	show biz
+10 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+26919	0.982641	0.991807		aquatint		show-business
+wektory: 
+szukany - 328924: 	show biz
+10 12 14 12 13 12 9 12 13 11 
+najlepszy - 14584: 	aquatint
+17 15 16 16 15 17 13 17 14 15 
+prawdziwy - 25687: 	show-business
+16 15 11 15 14 12 12 16 13 12 
+0.991807
+	show biz
+1
+markery: 
+0	7367: 	terminarz	,319505: 	appointment calendar
+1	388342: 	"chili con carne"	,327848: 	chili con carne
+2	258593: 	"nogal brunatny"	,294037: 	Alectura lathami
+3	45787: 	kokainista	,338363: 	cocaine addict
+4	30299: 	adsorbat	,363067: 	adsorbate
+5	16058: 	inspektorat	,330642: 	inspectorate
+6	28403: 	arendarz	,341646: 	tavern keeper
+7	227240: 	"stół na kozłach"	,309810: 	trestle table
+8	38174: 	stoliwo	,335100: 	table
+9	385325: 	"wiąz drobnolistny"	,351522: 	Ulmus parvifolia
+10	387902: 	androgeneza	,356648: 	androgeny
+	show biz
+11 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+3997	0.989133	0.994619		multivitamin pill		show-business
+wektory: 
+szukany - 328924: 	show biz
+10 9 11 13 11 11 14 10 11 11 15 
+najlepszy - 43555: 	multivitamin pill
+10 8 13 12 11 11 12 9 11 13 14 
+prawdziwy - 25687: 	show-business
+12 13 15 14 10 13 14 9 13 15 15 
+0.994619
+	show biz
+1
+markery: 
+0	77407: 	curling	,287101: 	curling
+1	47284: 	dieta	,325796: 	diet
+2	8161: 	odejmowanie	,289235: 	minus
+3	38936: 	Prolog	,322084: 	logic programming
+4	247401: 	witalizm	,317521: 	vitalism
+5	23110: 	czelista	,338194: 	violoncellist
+6	32930: 	kryminolog	,338621: 	criminologist
+7	20973: 	imperatiwus	,358758: 	imperative form
+8	384222: 	"magnolia górska"	,348197: 	Magnolia fraseri
+9	26586: 	okrywa	,334693: 	envelope
+10	37358: 	ektotoksyna	,365501: 	exotoxin
+11	32959: 	neurolog	,340907: 	brain doctor
+	show biz
+12 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+14325	0.98173	0.988551		baedeker		show-business
+wektory: 
+szukany - 328924: 	show biz
+14 13 13 13 11 14 15 14 11 8 12 14 
+najlepszy - 34750: 	baedeker
+16 15 19 17 19 18 17 19 20 14 18 20 
+prawdziwy - 25687: 	show-business
+13 11 16 12 16 14 13 13 16 10 10 16 
+0.988551
+	show biz
+1
+markery: 
+0	36374: 	salada	,307697: 	salade
+1	18383: 	konglomerat	,328873: 	empire
+2	259620: 	tymozyna	,314687: 	thymosin
+3	233107: 	"domek dla lalek"	,302302: 	doll's house
+4	34030: 	pistacja	,353212: 	genus Pistacia
+5	31395: 	holotyp	,317324: 	holotype
+6	47967: 	"zbrodnia wojenna"	,288775: 	war crime
+7	229074: 	"łódź policyjna"	,306786: 	police boat
+8	258666: 	"paw kongijski"	,294046: 	Afropavo congensis
+9	249981: 	barczatkowate	,296927: 	family Lasiocampidae
+10	249322: 	IDR	,358170: 	rupiah
+11	241458: 	pikieciarz	,341332: 	picket
+12	77255: 	kuwertura	,326075: 	couverture
+	show biz
+1
+markery: 
+0	32383: 	regresja	,362542: 	regression
+1	382016: 	"żelazne drzewo"	,351081: 	ironwood tree
+2	27877: 	"tenis stołowy"	,287261: 	Ping-Pong
+3	8255: 	"wieża kontrolna"	,301579: 	control tower
+4	22925: 	monoman	,340754: 	monomaniac
+5	4866: 	kawalerka	,302576: 	efficiency apartment
+6	102842: 	karaoke	,291243: 	karaoke
+7	232833: 	dzwonek	,302115: 	diamond
+8	41473: 	kilokaloria	,358313: 	nutritionist's calorie
+9	33493: 	rokoko	,311036: 	rococo
+10	250436: 	strzykwy	,297013: 	class Holothuroidea
+11	8877: 	"szpital polowy"	,302937: 	field hospital
+12	42338: 	bazyleus	,337788: 	basileus
+13	30075: 	żarłoctwo	,311944: 	gluttony
+14	44679: 	oślizłość	,312195: 	sliminess
+	show biz
+15 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+804	0.982916	0.985426		pantechnicon		show-business
+wektory: 
+szukany - 328924: 	show biz
+11 10 14 10 15 9 12 12 12 10 17 12 12 11 14 
+najlepszy - 21436: 	pantechnicon
+18 18 19 12 16 11 17 15 17 17 17 15 15 18 17 
+prawdziwy - 25687: 	show-business
+15 15 14 9 13 10 15 12 14 14 14 12 12 15 14 
+0.985426
+	show biz
+1
+markery: 
+0	47808: 	"miasto rodzinne"	,331826: 	hometown
+1	389749: 	wanadynit	,365812: 	vanadinite
+2	19519: 	toksyczność	,311462: 	toxicity
+3	31945: 	histamina	,314694: 	histamine
+4	34861: 	zacienienie	,311059: 	faintness
+5	383192: 	"zarodziec ruchliwy"	,292080: 	malaria parasite
+6	12430: 	meczet	,305656: 	mosque
+7	36513: 	Be	,363232: 	atomic number 4
+8	386657: 	gempylowate	,298763: 	family Gempylidae
+9	14722: 	inwentarz	,319872: 	stock list
+10	225007: 	"stopa bezrobcia"	,358844: 	unemployment rate
+11	39195: 	wzrokowiec	,343274: 	visualiser
+12	77548: 	lewirat	,315991: 	levirate
+13	11012: 	"gruszka miłosna"	,326846: 	mad apple
+14	384127: 	"drzewo pimentowe"	,351150: 	Pimenta dioica
+15	234200: 	"silos paszowy"	,308224: 	silo
+16	239959: 	roztoczek	,354286: 	genus Saprolegnia
+17	72516: 	klepak	,310432: 	willow
+18	244862: 	pozytyw	,306852: 	positive
+19	256101: 	"żmija sykliwa"	,293806: 	Bitis arietans
+	show biz
+20 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+34713	0.973722	0.987436		midvein		show-business
+wektory: 
+szukany - 328924: 	show biz
+10 10 11 11 10 11 10 11 15 9 14 12 14 10 10 9 8 11 10 12 
+najlepszy - 70065: 	midvein
+15 13 15 16 16 14 12 14 17 16 18 12 17 13 16 11 17 13 14 17 
+prawdziwy - 25687: 	show-business
+15 10 13 12 14 14 10 10 15 13 15 12 15 14 16 9 15 7 7 17 
+0.987436
+	show biz
+1
+markery: 
+0	384532: 	piotroszowate	,292196: 	family Zeidae
+1	11672: 	wilkołak	,335888: 	loup-garou
+2	400388: 	IgG	,365482: 	IgG
+3	249353: 	PAB	,357839: 	balboa
+4	401584: 	"mezon pi"	,335307: 	pi-meson
+5	28212: 	Madziar	,337036: 	Magyar
+6	44988: 	rybosom	,314849: 	ribosome
+7	397540: 	piperyna	,365489: 	piperine
+8	390173: 	"obrzęk Quinckego"	,360459: 	Quincke's edema
+9	4957: 	pestka	,348062: 	pip
+10	1365: 	konwencja	,315981: 	formula
+11	381921: 	"goździk pyszny"	,348670: 	Dianthus supurbus
+12	50955: 	myca	,310596: 	yarmelke
+13	11748: 	cytadela	,299812: 	citadel
+14	24025: 	kataster	,319921: 	cadastre
+15	391851: 	bock	,328002: 	bock beer
+16	232711: 	Purim	,366412: 	Purim
+17	73287: 	wątrobowce	,347570: 	class Hepaticae
+18	21020: 	"cykl rozwojowy"	,347207: 	life cycle
+19	13777: 	wiolonczela	,300958: 	violoncello
+20	32560: 	"zasoby ludzkie"	,356083: 	labor resources
+21	34797: 	fen	,347035: 	foehn
+22	12588: 	ładowisko	,300789: 	storage area
+23	32355: 	Zr	,363362: 	atomic number 40
+24	20134: 	alibi	,321225: 	alibi
+	show biz
+25 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+5446	0.974272	0.982227		baedeker		show-business
+wektory: 
+szukany - 328924: 	show biz
+14 9 11 11 15 13 10 11 10 10 13 10 9 10 9 13 15 14 13 12 12 11 8 11 9 
+najlepszy - 34750: 	baedeker
+19 21 21 20 17 17 19 17 19 18 16 20 16 14 19 21 22 18 18 16 17 20 14 18 19 
+prawdziwy - 25687: 	show-business
+15 18 14 15 13 13 15 11 15 14 13 16 12 10 14 15 17 14 13 8 13 16 10 10 14 
+0.982227
+	show biz
+1
+markery: 
+0	77926: 	mikroewolucja	,357069: 	microevolution
+1	40606: 	instrumentariusz	,342107: 	scrub nurse
+2	36288: 	parias	,343162: 	Harijan
+3	76604: 	rekinkowate	,292387: 	family Scyliorhinidae
+4	400517: 	czarnogiełdziarz	,337895: 	black marketeer
+5	231204: 	palec	,357780: 	digit
+6	246429: 	niewyraźność	,362252: 	uneasiness
+7	33471: 	kontrreformacja	,330897: 	Counter Reformation
+8	13360: 	manszeta	,301500: 	tourniquet
+9	8208: 	równanie	,320837: 	equation
+10	392319: 	"zawciąg nadmorski"	,350055: 	Armeria maritima
+11	25685: 	narkobiznes	,290496: 	narcotraffic
+12	388329: 	zimorodek	,294195: 	Alcedo atthis
+13	46147: 	"lekarz domowy"	,339494: 	GP
+14	75932: 	kózkowate	,296127: 	family Cerambycidae
+15	246207: 	poltergeist	,336157: 	poltergeist
+16	25642: 	"jesion mannowy"	,351020: 	Fraxinus ornus
+17	25359: 	duszność	,361839: 	dyspnoea
+18	76485: 	feluka	,302901: 	felucca
+19	71653: 	interfon	,304427: 	interphone
+20	26066: 	aneroid	,299275: 	aneroid
+21	25497: 	"ślepota zmierzchowa"	,362815: 	moon blindness
+22	26856: 	gratulacje	,320646: 	felicitation
+23	1750: 	ufność	,325617: 	confidence
+24	26316: 	turbosprężarka	,309083: 	supercharger
+25	41778: 	sr	,357537: 	sr
+26	39023: 	synekdocha	,323327: 	synecdoche
+27	47694: 	"wata cukrowa"	,326082: 	candyfloss
+28	17334: 	"wał wykorbiony"	,301745: 	crankshaft
+29	42473: 	neska	,328229: 	instant coffee
+	show biz
+30 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+4671	0.974042	0.979407		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+14 15 12 13 11 12 10 13 8 11 10 11 12 13 22 11 11 10 10 9 9 12 11 12 8 12 10 9 9 11 
+najlepszy - 70179: 	panicle
+15 17 15 19 16 18 18 18 15 18 18 20 18 17 19 17 17 15 17 15 16 20 18 19 15 18 19 15 15 15 
+prawdziwy - 25687: 	show-business
+12 15 13 15 14 14 14 14 11 12 16 16 16 15 15 15 15 15 11 9 4 17 13 15 8 14 13 15 9 12 
+0.979407
+	show biz
+1
+markery: 
+0	18334: 	mglistość	,311623: 	reconditeness
+1	13844: 	"kolektor słoneczny"	,308473: 	solar furnace
+2	7217: 	okład	,301499: 	compress
+3	18836: 	sokolnik	,339188: 	hawker
+4	386839: 	"chloran(V) sodu"	,365376: 	sodium chlorate
+5	79518: 	krokodyle	,293483: 	order Crocodilia
+6	384266: 	"jarząb amerykański"	,352711: 	Sorbus americana
+7	5413: 	starożytność	,366735: 	antiquity
+8	34351: 	antyfeminizm	,290723: 	antifeminism
+9	400842: 	repudiacja	,323833: 	repudiation
+10	232839: 	dwójka	,302098: 	two
+11	385834: 	fierasfer	,298396: 	pearl-fish
+12	6425: 	warunek	,321295: 	stipulation
+13	80029: 	booster	,300232: 	takeoff rocket
+14	388424: 	hindustani	,322545: 	Hindostani
+15	21347: 	bekwarek	,292728: 	Luscinia luscinia
+16	384802: 	brzytewnikowate	,292224: 	family Centriscidae
+17	73704: 	gastrostomia	,288223: 	gastrostomy
+18	253123: 	takin	,297608: 	Budorcas taxicolor
+19	17754: 	naparstek	,358590: 	thimbleful
+20	75778: 	ćwierćdolarówka	,356407: 	quarter
+21	248195: 	defraudacja	,288746: 	misappropriation
+22	39119: 	"karlik malutki"	,296014: 	Pipistrellus pipistrellus
+23	251899: 	wielkouch	,294434: 	Macrotis lagotis
+24	226075: 	korzeń	,314132: 	root
+25	32949: 	mineralog	,340694: 	mineralogist
+26	39564: 	amfibolit	,363370: 	amphibolite
+27	7831: 	trio	,329776: 	trio
+28	12646: 	telefax	,302832: 	fax
+29	41834: 	kerykejon	,321983: 	caduceus
+30	39529: 	łuskowiec	,354475: 	roof mushroom
+31	76763: 	żabkarz	,338000: 	breaststroker
+32	73854: 	gluon	,334775: 	gluon
+33	252289: 	"zastrzalin totara"	,347921: 	Podocarpus totara
+34	381779: 	"wyczyniec łąkowy"	,350090: 	Alopecurus pratensis
+	show biz
+35 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+7896	0.970607	0.977501		single shell		show-business
+wektory: 
+szukany - 328924: 	show biz
+13 9 8 13 10 18 11 13 13 13 13 10 12 11 15 12 14 14 9 10 10 12 11 10 9 14 11 9 9 12 11 14 16 12 9 
+najlepszy - 22355: 	single shell
+19 12 14 18 16 19 20 21 21 20 16 21 20 17 22 21 19 21 21 19 23 24 22 21 18 16 17 18 12 18 19 18 17 20 21 
+prawdziwy - 25687: 	show-business
+13 6 10 14 11 15 16 15 16 15 12 17 14 11 16 17 15 15 17 13 17 18 18 17 14 12 11 14 7 14 15 14 13 16 17 
+0.977501
+	show biz
+1
+markery: 
+0	73455: 	tekster	,338537: 	copywriter
+1	37367: 	stroboskop	,308980: 	strobe light
+2	381823: 	"lepnica bezłodygowa"	,348699: 	Silene acaulis
+3	80228: 	decyl	,316340: 	decile
+4	237341: 	"taca obrotowa"	,309942: 	lazy Susan
+5	38079: 	brander	,303018: 	fire ship
+6	34008: 	karpiel	,348990: 	Brassica napus napobrassica
+7	227293: 	"wskaźnikowa lampa benzynowa"	,307675: 	Davy lamp
+8	79406: 	newsletter	,320899: 	newssheet
+9	12453: 	pagoda	,306176: 	pagoda
+10	40380: 	latimeria	,298161: 	Latimeria chalumnae
+11	79730: 	hypertekst	,318706: 	hypertext
+12	229479: 	drewno	,339706: 	ham actor
+13	256398: 	orzechówka	,292863: 	Nucifraga caryocatactes
+14	259499: 	szczudłakowate	,295344: 	family Recurvirostridae
+15	76134: 	niekompatybilność	,311107: 	incompatibility
+16	26523: 	sulfan	,364790: 	hydrogen sulfide
+17	249615: 	podrzeniowate	,355258: 	family Blechnaceae
+18	28809: 	tequila	,328125: 	tequila
+19	31098: 	matador	,337748: 	matador
+20	386663: 	"makrela hiszpańska"	,298778: 	Scomber colias
+21	397680: 	szyfoniera	,301108: 	commode
+22	22082: 	"pociąg sanitarny"	,304211: 	hospital train
+23	34768: 	motet	,324261: 	motet
+24	387278: 	"czosnek grzebieniasty"	,351635: 	Allium carinatum
+25	74841: 	produkt	,346899: 	product
+26	7658: 	brygada	,329579: 	brigade
+27	18215: 	komuna	,330435: 	commune
+28	34431: 	wilia	,366409: 	Dec 24
+29	77566: 	"polityka realistyczna"	,318174: 	practical politics
+30	17907: 	dusznota	,347165: 	sultriness
+31	73158: 	malwowate	,350413: 	mallow family
+32	46886: 	izogamia	,357009: 	isogamy
+33	78363: 	"antylopa widłoroga"	,297666: 	Antilocapra americana
+34	12813: 	kolaps	,360174: 	prostration
+35	76537: 	RNAP	,365221: 	RNA polymerase
+36	45095: 	"wąż koralowy arlekin"	,293761: 	Micrurus fulvius
+37	397994: 	przestrzegacz	,343347: 	warner
+38	233567: 	fokstenga	,303252: 	fore-topmast
+39	73823: 	burunduk	,297232: 	Eutamius sibiricus
+	show biz
+nan: 17417, 25687
+slowo	trans	markers
+13	13	338537
+11	5	308980
+10	16	348699
+12	18	316340
+8	9	309942
+9	5	303018
+10	15	348990
+11	8	307675
+11	13	320899
+10	11	306176
+10	16	298161
+9	14	318706
+12	14	339706
+11	18	292863
+19	15	295344
+12	13	311107
+10	11	364790
+18	15	355258
+13	13	328125
+14	12	337748
+10	18	298778
+10	9	301108
+12	9	304211
+11	11	324261
+11	15	351635
+9	12	346899
+11	16	329579
+11	13	330435
+1000000000	16	366409
+13	18	318174
+12	16	347165
+16	14	350413
+15	13	357009
+10	16	297666
+10	15	360174
+12	12	365221
+11	18	293761
+12	12	343347
+11	12	303252
+9	17	297232
+40 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+1	-nan	-10		entity		show-business
+wektory: 
+szukany - 328924: 	show biz
+13 11 10 12 8 9 10 11 11 10 10 9 12 11 19 12 10 18 13 14 10 10 12 11 11 9 11 11 1000000000 13 12 16 15 10 10 12 11 12 11 9 
+najlepszy - 1: 	entity
+6 9 11 10 9 7 10 10 7 9 11 9 7 13 7 5 8 7 8 5 13 9 9 6 10 5 8 5 8 10 9 8 6 11 8 8 13 5 12 10 
+prawdziwy - 25687: 	show-business
+13 5 16 18 9 5 15 8 13 11 16 14 14 18 15 13 11 15 13 12 18 9 9 11 15 12 16 13 16 18 16 14 13 16 15 12 18 12 12 17 
+-nan
+	show biz
+1
+markery: 
+0	48132: 	"dziadek do orzechów"	,305939: 	nutcracker
+1	384464: 	"pistacja właściwa"	,353213: 	pistachio tree
+2	39281: 	"barwnik naturalny"	,365249: 	pigment
+3	1176: 	rano	,347441: 	sunrise
+4	11742: 	baptysterium	,299710: 	font
+5	236969: 	"siodło damskie"	,308192: 	sidesaddle
+6	74227: 	bezbożność	,317534: 	atheism
+7	18091: 	nieżywość	,312594: 	deadness
+8	19103: 	"pies św. Bernarda"	,295781: 	St Bernard
+9	37167: 	"belona pospolita"	,298873: 	Lepisosteus osseus
+10	76162: 	parapsycholog	,341168: 	parapsychologist
+11	78639: 	kriostat	,301844: 	cryostat
+12	27838: 	sporofit	,348075: 	sporophyte
+13	381605: 	dirndl	,302223: 	dirndl
+14	25144: 	lokomotywownia	,307591: 	roundhouse
+15	398289: 	mastka	,314706: 	smegma
+16	17142: 	"język ukraiński"	,322391: 	Ukrainian
+17	52653: 	posrebrzenie	,308228: 	silver plate
+18	25675: 	"okonówka zwyczajna"	,292948: 	Delichon urbica
+19	26496: 	ósemka	,358384: 	eighth
+20	30152: 	mapografia	,289526: 	cartography
+21	41997: 	gencjana	,350963: 	gentian
+22	29981: 	prowincjonalizm	,323581: 	regionalism
+23	232017: 	paraplegik	,341166: 	paraplegic
+24	22562: 	kabalista	,338076: 	Kabbalist
+25	257581: 	"kwas barbiturowy"	,363971: 	malonylurea
+26	247764: 	miękkość	,312304: 	softness
+27	382701: 	"wiosnówka pospolita"	,349031: 	Draba verna
+28	28464: 	palankin	,306192: 	palankeen
+29	392775: 	garstka	,358593: 	smattering
+30	34452: 	pozytywka	,305731: 	musical box
+31	259942: 	"wilczomlecz ogrodowy"	,353968: 	Euphorbia peplus
+32	42337: 	autorytaryzm	,330794: 	tyranny
+33	72909: 	szkodowość	,358862: 	loss ratio
+34	227515: 	"nurek głębionwy"	,338746: 	deep-sea diver
+35	251454: 	budda	,336077: 	Buddha
+36	38387: 	hostel	,304212: 	student lodging
+37	43084: 	spinet	,308605: 	spinet
+38	387663: 	murale	,305723: 	wall painting
+39	32705: 	"grupa metylowa"	,365031: 	methyl radical
+40	235628: 	"igła magnetyczna"	,305197: 	magnetic needle
+41	253052: 	"kob liczi"	,297655: 	Kobus leche
+42	381974: 	antefiks	,299304: 	antefix
+43	26166: 	dziewięćdziesiątka	,358459: 	XC
+44	381278: 	ponikło	,350332: 	genus Eleocharis
+	show biz
+nan: 17417, 25687
+slowo	trans	markers
+9	10	305939
+11	16	353213
+10	10	365249
+12	14	347441
+11	9	299710
+9	8	308192
+1000000000	14	317534
+12	15	312594
+12	14	295781
+10	17	298873
+12	13	341168
+10	9	301844
+9	11	348075
+11	12	302223
+9	13	307591
+11	12	314706
+15	14	322391
+9	10	308228
+12	18	292948
+7	18	358384
+14	15	289526
+10	15	350963
+10	12	323581
+14	12	341166
+14	13	338076
+11	11	363971
+7	13	312304
+11	14	349031
+11	8	306192
+9	13	358593
+8	6	305731
+10	15	353968
+11	14	330794
+10	12	358862
+15	13	338746
+13	13	336077
+10	9	304212
+12	9	308605
+10	11	305723
+17	14	365031
+12	6	305197
+10	18	297655
+9	9	299304
+9	15	358459
+9	15	350332
+45 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+1	-nan	-10		entity		show-business
+wektory: 
+szukany - 328924: 	show biz
+9 11 10 12 11 9 1000000000 12 12 10 12 10 9 11 9 11 15 9 12 7 14 10 10 14 14 11 7 11 11 9 8 10 11 10 15 13 10 12 10 17 12 10 9 9 9 
+najlepszy - 1: 	entity
+8 11 6 7 9 10 6 7 9 12 6 11 6 10 7 8 8 8 13 10 7 10 6 5 6 8 5 9 8 5 8 10 6 5 6 6 7 11 9 6 8 13 7 7 7 
+prawdziwy - 25687: 	show-business
+10 16 10 14 9 8 14 15 14 17 13 9 11 12 13 12 14 10 18 18 15 15 12 12 13 11 13 14 8 13 6 15 14 12 13 13 9 9 11 14 6 18 9 15 15 
+-nan
+	show biz
+1
+markery: 
+0	77670: 	skóbel	,303943: 	hasp
+1	74191: 	monochrom	,305622: 	monochrome
+2	16579: 	szkwał	,347420: 	squall
+3	19551: 	wstęga	,299691: 	band
+4	34455: 	samowar	,307713: 	samovar
+5	17830: 	mizerność	,313449: 	aimlessness
+6	37947: 	szantung	,308018: 	shantung
+7	102744: 	chór	,329497: 	consort
+8	231264: 	kamień	,358277: 	stone
+9	49666: 	aplikacja	,299372: 	applique
+10	92608: 	wywłaszczenie	,285113: 	expropriation
+11	32395: 	Cd	,363237: 	atomic number 48
+12	19910: 	czytelnictwo	,329633: 	readership
+13	45248: 	sztangielka	,302514: 	dumbbell
+14	38648: 	"wiersz aleksandryjski"	,319137: 	Alexandrine
+15	33899: 	rad	,357532: 	rad
+16	41461: 	"atrybucja sytuacyjna"	,316328: 	externalisation
+17	13733: 	stabilizator	,365606: 	stabilizer
+18	44266: 	krewniactwo	,358813: 	cognation
+19	41952: 	"rzeżucha lekarska"	,349066: 	Nasturtium officinale
+20	396179: 	farthing	,356429: 	farthing
+21	15037: 	szyderstwo	,321109: 	sneer
+22	17146: 	limeryk	,319304: 	limerick
+23	261224: 	"glista ludzka"	,294749: 	Ascaris lumbricoides
+24	72327: 	rokitniczka	,292763: 	Acrocephalus schoenobaenus
+25	72640: 	klosz	,359096: 	flair
+26	262429: 	elszocja	,353622: 	elsholtzia
+27	40979: 	goździkowate	,348644: 	pink family
+28	257595: 	"pudel miniaturowy"	,295807: 	miniature poodle
+29	20325: 	etanal	,363631: 	ethanal
+30	251790: 	"gereza abisyńska"	,298011: 	Colobus guereza
+31	231222: 	"prawa ręka"	,341898: 	man Friday
+32	262165: 	mątwowate	,294979: 	family Sepiidae
+33	21298: 	pomuchla	,298200: 	Gadus morhua
+34	389977: 	intaglio	,304405: 	diaglyph
+35	40194: 	"agnozja słuchowa"	,360354: 	auditory agnosia
+36	80478: 	"nerwiak zarodkowy"	,361123: 	neuroblastoma
+37	39434: 	jubel	,329816: 	shindy
+38	40235: 	sygmatyzm	,362017: 	lisp
+39	22082: 	"pociąg sanitarny"	,304211: 	hospital train
+40	387956: 	"huba wielka"	,354635: 	scaly polypore
+41	15269: 	"kredyt hipoteczny"	,356475: 	mortgage loan
+42	19855: 	epileptyk	,339100: 	epileptic
+43	381887: 	HIV	,360733: 	HIV
+44	3158: 	sola	,298975: 	Pseudopleuronectes americanus
+45	249327: 	NPR	,358164: 	rupee
+46	12483: 	przecinka	,331344: 	fireguard
+47	258241: 	kustrzebkowate	,354527: 	family Pezizaceae
+48	252760: 	mulak	,297683: 	Odocoileus hemionus
+49	382392: 	"śniedek baldaszkowaty"	,351765: 	Ornithogalum umbellatum
+	show biz
+50 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+13086	0.960997	0.972156		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+8 10 11 10 8 12 12 12 13 9 15 11 12 10 20 12 12 10 15 10 10 13 12 10 11 15 10 15 11 9 9 12 23 11 12 11 12 10 13 12 10 13 13 12 10 12 11 18 9 11 
+najlepszy - 70179: 	panicle
+16 15 19 15 16 21 12 17 19 14 21 15 17 15 18 18 20 14 16 18 21 18 20 16 20 15 15 18 16 15 21 15 19 21 16 19 18 19 20 15 15 18 15 20 20 19 16 19 17 16 
+prawdziwy - 25687: 	show-business
+8 11 16 11 10 17 8 13 15 10 17 10 13 8 14 14 16 9 11 16 17 12 14 14 18 12 13 16 14 11 18 13 15 19 12 18 16 15 16 9 13 14 13 18 18 15 14 15 15 14 
+0.972156
+	show biz
+1
+markery: 
+0	17389: 	gromnik	,304963: 	lightning conductor
+1	15003: 	abstynencja	,311923: 	abstention
+2	23762: 	kwadrofonia	,307101: 	quadriphonic system
+3	39893: 	regeneracja	,285151: 	reclamation
+4	252477: 	"świerk sitkajski"	,347787: 	Picea sitchensis
+5	26490: 	osiemnastka	,358440: 	XVIII
+6	15008: 	beztroska	,325641: 	lightsomeness
+7	13180: 	okupant	,337852: 	besieger
+8	40895: 	przekształtnik	,304440: 	inverter
+9	25392: 	chianti	,328050: 	Chianti
+10	20364: 	"język paszto"	,322576: 	Afghan
+11	257483: 	"biedronka dwukropka"	,296110: 	Adalia bipunctata
+12	16749: 	obserwacja	,321352: 	reflexion
+13	40530: 	mrówkolew	,296688: 	antlion
+14	74923: 	potlacz	,325200: 	potlatch
+15	16533: 	łapacz	,338178: 	backstop
+16	391340: 	biel	,354860: 	sapwood
+17	226674: 	"planeta górna"	,335605: 	superior planet
+18	257625: 	"wyżeł węgierski krótkowłosy"	,295725: 	Hungarian pointer
+19	40406: 	"układ rozrodczy żeński"	,315181: 	female reproductive system
+20	23014: 	lutnista	,340434: 	lutenist
+21	50948: 	grupa	,329506: 	task force
+22	238935: 	deskorolkarz	,342340: 	skateboarder
+23	41645: 	blansz	,365875: 	lead carbonate
+24	5013: 	kielich	,359336: 	cup
+25	74495: 	oliguria	,362564: 	oliguria
+26	45787: 	kokainista	,338363: 	cocaine addict
+27	13178: 	oferent	,337868: 	bidder
+28	34768: 	motet	,324261: 	motet
+29	79293: 	"paciorecznik indyjski"	,351256: 	Canna edulis
+30	43476: 	"werteb krasowy"	,335520: 	swallow hole
+31	38342: 	muszkatołowiec	,348215: 	Myristica fragrans
+32	20101: 	set	,366747: 	set
+33	26926: 	interpolacja	,321135: 	insertion
+34	45647: 	dg	,358295: 	dg
+35	78111: 	"mąka kukurydziana"	,325836: 	Indian meal
+36	250278: 	"podejźrzon marunowy"	,354188: 	Botrychium matricariifolium
+37	7755: 	młódź	,328379: 	youth
+38	403443: 	GEL	,358126: 	lari
+39	232627: 	ksylofonista	,343515: 	xylophonist
+40	400980: 	Kirgiz	,337186: 	Khirghiz
+41	27919: 	tyczka	,325293: 	pole jumping
+42	27234: 	ściągacz	,310363: 	welt
+43	76975: 	zeszklenie	,357361: 	vitrification
+44	22868: 	estuarium	,334698: 	estuary
+45	11735: 	cal	,357757: 	in
+46	35637: 	ekwinokcjum	,366561: 	equinox
+47	224706: 	"wspólny zasób"	,313378: 	commonweal
+48	72771: 	tuberkulina	,365952: 	tuberculin
+49	262337: 	zespólnia	,315648: 	syncytium
+50	255711: 	"dereń kwiecisty"	,354112: 	Cornus florida
+51	58334: 	clubbing	,288628: 	pub crawl
+52	49167: 	"dynia olbrzymia"	,350370: 	Cucurbita maxima
+53	12582: 	zaspa	,335539: 	snowdrift
+54	381212: 	komptonia	,348354: 	genus Comptonia
+	show biz
+55 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+17994	0.976244	0.985344		newsstand		show-business
+wektory: 
+szukany - 328924: 	show biz
+7 13 14 13 11 11 12 12 9 14 15 11 11 10 12 12 14 9 12 10 14 12 12 12 7 10 13 13 11 11 11 10 12 15 13 10 10 9 11 14 13 14 10 13 8 12 12 11 12 10 10 11 11 10 9 
+najlepszy - 21059: 	newsstand
+12 15 14 17 19 18 16 15 13 18 19 18 17 14 16 18 16 13 18 16 16 17 16 14 14 16 16 14 13 16 12 18 15 15 18 16 17 15 18 17 16 17 14 13 13 17 14 16 14 15 18 22 17 14 17 
+prawdziwy - 25687: 	show-business
+6 14 10 14 17 15 15 13 7 14 14 16 12 12 14 16 11 11 16 15 14 15 14 11 14 15 14 12 11 14 11 16 12 10 15 13 15 13 15 15 14 15 10 9 12 14 13 15 11 10 16 17 15 12 15 
+0.985344
+	show biz
+1
+markery: 
+0	21347: 	bekwarek	,292728: 	Luscinia luscinia
+1	238128: 	"zaimek wzajemnie zwrotny"	,319020: 	reciprocal pronoun
+2	79140: 	sushi	,327954: 	sushi
+3	80428: 	igliczniowate	,292214: 	family Syngnathidae
+4	250677: 	prątnikowce	,347558: 	order Bryales
+5	29204: 	ogon	,342834: 	shadower
+6	75983: 	"gipsówka wiechowata"	,348674: 	Gypsophila paniculata
+7	16181: 	estetyka	,318225: 	esthetics
+8	47659: 	html	,321462: 	HTML
+9	20688: 	"ułamek piętrowy"	,358370: 	compound fraction
+10	77456: 	tajęża	,349878: 	genus Goodyera
+11	381546: 	"badian trujący"	,348190: 	Illicium anisatum
+12	673: 	klepaki	,356394: 	change
+13	19788: 	samopomoc	,288878: 	self-help
+14	20872: 	"postęp geometryczny"	,330833: 	geometric progression
+15	241353: 	kognat	,340173: 	matrilineal sib
+16	73635: 	wirki	,294717: 	class Turbellaria
+17	26816: 	gawot	,323061: 	gavotte
+18	13528: 	nieczystość	,288681: 	luxuria
+19	39922: 	papaweryna	,306247: 	Kavrin
+20	25772: 	silikoza	,360601: 	silicosis
+21	381539: 	"gołąb pręgosterny"	,294104: 	Columba fasciata
+22	73930: 	riff	,323000: 	riff
+23	239479: 	posypka	,326077: 	sprinkles
+24	238152: 	abstractum	,318982: 	noun
+25	80813: 	odtwarzalność	,311541: 	duplicability
+26	77268: 	psychrometr	,307020: 	psychrometer
+27	36131: 	wszechwiedza	,362319: 	omniscience
+28	227637: 	"helikopter jednowirnikowy"	,308243: 	single-rotor helicopter
+29	29493: 	samba	,287465: 	samba
+30	245829: 	ochronność	,311150: 	protectiveness
+31	258788: 	modliszkowate	,296517: 	family Manteidae
+32	37568: 	ping	,324834: 	ping
+33	231972: 	abA	,357684: 	abamp
+34	24934: 	demodekoza	,361276: 	mange
+35	235595: 	"wydawnictwo albumowe"	,301396: 	coffee-table book
+36	26380: 	bałabajka	,299641: 	balalaika
+37	29111: 	"cynamonowiec chiński"	,348172: 	Chinese cinnamon
+38	29224: 	kohorta	,329805: 	cohort
+39	381595: 	aleuron	,363729: 	aleurone
+40	40094: 	półświatło	,347158: 	half-light
+41	226406: 	"fiołek psi"	,351435: 	Viola canina
+42	29278: 	bordo	,312342: 	claret
+43	27657: 	arkan	,304820: 	reata
+44	249648: 	szparnicowate	,354153: 	family Schizaeaceae
+45	390282: 	"kuropatwa skalna"	,294078: 	Alectoris graeca
+46	249089: 	"pokrzewka czarnogłowa"	,292757: 	Silvia atricapilla
+47	253210: 	"nosorożec pancerny"	,297445: 	Rhinoceros unicornis
+48	33315: 	ektoplazma	,365942: 	ectoplasm
+49	15291: 	"rachunek bieżący"	,356257: 	current account
+50	246649: 	wodnik	,337312: 	Water Bearer
+51	235208: 	majcher	,308094: 	shiv
+52	15684: 	spirala	,359169: 	spiral
+53	29867: 	kosmonautyka	,317963: 	astronautics
+54	71192: 	hydrokortyzon	,363844: 	Cortef
+55	42500: 	torebka	,348065: 	boll
+56	80421: 	"komórka kościogubna"	,314867: 	osteoclast
+57	226662: 	"czerwony karzeł"	,335375: 	red dwarf star
+58	73859: 	mion	,335156: 	mu-meson
+59	74844: 	tremolit	,363715: 	tremolite
+	show biz
+60 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+9913	0.966959	0.975119		tonsure		show-business
+wektory: 
+szukany - 328924: 	show biz
+12 12 9 14 16 13 10 13 9 9 10 10 10 10 13 13 18 11 11 11 12 10 10 8 12 12 10 10 14 12 12 21 12 13 11 11 11 10 13 10 12 10 10 9 18 10 11 10 9 12 12 9 7 15 12 9 9 10 15 13 
+najlepszy - 30512: 	tonsure
+20 18 16 18 18 15 18 18 18 20 18 18 20 18 18 14 17 17 21 16 18 19 19 16 17 16 17 13 19 20 13 18 17 18 17 15 17 14 16 16 20 18 18 14 18 18 21 20 13 16 13 17 14 21 18 15 15 14 16 17 
+prawdziwy - 25687: 	show-business
+17 13 13 15 15 13 15 16 13 17 15 15 17 13 13 12 14 12 16 12 16 16 14 13 12 15 4 12 11 15 12 15 14 15 15 10 8 11 13 12 18 15 17 9 15 15 18 17 10 15 11 6 13 18 12 12 12 11 13 12 
+0.975119
+	show biz
+1
+markery: 
+0	260102: 	strusie	,292495: 	family Struthionidae
+1	8370: 	"studio nagrań"	,307297: 	recording studio
+2	27168: 	masażysta	,340558: 	massager
+3	253817: 	gąsienicznikowate	,296417: 	family Ichneumonidae
+4	76851: 	flokulacja	,356902: 	flocculation
+5	10895: 	partnerstwo	,358651: 	partnership
+6	381546: 	"badian trujący"	,348190: 	Illicium anisatum
+7	383516: 	malanga	,348590: 	genus Xanthosoma
+8	262924: 	malapropizm	,321368: 	malaprop
+9	252656: 	"marabut afrykański"	,295150: 	Leptoptilus crumeniferus
+10	258927: 	"terier tybetański"	,295706: 	chrysanthemum dog
+11	399441: 	karioka	,336907: 	Carioca
+12	78884: 	lid	,318752: 	lede
+13	259912: 	mamea	,351343: 	genus Mammea
+14	17493: 	metabaza	,323289: 	apostrophe
+15	15378: 	abdykacja	,324103: 	stepping down
+16	79227: 	złotookowate	,296691: 	family Chrysopidae
+17	39670: 	"wagon węglarka"	,301343: 	coal car
+18	24628: 	sukkub	,336141: 	succuba
+19	46608: 	"owoc maślany"	,327188: 	aguacate
+20	5525: 	morze	,358627: 	sea
+21	20829: 	"kwas salicylowy"	,365363: 	2-hydroxybenzoic acid
+22	37550: 	"opona pajęcza"	,315037: 	arachnoid membrane
+23	40938: 	nieprzekupność	,311858: 	incorruptibility
+24	242351: 	"kwas borny"	,364040: 	orthoboric acid
+25	37597: 	anamneza	,316459: 	anamnesis
+26	20118: 	wizytacja	,288109: 	visitation
+27	76482: 	bejsbolówka	,299772: 	golf cap
+28	46291: 	maraschino	,328154: 	maraschino liqueur
+29	32012: 	"pawie oczko"	,292172: 	Lebistes reticulatus
+30	19700: 	gospodarz	,291869: 	host
+31	21042: 	krótkowidztwo	,362807: 	shortsightedness
+32	243243: 	lama	,342558: 	lame
+33	257703: 	"pierwiosnka wyniosła"	,350011: 	Primula elatior
+34	42361: 	"wieża szybowa"	,303986: 	headgear
+35	46797: 	"substancja szara"	,315041: 	substantia grisea
+36	241035: 	ultramontanin	,346551: 	ultramontane
+37	77919: 	bimetalizm	,356314: 	bimetallism
+38	47548: 	"łyżka do butów"	,308101: 	shoehorn
+39	24025: 	kataster	,319921: 	cadastre
+40	260270: 	śluzorośla	,354265: 	division Gymnomycota
+41	2084: 	odpis	,319940: 	copy
+42	388967: 	furunkuloza	,361002: 	furunculosis
+43	40331: 	nerwiak	,361126: 	neuroma
+44	29351: 	intonacja	,312491: 	tone
+45	71997: 	gemsbok	,297661: 	Oryx gazella
+46	28580: 	praktycysta	,343180: 	utilitarian
+47	27265: 	"doktor honoris causa"	,321039: 	honoris causa
+48	37887: 	światłoczułość	,315913: 	radiosensitivity
+49	26352: 	"bezwodnik ftalowy"	,363946: 	phthalic anhydride
+50	24831: 	oklaski	,320953: 	clapping
+51	232919: 	bagatela	,287271: 	bar billiards
+52	251468: 	siwosz	,292409: 	Mustelus mustelus
+53	80072: 	tył	,331631: 	rear
+54	385812: 	histrionowate	,298350: 	family Antennariidae
+55	13968: 	śmiech	,290293: 	laughter
+56	234520: 	chińczyk	,287286: 	ludo
+57	8027: 	garstka	,358558: 	fistful
+58	28789: 	grappa	,328110: 	grappa
+59	396292: 	mechanista	,340599: 	mechanist
+60	255630: 	manul	,295889: 	Felis manul
+61	45948: 	scholastyka	,317511: 	Scholasticism
+62	37547: 	osadka	,354956: 	rachis
+63	14685: 	rożen	,307569: 	rotisserie
+64	245919: 	przechera	,339262: 	wangler
+	show biz
+65 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+5210	0.964099	0.970537		valence electron		show-business
+wektory: 
+szukany - 328924: 	show biz
+18 9 17 24 13 13 10 9 11 10 11 14 11 11 8 12 22 14 10 10 9 11 12 13 12 18 12 10 12 10 7 14 12 10 8 9 12 13 9 9 15 9 11 11 12 11 15 13 13 12 12 15 12 9 12 13 14 9 12 14 10 13 10 11 12 
+najlepszy - 50909: 	valence electron
+17 14 14 17 12 14 15 17 16 17 15 15 16 18 16 17 17 14 20 12 15 16 13 17 15 17 18 13 16 19 10 20 12 14 13 12 15 17 11 18 17 17 16 17 16 18 15 17 18 15 15 18 19 12 17 16 19 15 17 14 15 18 11 12 14 
+prawdziwy - 25687: 	show-business
+15 13 14 15 9 11 15 15 12 17 15 15 12 16 12 14 15 10 18 13 13 12 15 15 11 15 16 11 13 19 10 18 12 14 7 14 15 15 5 14 15 13 15 17 14 18 15 12 16 11 11 14 19 12 15 12 15 13 14 14 15 16 13 10 14 
+0.970537
+	show biz
+1
+markery: 
+0	25398: 	riesling	,328065: 	Riesling
+1	102895: 	"nietolerancja laktozy"	,362561: 	milk intolerance
+2	254285: 	"platykladus wschodni"	,347876: 	Platycladus orientalis
+3	238046: 	"rodzajnik określony"	,319007: 	definite article
+4	6219: 	motocyklista	,340786: 	motorcyclist
+5	384526: 	"zapalenie ucha środkowego"	,361724: 	otitis media
+6	75040: 	łuskacze	,292553: 	subfamily Carduelinae
+7	78700: 	lizosom	,314786: 	lysosome
+8	36806: 	geoda	,334766: 	geode
+9	471: 	rata	,355898: 	installment
+10	262562: 	gojnik	,353662: 	Marrubium vulgare
+11	241061: 	natywista	,336563: 	nativist
+12	14496: 	agrafka	,307678: 	safety pin
+13	33172: 	narwal	,295557: 	Monodon monoceros
+14	27987: 	homofon	,323447: 	homophone
+15	16981: 	równouprawnienie	,313488: 	equality before the law
+16	226430: 	"świerszczka północna"	,293260: 	Acris crepitans
+17	27925: 	trójskok	,325307: 	hop-step-and-jump
+18	5765: 	niedorosłość	,362140: 	juvenility
+19	33222: 	nadproże	,303981: 	lintel
+20	232197: 	PiB	,357640: 	PiB
+21	231980: 	S	,357681: 	S
+22	259485: 	"żuraw krzykliwy"	,295210: 	Grus americana
+23	76539: 	transkryptaza	,365222: 	reverse transcriptase
+24	226354: 	"fiołek rogaty"	,351436: 	Viola cornuta
+25	383796: 	"żółtaczka pokarmowa"	,360509: 	infectious hepatitis
+26	39728: 	"wrzód żołądka"	,360910: 	gastric ulcer
+27	236591: 	"mikrofalowy akcelerator liniowy"	,305495: 	microwave linear accelerator
+28	14290: 	kosa	,307869: 	scythe
+29	36548: 	kuglarstwo	,321323: 	skullduggery
+30	14343: 	taczka	,299761: 	wheelbarrow
+31	11518: 	kwestor	,341695: 	quaestor
+32	14925: 	pens	,358073: 	penny
+33	232186: 	EB	,357645: 	EB
+34	20415: 	"języki austroazjatyckie"	,322341: 	Munda-Mon-Khmer
+35	15023: 	demencja	,361984: 	dementedness
+36	20437: 	"kalendarz kościelny"	,366321: 	ecclesiastical calendar
+37	13988: 	wizg	,321562: 	whistling
+38	73160: 	cisowate	,347960: 	yew family
+39	14597: 	negatyw	,313399: 	drawback
+40	18605: 	peryfraza	,321326: 	indirect expression
+41	250277: 	"ropucha zielona"	,293233: 	Bufo viridis
+42	5435: 	giełda	,308882: 	securities market
+43	44591: 	klaps	,301232: 	clapperboard
+44	41778: 	sr	,357537: 	sr
+45	73639: 	alkazar	,299187: 	alcazar
+46	47005: 	"szlak bojowy"	,331462: 	line of march
+47	382719: 	"pieczarka polowa"	,354382: 	Agaricus arvensis
+48	28636: 	burnus	,300544: 	burnouse
+49	259953: 	rąbek	,348068: 	peristome
+50	381922: 	"goździk siny"	,348667: 	Diangus gratianopolitanus
+51	18119: 	napięcie	,347427: 	tension
+52	388154: 	wodomiotacz	,310270: 	watercannon
+53	38664: 	nokturn	,323013: 	notturno
+54	261238: 	trychina	,294763: 	Trichinella spiralis
+55	26729: 	proklamacja	,321151: 	declaration
+56	37921: 	dębik	,352566: 	genus Dryas
+57	255941: 	erechtites	,349422: 	Erechtites hieracifolia
+58	7236: 	magazyn	,320418: 	mag
+59	249551: 	mazurek	,323066: 	mazurka
+60	38752: 	boran	,364038: 	borate
+61	17847: 	bałwan	,308430: 	snowman
+62	389632: 	kwashiorkor	,360842: 	kwashiorkor
+63	80443: 	"dolar etiopski"	,357841: 	birr
+64	76866: 	rogatka	,309631: 	tollbar
+65	256927: 	cyjon	,295821: 	Cuon alpinus
+66	74952: 	spektrogram	,308567: 	spectrograph
+67	233553: 	"mata zapaśnicza"	,310563: 	wrestling mat
+68	46793: 	"czarna księga"	,319836: 	shitlist
+69	256165: 	"ożota zwyczajna"	,349250: 	Linosyris vulgaris
+	show biz
+70 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+28136	0.969356	0.982741		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+15 10 10 12 13 11 20 10 10 9 10 14 10 9 10 13 11 14 12 8 11 13 11 12 11 11 12 11 9 12 13 15 12 11 9 10 14 12 17 12 10 10 13 8 12 10 10 10 9 10 10 12 13 10 10 12 11 9 10 11 11 11 10 11 9 8 12 11 9 10 
+najlepszy - 70179: 	panicle
+18 18 19 19 14 17 19 15 16 19 16 16 16 20 17 22 19 18 17 14 18 19 19 17 16 20 22 17 16 19 15 16 19 18 17 20 21 16 20 19 20 18 16 14 18 14 14 15 16 15 18 18 15 15 16 17 20 15 15 17 16 15 19 19 16 17 14 15 18 18 
+prawdziwy - 25687: 	show-business
+15 15 17 14 12 17 15 15 14 15 14 14 8 18 12 16 17 14 13 8 14 15 17 12 14 17 20 7 9 13 9 14 15 14 11 16 17 9 16 15 14 16 14 5 14 10 12 13 12 15 16 15 10 11 14 11 16 13 9 12 11 11 16 15 12 15 10 8 13 16 
+0.982741
+	show biz
+1
+markery: 
+0	235520: 	dźwięcznik	,299936: 	bell
+1	232196: 	TiB	,357636: 	TiB
+2	235480: 	"trąba wodna"	,347484: 	waterspout
+3	388819: 	łzawnik	,354682: 	genus Dacrymyces
+4	391489: 	screwdriver	,328203: 	screwdriver
+5	381899: 	"oprzędnica jesienna"	,296941: 	Hyphantria cunea
+6	11506: 	kociak	,342214: 	sex bomb
+7	1253: 	pogrom	,325333: 	rout
+8	253965: 	sępy	,293067: 	Old World vulture
+9	31151: 	zecer	,338446: 	typographer
+10	249264: 	CYP	,358068: 	pound
+11	11534: 	macocha	,342622: 	stepmother
+12	12418: 	latryna	,304836: 	latrine
+13	391904: 	"schizofrenia urojeniowa"	,362003: 	paraphrenia
+14	74396: 	Lewantyńczyk	,337077: 	Levantine
+15	236159: 	komentarz	,318748: 	think piece
+16	73158: 	malwowate	,350413: 	mallow family
+17	382858: 	milleryt	,363460: 	millerite
+18	261577: 	notozaur	,293650: 	nothosaur
+19	35396: 	balsa	,350513: 	balsa wood
+20	381974: 	antefiks	,299304: 	antefix
+21	74739: 	zuchowatość	,311806: 	pluckiness
+22	31266: 	"butla tlenowa"	,301936: 	cylinder
+23	260504: 	ważki	,296711: 	order Odonata
+24	35932: 	lemiesz	,315673: 	vomer
+25	384132: 	"drzewo goździkowe"	,351197: 	Eugenia caryophyllatum
+26	65154: 	"szesnastkowy system liczbowy"	,321590: 	hexadecimal system
+27	12734: 	partykuła	,319016: 	particle
+28	248036: 	oszołomienie	,325529: 	stupefaction
+29	7385: 	wieża	,300890: 	rook
+30	390824: 	"ludzka granulocytarna ehrlichioza"	,361190: 	anaplasmosis
+31	232180: 	"kilotona trotylu"	,357743: 	kiloton
+32	29204: 	ogon	,342834: 	shadower
+33	385800: 	wstęgorowate	,298334: 	family Trachipteridae
+34	24621: 	zombie	,343542: 	living dead
+35	1195: 	kantata	,322974: 	oratorio
+36	382488: 	RVF	,360732: 	Rift Valley fever
+37	28748: 	dziobak	,294417: 	Ornithorhynchus anatinus
+38	42096: 	ćwiartka	,313056: 	4to
+39	67382: 	"pierwsza kwadra"	,366465: 	first quarter
+40	20678: 	pulman	,307036: 	Pullman car
+41	34801: 	hamsin	,347384: 	samiel
+42	237624: 	"droga kołowania"	,309311: 	taxi strip
+43	74782: 	paramagnetyzm	,347238: 	paramagnetism
+44	381830: 	"lepnica pospolita"	,348704: 	Silene vulgaris
+45	26352: 	"bezwodnik ftalowy"	,363946: 	phthalic anhydride
+46	14251: 	brzytwa	,308936: 	straight razor
+47	238759: 	kofeinista	,338085: 	caffein addict
+48	229205: 	"wagon chłodnia"	,307339: 	refrigerator car
+49	228924: 	pływak	,306812: 	pontoon
+50	13857: 	kawon	,327138: 	watermelon
+51	37550: 	"opona pajęcza"	,315037: 	arachnoid membrane
+52	245645: 	SDG	,358081: 	pound
+53	227089: 	"tron Boży"	,305435: 	mercy seat
+54	10906: 	pijactwo	,360164: 	drunkenness
+55	25170: 	druciarz	,342969: 	tinker
+56	252038: 	"kangury drzewne"	,294449: 	genus Dendrolagus
+57	257907: 	brunch	,325879: 	brunch
+58	249333: 	SOS	,358180: 	shilling
+59	257478: 	"kwas glutaminowy"	,363110: 	glutaminic acid
+60	232043: 	ph	,357705: 	phot
+61	76489: 	kilt	,304651: 	kilt
+62	383907: 	kariota	,352350: 	genus Caryota
+63	13592: 	bas	,321909: 	basso
+64	8877: 	"szpital polowy"	,302937: 	field hospital
+65	22686: 	kirasjer	,338646: 	cuirassier
+66	25884: 	"zięba jer"	,292552: 	Fringilla montifringilla
+67	255357: 	garnelowate	,295056: 	family Crangonidae
+68	249772: 	rozpłoch	,354136: 	genus Hymenophyllum
+69	34717: 	"wątłusz srebrzysty"	,298208: 	Melanogrammus aeglefinus
+70	20550: 	tasza	,298903: 	Cyclopterus lumpus
+71	15254: 	bln	,358473: 	1000000000000
+72	14239: 	grysik	,325837: 	farina
+73	238256: 	"pompa wodna"	,310298: 	water pump
+74	11232: 	tymianek	,327549: 	thyme
+	show biz
+75 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+6874	0.967811	0.975841		tonsure		show-business
+wektory: 
+szukany - 328924: 	show biz
+13 11 13 10 13 10 13 10 19 14 12 14 9 12 14 11 16 11 10 10 9 12 10 20 10 10 11 11 12 12 12 13 13 14 10 10 12 10 13 15 13 12 11 11 10 12 9 12 14 10 11 12 12 9 11 14 21 9 12 12 14 9 10 12 12 13 12 19 11 10 9 12 9 11 9 
+najlepszy - 30512: 	tonsure
+13 17 20 18 18 21 16 18 19 16 18 18 14 18 14 15 17 15 19 16 14 17 14 18 17 19 19 17 15 17 17 17 15 18 14 17 20 19 14 17 17 18 15 18 19 17 16 15 17 13 17 18 18 19 17 18 18 16 18 17 19 16 18 16 17 18 20 18 18 21 21 18 16 16 18 
+prawdziwy - 25687: 	show-business
+8 14 18 15 14 18 14 15 16 14 15 16 9 17 12 10 14 10 16 11 9 16 7 15 14 16 15 12 14 9 15 14 13 15 12 12 19 16 13 15 10 16 10 16 16 11 10 13 10 8 14 15 15 12 16 16 15 13 15 12 16 11 15 11 12 16 17 15 15 18 18 15 13 8 15 
+0.975841
+	show biz
+1
+markery: 
+0	33195: 	jonizacja	,357006: 	ionisation
+1	75567: 	shaker	,301382: 	cocktail shaker
+2	396164: 	effandi	,337182: 	effendi
+3	72692: 	ekstynkcja	,356883: 	extinction
+4	227282: 	"lampa gazowa"	,303485: 	gas lamp
+5	231045: 	tapeciarz	,341156: 	paperer
+6	7641: 	ugrupowanie	,329508: 	ground forces
+7	27586: 	malowanka	,301443: 	coloring book
+8	36612: 	lotnictwo	,329530: 	airforce
+9	386352: 	"bass błękitnoskrzelny"	,298421: 	Lepomis macrochirus
+10	19470: 	kompozycja	,318841: 	portmanteau
+11	35659: 	wiklina	,310414: 	caning
+12	237755: 	"średnia potęgowa rzędu 0"	,317722: 	geometric mean
+13	24931: 	pełzakowica	,360711: 	amoebiosis
+14	20275: 	goblin	,336145: 	hobgoblin
+15	238831: 	heroinista	,339810: 	heroin addict
+16	42514: 	trombina	,363767: 	thrombin
+17	33231: 	pylon	,307084: 	power pylon
+18	382365: 	zwartnica	,351588: 	genus Hippeastrum
+19	261316: 	"czeremcha wirginijska"	,352672: 	Prunus virginiana
+20	34169: 	wizon	,297745: 	Mustela vison
+21	241061: 	natywista	,336563: 	nativist
+22	256270: 	"starzec zwyczajny"	,349651: 	Senecio vulgaris
+23	65648: 	kawał	,358614: 	wad
+24	39816: 	ekspedytor	,339405: 	freight agent
+25	251852: 	śluzice	,292334: 	genus Myxine
+26	249550: 	lendler	,323065: 	landler
+27	21297: 	"wspólny dorobek"	,355566: 	community property
+28	17560: 	zamsz	,363910: 	suede leather
+29	384146: 	langerstremia	,351139: 	genus Lagerstroemia
+30	21020: 	"cykl rozwojowy"	,347207: 	life cycle
+31	29173: 	skrzydło	,329616: 	wing
+32	20387: 	"język bułgarski"	,322399: 	Bulgarian
+33	31938: 	glutamina	,363111: 	glutamine
+34	39149: 	"bóbr wschodni"	,297249: 	Castor fiber
+35	24732: 	dzwony	,299940: 	bellbottom pants
+36	237755: 	"średnia potęgowa rzędu 0"	,317722: 	geometric mean
+37	36655: 	Tb	,363341: 	atomic number 65
+38	80333: 	wątek	,316511: 	thread
+39	72543: 	chodzik	,310199: 	go-cart
+40	231475: 	naganiacz	,342250: 	shill
+41	18490: 	daniel	,297688: 	Dama dama
+42	38347: 	tapioka	,326195: 	tapioca
+43	258827: 	kuczmany	,296324: 	family Ceratopogonidae
+44	45890: 	mezzotinta	,305477: 	mezzotint
+45	18055: 	gnojownia	,328477: 	muckhill
+46	45054: 	śródplon	,354797: 	catch crop
+47	249609: 	"język jeleni"	,355250: 	Phyllitis scolopendrium
+48	27994: 	meronimia	,358792: 	part to whole relation
+49	30577: 	dozorowiec	,303749: 	guard ship
+50	261408: 	pijawkowate	,294789: 	family Hirudinidae
+51	252376: 	mrównikowate	,295614: 	family Orycteropodidae
+52	229157: 	"system naprowadzania"	,303755: 	guidance device
+53	41619: 	prolongacja	,289996: 	lengthening
+54	42740: 	przodownictwo	,313361: 	lead
+55	251743: 	werweta	,297988: 	Cercopithecus aethiops pygerythrus
+56	73937: 	centryzm	,318474: 	moderatism
+57	28150: 	wyżerka	,325820: 	grub
+58	37679: 	sknerstwo	,311675: 	miserliness
+59	14862: 	gilotyna	,303763: 	guillotine
+60	8006: 	stopa	,358831: 	rate
+61	381802: 	"chrzan pospolity"	,348967: 	horseradish root
+62	80387: 	bimetal	,363994: 	bimetal
+63	40205: 	proteinuria	,361227: 	proteinuria
+64	24593: 	admirał	,296756: 	Vanessa atalanta
+65	73308: 	szczeciowate	,352825: 	family Dipsacaceae
+66	235510: 	"stroik dmuchany"	,306641: 	pitch pipe
+67	262744: 	legionella	,291806: 	legionella
+68	103075: 	"jedna trzecia"	,358377: 	tierce
+69	252248: 	peba	,297818: 	Dasypus novemcinctus
+70	11327: 	pokrzywa	,351452: 	genus Urtica
+71	15426: 	"promieniowanie infraczerwone"	,347180: 	infrared emission
+72	39677: 	Zulus	,337301: 	Zulu
+73	250834: 	orleniowate	,292445: 	family Myliobatidae
+74	39968: 	Ala	,363087: 	alanine
+75	24152: 	warchlak	,297463: 	sucking pig
+76	21865: 	"hokej na trawie"	,287128: 	hockey
+77	20648: 	baktrian	,297715: 	Camelus bactrianus
+78	259913: 	"mamea amerykańska"	,351344: 	Mammea americana
+79	75323: 	"klon polny"	,353173: 	Acer campestre
+	show biz
+80 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+19531	0.955548	0.96742		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+11 11 14 14 10 15 10 9 15 11 10 9 12 11 9 13 12 10 9 12 9 14 9 9 13 14 11 10 10 9 13 12 15 12 10 9 12 11 9 9 13 8 8 22 17 9 12 11 13 11 21 19 9 13 14 9 13 9 13 9 11 10 10 10 12 16 10 10 7 9 8 13 13 13 12 9 14 9 10 11 
+najlepszy - 70179: 	panicle
+14 14 17 14 15 16 19 15 19 21 17 14 21 20 21 16 17 13 20 19 19 16 15 17 17 19 17 14 15 19 16 20 20 16 19 15 21 15 19 14 17 17 13 19 15 17 14 16 17 16 19 19 13 19 18 21 19 14 18 15 19 8 13 15 19 18 16 14 22 19 19 20 14 19 16 16 22 20 18 18 
+prawdziwy - 25687: 	show-business
+9 8 15 9 7 14 15 11 15 19 12 10 17 18 17 14 12 9 16 17 17 14 13 13 15 15 12 10 11 15 13 16 14 12 17 11 17 10 15 8 15 15 12 15 11 13 12 14 12 10 15 15 7 13 14 18 15 12 14 5 14 12 9 15 17 16 8 10 18 17 15 17 12 15 12 14 16 18 16 16 
+0.96742
+	show biz
+1
+markery: 
+0	251437: 	jungizm	,317845: 	Jungian psychology
+1	73725: 	niedodma	,362539: 	atelectasis
+2	11539: 	marionetka	,307062: 	marionette
+3	387269: 	"oszloch morski"	,351779: 	Urginea maritima
+4	7509: 	mikrowela	,305492: 	microwave oven
+5	33606: 	sfinks	,335884: 	Sphinx
+6	19220: 	grafit	,364118: 	plumbago
+7	35348: 	oś	,317648: 	axis
+8	395394: 	bodyguard	,337927: 	escort
+9	389749: 	wanadynit	,365812: 	vanadinite
+10	43349: 	jai-alai	,287169: 	pelota
+11	12537: 	luminator	,306845: 	porthole
+12	386230: 	"drzewo kapokowe"	,350506: 	Ceiba pentandra
+13	398515: 	brajtszwanc	,363919: 	broadtail
+14	383754: 	LTB	,361701: 	laryngitis
+15	72826: 	stras	,363533: 	rhinestone
+16	75376: 	"fundusz emerytalny"	,356236: 	superannuation fund
+17	384405: 	wręgowcowate	,298363: 	family Scombresocidae
+18	40303: 	uremia	,360900: 	azotaemia
+19	25848: 	"chronometr okrętowy"	,301171: 	chronometer
+20	35946: 	dolomit	,363415: 	bitter spar
+21	381312: 	pałkowate	,350343: 	cattail family
+22	259079: 	"kurka wodna"	,294003: 	moorhen
+23	238751: 	południe	,331293: 	south
+24	40580: 	dydaktyk	,339005: 	educationalist
+25	76411: 	ekstrapolacja	,316657: 	extrapolation
+26	74451: 	jezuityzm	,318328: 	Jesuitry
+27	41562: 	lamus	,305140: 	lumber room
+28	14444: 	ryza	,307635: 	runway
+29	14592: 	logo	,324210: 	logotype
+30	381108: 	"prątek kwasoodporny"	,291824: 	Mycobacterium tuberculosis
+31	391726: 	liman	,335027: 	liman
+32	395043: 	przeciwprostokątna	,359292: 	hypotenuse
+33	42965: 	tężyczka	,361471: 	apyretic tetanus
+34	15074: 	obręb	,331649: 	reach
+35	252346: 	"świerk Brewera"	,347782: 	Picea breweriana
+36	44571: 	charyzmat	,310961: 	personal magnetism
+37	28932: 	tamaryszek	,351423: 	tamarisk
+38	1392: 	sarniak	,297691: 	roebuck
+39	71497: 	pierścieniakowate	,354428: 	family Strophariaceae
+40	42195: 	miłka	,350158: 	genus Eragrostis
+41	30061: 	kabotynizm	,311601: 	glitz
+42	252014: 	"terapena ozdobna"	,293335: 	Terrapene ornata
+43	391484: 	margarita	,328193: 	margarita
+44	390934: 	"krzywica dorosłych"	,360885: 	osteomalacia
+45	259713: 	mrówkołowowate	,292688: 	family Formicariidae
+46	7026: 	motto	,320520: 	epigraph
+47	28789: 	grappa	,328110: 	grappa
+48	45440: 	browar	,300382: 	brewery
+49	36343: 	szwargot	,320507: 	gabble
+50	25173: 	pilśniarz	,339429: 	fuller
+51	260795: 	sargassowate	,291976: 	genus Sargassum
+52	258801: 	długoczułkie	,296309: 	suborder Nematocera
+53	15782: 	sanatorium	,307717: 	sanitarium
+54	32641: 	"Kościół Chrześcijan Baptystów"	,329033: 	Baptists
+55	13219: 	ankietowany	,340050: 	interviewee
+56	235370: 	"biała nędza"	,336609: 	poor white trash
+57	8374: 	południe	,358926: 	S
+58	37289: 	mimetyzm	,290013: 	mimicry
+59	32039: 	klonek	,292126: 	Leuciscus cephalus
+60	32842: 	pointylista	,341414: 	pointillist
+61	254699: 	"korzybiel biały"	,351354: 	Canella-alba
+62	43372: 	fiksatywa	,303059: 	fixative
+63	15772: 	pensjonat	,300144: 	boardinghouse
+64	32699: 	napalm	,365071: 	napalm
+65	24584: 	undyna	,336129: 	undine
+66	14795: 	kłódka	,306174: 	padlock
+67	30737: 	rekombinacja	,324748: 	recombination
+68	21785: 	perigeum	,331592: 	perigee
+69	254615: 	"krokodyle właściwe"	,293486: 	family Crocodylidae
+70	18564: 	sęk	,365899: 	knot
+71	251805: 	"żaba ogoniasta"	,293221: 	Ascaphus trui
+72	240563: 	S$	,357906: 	Singapore dollar
+73	13908: 	"mniszek lekarski"	,349685: 	genus Sonchus
+74	30998: 	tiul	,309909: 	tulle
+75	227709: 	"statek pocztowy"	,305212: 	packet boat
+76	232169: 	sabin	,357524: 	sabin
+77	11483: 	gnoma	,323563: 	gnome
+78	73261: 	dzwonkowate	,349765: 	bellflower family
+79	30934: 	wylinka	,357075: 	ecdysis
+80	43447: 	"agent obcego wywiadu"	,339350: 	foreign agent
+81	384370: 	żaglon	,298323: 	wolffish
+82	238134: 	"czasownik przechodni podwójnie"	,319042: 	doubly transitive verb form
+83	76829: 	habituacja	,360154: 	habituation
+84	390664: 	"marmurkowatość kości"	,360895: 	marble bones disease
+	show biz
+85 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+6738	0.966167	0.975026		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+13 11 11 10 11 10 12 8 15 10 13 13 11 10 11 10 11 14 11 13 11 13 11 6 15 14 13 9 8 8 10 12 13 10 13 11 11 10 8 18 10 10 11 13 11 19 9 12 10 13 13 16 21 11 13 10 14 10 12 10 13 10 11 10 9 14 8 13 9 19 13 10 10 9 11 9 13 11 16 13 12 10 13 13 11 
+najlepszy - 70179: 	panicle
+26 19 15 16 17 22 15 13 15 14 21 15 17 16 16 16 20 19 19 17 14 19 18 12 15 21 22 15 16 17 16 16 18 16 15 19 18 16 18 19 19 18 20 17 20 19 21 17 14 18 16 19 19 15 20 15 14 19 22 21 16 16 14 14 14 21 16 19 15 19 13 17 19 20 13 17 18 19 19 15 17 19 22 18 18 
+prawdziwy - 25687: 	show-business
+22 17 11 14 10 18 10 11 13 10 15 9 15 14 16 12 16 15 17 5 10 15 16 10 13 17 18 11 12 11 10 14 15 16 13 17 14 14 16 15 15 14 18 14 18 15 15 14 10 12 14 15 15 11 16 13 12 14 16 19 14 14 10 10 12 17 8 15 13 15 11 15 15 16 9 11 14 13 15 12 15 17 18 14 15 
+0.975026
+	show biz
+1
+markery: 
+0	15782: 	sanatorium	,307717: 	sanitarium
+1	18838: 	sten	,308831: 	Sten gun
+2	381910: 	"goździk kropkowany"	,348666: 	Dianthus deltoides
+3	24487: 	piaszczysko	,335443: 	sand bar
+4	25131: 	elektrowóz	,302615: 	electric locomotive
+5	41776: 	gon	,357533: 	grade
+6	80671: 	mużyk	,340835: 	muzjik
+7	250132: 	disco	,323092: 	disco music
+8	235625: 	Mozart	,324249: 	Mozart
+9	48890: 	"strach na wróble"	,307784: 	scarer
+10	30687: 	dysocjacja	,356828: 	dissociation
+11	237512: 	"obiekt przejściowy"	,307906: 	security blanket
+12	34204: 	kontrrewolucja	,289708: 	counterrevolution
+13	33527: 	"dwoinka zapalenia płuc"	,291844: 	Diplococcus pneumoniae
+14	232188: 	ZB	,357649: 	ZB
+15	249245: 	GRD	,357917: 	Greek drachma
+16	595: 	pokwitanie	,366136: 	pubescence
+17	33717: 	jidisz	,322430: 	Yiddish
+18	18306: 	strzecha	,309441: 	thatched roof
+19	71698: 	shamisen	,307711: 	shamisen
+20	11340: 	słonecznik	,327256: 	sunflower seed
+21	235423: 	"gitara hawajska"	,303958: 	steel guitar
+22	71870: 	"chemotaksja ujemna"	,289193: 	negative chemotaxis
+23	383258: 	"rzęsa trójrowkowa"	,348600: 	Lemna trisulca
+24	30971: 	fiszbin	,363870: 	baleen
+25	393614: 	"przepuklina oponowo-rdzeniowa"	,362360: 	myelomeningocele
+26	35049: 	jednogłosowość	,322872: 	monody
+27	15977: 	kwarantanna	,362084: 	quarantine
+28	45949: 	czernina	,350752: 	Viccinium myrtillus
+29	74600: 	koślawość	,362367: 	valgus
+30	47395: 	"kwaśne deszcze"	,362618: 	acid precipitation
+31	251745: 	dryl	,297999: 	Mandrillus leucophaeus
+32	261552: 	cannelloni	,327838: 	cannelloni
+33	37651: 	nadkład	,335255: 	overburden
+34	5123: 	start	,331766: 	scratch line
+35	30618: 	"dozorowiec pogranicza"	,306334: 	patrol ship
+36	384365: 	traszyna	,298319: 	snake-fish
+37	76354: 	seryna	,365432: 	serine
+38	227093: 	szafa	,310227: 	wardrobe
+39	33055: 	pramatka	,339349: 	foremother
+40	50710: 	K	,358241: 	K
+41	400129: 	tysięczna	,358393: 	thousandth
+42	72838: 	transponder	,309765: 	transponder
+43	17172: 	pisuar	,310028: 	urinal
+44	391109: 	galaktozemia	,360624: 	galactosemia
+45	71524: 	kopytnik	,348633: 	genus Asarum
+46	258328: 	stringi	,309483: 	thong
+47	37664: 	sprężystość	,312665: 	springiness
+48	34157: 	"angora turecka"	,295869: 	Angora cat
+49	11513: 	"pies nierasowy"	,295624: 	mutt
+50	31432: 	"tritlenek arsenu"	,363943: 	ratsbane
+51	26993: 	poczwara	,292240: 	teras
+52	47558: 	"korona cierniowa"	,301825: 	crown of thorns
+53	77679: 	trzewikodzioby	,295161: 	family Balaenicipitidae
+54	253020: 	"pszczoła włoska"	,296360: 	Italian bee
+55	382228: 	drzymy	,294284: 	family Bucconidae
+56	13006: 	"drzewo oskrzelowe"	,315269: 	bronchial tube
+57	25492: 	puszkarz	,337839: 	bell founder
+58	233908: 	"iPod video"	,304449: 	video iPod
+59	74478: 	"łaźnia parowa"	,308793: 	vapour bath
+60	65033: 	"ekran dotykowy"	,309686: 	touchscreen
+61	382057: 	"pawica grabówka"	,296902: 	Saturnia pavonia
+62	249700: 	largo	,323005: 	largo
+63	15586: 	gloria	,312281: 	gloriole
+64	1063: 	hodowca	,338001: 	stock breeder
+65	261485: 	"brodziec plamisty"	,295286: 	Actitis macularia
+66	237862: 	TND	,357878: 	dinar
+67	25877: 	ziarnojady	,292548: 	family Fringillidae
+68	46947: 	"miecz Damoklesowy"	,362752: 	sword of Damocles
+69	256537: 	skowronki	,292538: 	family Alaudidae
+70	249798: 	"leming górski"	,297142: 	Lemmus lemmus
+71	32226: 	kołchoz	,328867: 	kolkhoz
+72	41102: 	espadryla	,302743: 	espadrille
+73	241462: 	teleolog	,342889: 	teleologist
+74	17389: 	gromnik	,304963: 	lightning conductor
+75	23655: 	panteizm	,318533: 	pantheism
+76	74456: 	kamikaze	,304601: 	kamikaze
+77	24206: 	mściciel	,337683: 	retaliator
+78	25815: 	plenum	,330119: 	plenum
+79	384219: 	"magnolia drzewiasta"	,348198: 	Magnolia acuminata
+80	7420: 	antyteza	,323285: 	antithesis
+81	231237: 	Da	,358246: 	atomic mass unit
+82	5627: 	wałach	,297333: 	gelding
+83	400545: 	zwapnienie	,361812: 	calcification
+84	71949: 	perłowce	,296748: 	family Nymphalidae
+85	71555: 	sromotnica	,354574: 	genus Phallus
+86	37301: 	polucja	,357183: 	premature ejaculation
+87	386657: 	gempylowate	,298763: 	family Gempylidae
+88	12673: 	kombajn	,301464: 	combine
+89	238152: 	abstractum	,318982: 	noun
+	show biz
+nan: 17417, 25687
+slowo	trans	markers
+11	11	307717
+11	11	308831
+10	16	348666
+8	12	335443
+13	10	302615
+12	14	357533
+13	14	340835
+10	12	323092
+10	11	324249
+10	10	307784
+11	10	356828
+7	11	307906
+11	14	289708
+11	11	291844
+11	14	357649
+11	15	357917
+12	14	366136
+15	15	322430
+9	10	309441
+11	7	307711
+9	15	327256
+12	8	303958
+12	15	289193
+9	14	348600
+8	11	363870
+13	15	362360
+12	11	322872
+11	14	362084
+10	15	350752
+12	17	362367
+14	16	362618
+8	18	297999
+10	14	327838
+1000000000	10	335255
+7	12	331766
+12	10	306334
+10	17	298319
+12	12	365432
+10	12	310227
+14	13	339349
+12	14	358241
+7	18	358393
+10	6	309765
+8	9	310028
+11	16	360624
+10	15	348633
+10	12	309483
+11	14	312665
+10	13	295869
+10	13	295624
+10	12	363943
+10	14	292240
+10	10	301825
+18	15	295161
+11	17	296360
+18	15	294284
+10	17	315269
+14	14	337839
+12	11	304449
+9	10	308793
+10	9	309686
+10	17	296902
+11	11	323005
+9	14	312281
+14	14	338001
+12	18	295286
+12	15	357878
+19	15	292548
+13	13	362752
+19	15	292538
+10	17	297142
+10	16	328867
+10	11	302743
+14	12	342889
+7	6	304963
+14	16	318533
+12	11	304601
+14	14	337683
+13	14	330119
+11	16	348198
+11	12	323285
+12	14	358246
+9	13	297333
+10	16	361812
+21	15	296748
+10	15	354574
+13	14	357183
+15	15	298763
+9	8	301464
+12	12	318982
+90 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+1	-nan	-10		entity		show-business
+wektory: 
+szukany - 328924: 	show biz
+11 11 10 8 13 12 13 10 10 10 11 7 11 11 11 11 12 15 9 11 9 12 12 9 8 13 12 11 10 12 14 8 10 1000000000 7 12 10 12 10 14 12 7 10 8 11 10 10 11 10 10 10 10 10 18 11 18 10 14 12 9 10 10 11 9 14 12 12 19 13 19 10 10 10 14 7 14 12 14 13 11 11 12 9 10 21 10 13 15 9 12 
+najlepszy - 1: 	entity
+9 13 11 7 10 6 7 6 5 8 5 9 6 8 6 7 6 9 8 9 10 10 8 9 7 7 5 6 10 9 8 10 8 4 6 10 12 8 4 6 6 10 8 7 9 7 10 6 8 8 9 9 10 7 12 7 9 7 11 8 11 12 6 6 7 13 7 7 5 7 10 8 9 5 7 8 11 7 6 11 6 6 8 8 7 7 7 7 10 7 
+prawdziwy - 25687: 	show-business
+11 11 16 12 10 14 14 12 11 10 10 11 14 11 14 15 14 15 10 7 15 8 15 14 11 15 11 14 15 17 16 18 14 10 12 10 17 12 12 13 14 18 6 9 16 15 12 14 13 13 12 14 10 15 17 15 17 14 11 10 9 17 11 14 14 18 15 15 13 15 17 16 11 12 6 16 11 14 14 16 12 14 13 16 15 15 14 15 8 12 
+-nan
+	show biz
+1
+markery: 
+0	36213: 	entoblast	,292264: 	hypoblast
+1	261320: 	nektarynka	,352660: 	Prunus persica nectarina
+2	259935: 	"wilczomlecz groszkowy"	,353966: 	Euphorbia lathyris
+3	229554: 	"lasówka rudogardła"	,292782: 	Dendroica fusca
+4	17516: 	glicerol	,364626: 	glycerine
+5	79293: 	"paciorecznik indyjski"	,351256: 	Canna edulis
+6	253440: 	"owca dzika"	,297576: 	Ovis ammon
+7	392604: 	mikrowaga	,305480: 	microbalance
+8	80448: 	buławinka	,354213: 	genus Claviceps
+9	20430: 	"język maszynowy"	,319185: 	machine language
+10	42369: 	peltandra	,348576: 	genus Peltandra
+11	37145: 	homozygota	,314776: 	homozygote
+12	390343: 	"cukrzyca insulinozależna"	,360454: 	autoimmune diabetes
+13	19779: 	recyklizacja	,289651: 	recycling
+14	14396: 	"papier pergaminowy"	,365166: 	parchment
+15	251558: 	czerwonakowate	,295176: 	family Phoenicopteridae
+16	25114: 	technokrata	,342882: 	technocrat
+17	260251: 	"szarańcza wędrowna"	,296469: 	Locusta migratoria
+18	6452: 	dziób	,293834: 	beak
+19	30935: 	wylęgarnia	,331381: 	hatchery
+20	19171: 	samochodziarz	,337681: 	grease monkey
+21	248158: 	naiwniactwo	,311916: 	gullibility
+22	73272: 	gruboszowate	,353328: 	stonecrop family
+23	46457: 	"maszt wiertniczy"	,302075: 	derrick
+24	16807: 	rogal	,326709: 	croissant
+25	25927: 	mewy-siewki	,295261: 	order Charadriiformes
+26	13860: 	bób	,352299: 	Vicia faba
+27	249772: 	rozpłoch	,354136: 	genus Hymenophyllum
+28	261996: 	"ostryżyca japońska"	,294913: 	Ostrea gigas
+29	252942: 	garna	,297611: 	Antilope cervicapra
+30	13315: 	brezent	,309300: 	tarp
+31	80299: 	voucher	,320867: 	voucher
+32	73819: 	krzyżowe	,348945: 	mustard family
+33	11772: 	gotycyzm	,316859: 	Gothic architecture
+34	25752: 	dwudziestopięciolecie	,366459: 	quarter-century
+35	392802: 	idealizacja	,356969: 	idealisation
+36	249714: 	"nerecznica szerokolistna"	,355298: 	Dryopteris dilatata
+37	256855: 	"łasica długoogoniasta"	,297743: 	Mustela frenata
+38	252500: 	elops	,298308: 	genus Elops
+39	258843: 	"nasionnica jabłkówka"	,296292: 	Rhagoletis pomonella
+40	262296: 	"morszczyn pęcherzykowaty"	,291973: 	Fucus vesiculosus
+41	35659: 	wiklina	,310414: 	caning
+42	26304: 	trioda	,309839: 	triode
+43	256456: 	"farbownik lekarski"	,353478: 	Anchusa officinalis
+44	25299: 	kalifat	,287746: 	caliphate
+45	2608: 	profil	,331561: 	profile
+46	252957: 	"cis pospolity"	,347964: 	Taxus baccata
+47	400660: 	dyptych	,302217: 	diptych
+48	259081: 	guanozyna	,365727: 	guanosine
+49	229346: 	subkompakt	,309014: 	subcompact car
+50	30773: 	tygiel	,301828: 	melting pot
+51	15052: 	bod	,357385: 	baud rate
+52	23472: 	tasiemce	,294730: 	class Cestoda
+53	30054: 	etnologia	,318164: 	ethnology
+54	227523: 	"bombowiec nurkujący"	,302277: 	dive bomber
+55	77724: 	cytoszkielet	,314781: 	cytoskeleton
+56	33058: 	omamienie	,316492: 	chimaera
+57	74367: 	socynianin	,342437: 	Socinian
+58	252525: 	"żółw iberyjski"	,293341: 	Testudo graeca
+59	36874: 	nieinterwencja	,320791: 	noninterference
+60	394242: 	rzędna	,317666: 	ordinate
+61	252373: 	"świerk wschodni"	,347788: 	Picea orientalis
+62	234906: 	levisy	,304917: 	levis
+63	19862: 	graffiti	,303658: 	graffiti
+64	16453: 	szklarz	,339533: 	glassmaker
+65	243996: 	twardziel	,340065: 	ironside
+66	76314: 	"ślimak winniczek"	,294817: 	Helix pomatia
+67	394664: 	L-DOPA	,363104: 	Larodopa
+68	43490: 	"automatyczna skrzynia biegów"	,299545: 	automatic drive
+69	249499: 	tysiąclecie	,366728: 	millenary
+70	397443: 	baskinka	,306420: 	peplum
+71	79164: 	antropometria	,289887: 	anthropometry
+72	41063: 	śmieciarz	,340366: 	litter lout
+73	226647: 	"gwiazda stała"	,334727: 	fixed star
+74	252912: 	"sosna zachodnia"	,347724: 	Pinus monticola
+75	261211: 	wrotki	,294741: 	phylum Rotifera
+76	229078: 	"statek szkolny"	,307802: 	training ship
+77	14936: 	szkodnik	,291520: 	vermin
+78	389561: 	łysak	,354749: 	genus Gymnopilus
+79	27688: 	bold	,321675: 	bold
+80	71653: 	interfon	,304427: 	interphone
+81	261272: 	eszynantus	,353544: 	aeschynanthus
+82	39389: 	sodówka	,308462: 	sodium-vapour lamp
+83	237862: 	TND	,357878: 	dinar
+84	46741: 	superlatyw	,320966: 	superlative
+85	381761: 	"stokłosa polna"	,350111: 	Bromus arvensis
+86	25313: 	dekanat	,287763: 	deanery
+87	11534: 	macocha	,342622: 	stepmother
+88	258656: 	"wrzosiec drzewiasty"	,350651: 	Erica arborea
+89	72477: 	jakobinizm	,318506: 	Jacobinism
+90	256708: 	wydra	,297759: 	Lutra lutra
+91	257263: 	"akacja srebrzysta"	,348423: 	Acacia dealbata
+92	77797: 	kosmotron	,301664: 	cosmotron
+93	102946: 	stopa	,357758: 	ft
+94	36507: 	emetyk	,302669: 	nauseant
+	show biz
+95 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+22999	0.965977	0.98048		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+11 11 11 10 11 11 10 10 10 12 9 8 12 12 10 17 12 9 9 7 15 11 15 10 10 17 10 11 11 10 11 10 16 13 12 13 12 8 10 10 11 9 11 10 13 8 11 10 13 11 10 12 18 13 13 11 13 15 10 12 12 11 10 10 13 12 10 12 10 14 9 14 12 9 10 17 9 7 10 10 9 9 11 12 12 10 11 14 11 13 9 10 13 12 10 
+najlepszy - 70179: 	panicle
+13 18 17 20 15 16 19 17 19 19 19 13 18 19 14 19 14 20 17 15 17 17 19 14 13 19 18 19 17 19 13 18 16 23 17 16 17 19 19 18 17 14 15 16 20 16 19 13 17 17 14 17 18 22 17 14 19 15 20 23 19 19 16 12 15 15 17 17 16 20 14 19 17 11 20 18 17 14 19 21 15 14 15 19 18 18 20 18 18 20 19 18 18 18 13 
+prawdziwy - 25687: 	show-business
+15 16 15 18 11 14 17 5 15 13 15 11 15 13 10 15 12 18 17 13 15 13 15 8 14 15 16 15 15 17 9 12 14 19 13 13 15 17 15 16 15 10 7 14 14 14 17 9 13 11 8 13 14 18 11 14 15 13 18 19 15 17 12 8 13 13 15 13 8 16 10 13 15 11 18 14 11 12 15 14 9 12 7 15 12 16 14 16 16 16 17 16 8 14 10 
+0.98048
+	show biz
+1
+markery: 
+0	258954: 	"legwan obrożny"	,293387: 	collared lizard
+1	383265: 	"muchomor czerwonawy"	,354392: 	Amanita rubescens
+2	256390: 	lironosy	,295994: 	family Megadermatidae
+3	383787: 	pia	,357994: 	pya
+4	34326: 	esteta	,339117: 	aesthete
+5	2864: 	krytyka	,319472: 	review article
+6	382664: 	"rukwiel nadmorska"	,349003: 	Cakile maritima
+7	6940: 	"ząb sieczny"	,314128: 	incisor
+8	390841: 	asystolia	,359961: 	cardiopulmonary arrest
+9	385085: 	"sum elektryczny"	,298176: 	Malopterurus electricus
+10	22381: 	ujeżdżacz	,341957: 	roughrider
+11	20688: 	"ułamek piętrowy"	,358370: 	compound fraction
+12	78062: 	neokonserwatysta	,340895: 	neocon
+13	257403: 	"foxhound angielski"	,295658: 	English foxhound
+14	235556: 	"obój da caccia"	,305954: 	oboe da caccia
+15	17531: 	"ręcznik papierowy"	,306257: 	paper towel
+16	238356: 	"samochód z drabiną mechaniczną"	,304748: 	aerial ladder truck
+17	7261: 	odwzorowanie	,358668: 	transformation
+18	257309: 	"tytoń perski"	,353915: 	Nicotiana alata
+19	33695: 	dwużeństwo	,359641: 	bigamy
+20	232638: 	król	,304656: 	king
+21	33785: 	beatyfikacja	,290111: 	beatification
+22	382016: 	"żelazne drzewo"	,351081: 	ironwood tree
+23	262095: 	józefka	,353631: 	Hyssopus officinalis
+24	25051: 	akrofobia	,361907: 	acrophobia
+25	11677: 	"wolny strzelec"	,339399: 	self-employed person
+26	27550: 	skoropis	,342616: 	shorthand typist
+27	11254: 	"łój skórny"	,314705: 	sebum
+28	258017: 	megalozaury	,293587: 	family Megalosauridae
+29	16297: 	improwizacja	,285183: 	improvisation
+30	46024: 	"drzwi podwójne"	,302350: 	double door
+31	235440: 	Sumatryjczyk	,337287: 	Sumatran
+32	12590: 	placenta	,315216: 	placenta
+33	21522: 	"satelita meteorologiczny"	,310327: 	meteorological satellite
+34	399901: 	mostek	,300397: 	bridge
+35	16118: 	niezręczność	,285064: 	gaucherie
+36	44829: 	paralipsa	,323308: 	preterition
+37	25725: 	piwiarnia	,299930: 	beer hall
+38	5649: 	pragnienie	,360038: 	thirstiness
+39	258418: 	padalcowate	,293444: 	family Anguidae
+40	75187: 	ureaza	,365794: 	urease
+41	51760: 	caravan	,300686: 	camper trailer
+42	35062: 	sekstet	,329781: 	sestet
+43	381227: 	kazuaryna	,350641: 	casuarina
+44	20537: 	"zegar atomowy"	,299500: 	atomic clock
+45	76348: 	kwazar	,335358: 	quasi-stellar radio source
+46	23960: 	bykowiec	,301726: 	cowhide
+47	229803: 	kiosk	,301549: 	conning tower
+48	381546: 	"badian trujący"	,348190: 	Illicium anisatum
+49	79320: 	błonkówki	,296345: 	order Hymenoptera
+50	79715: 	kieszeń	,356215: 	pocket
+51	395656: 	"kwas tymnodonowy"	,364404: 	eicosapentaenoic acid
+52	393502: 	"zaćma korowa"	,361162: 	cortical cataract
+53	46138: 	barbecue	,299719: 	barbeque
+54	389686: 	"rokietta siewna"	,349033: 	Eruca vesicaria sativa
+55	34662: 	lm	,357708: 	lm
+56	383067: 	"życica roczna"	,350187: 	Lolium temulentum
+57	76705: 	briefing	,323899: 	briefing
+58	73266: 	żabieńcowate	,352479: 	water-plantain family
+59	65157: 	"duodecymalny system liczbowy"	,321588: 	duodecimal system
+60	390729: 	"trójednik biały"	,351704: 	Calochortus albus
+61	400129: 	tysięczna	,358393: 	thousandth
+62	40154: 	gastryna	,314669: 	gastrin
+63	384086: 	"września pobrzeżna"	,351425: 	Myricaria germanica
+64	387517: 	winodań	,352343: 	genus Borassus
+65	36533: 	Ru	,363325: 	atomic number 44
+66	254703: 	"flaszowiec siatkowaty"	,348119: 	Annona reticulata
+67	39640: 	lumpenproletariat	,329447: 	lumpenproletariat
+68	25187: 	konstruktywizm	,330858: 	constructivism
+69	7333: 	replika	,307370: 	reproduction
+70	254544: 	"kaszalot mały"	,295529: 	Kogia breviceps
+71	226645: 	"gwiazda podwójna"	,334411: 	double star
+72	249333: 	SOS	,358180: 	shilling
+73	384149: 	"langerstremia wspaniała"	,351141: 	Lagerstroemia speciosa
+74	385085: 	"sum elektryczny"	,298176: 	Malopterurus electricus
+75	41566: 	wielobarwność	,347302: 	pleochroism
+76	255002: 	"cynamonowiec cejloński"	,348169: 	Cinnamomum zeylanicum
+77	41388: 	przemyślność	,311169: 	cleverness
+78	40201: 	antytalent	,315879: 	talentlessness
+79	17873: 	"egipskie ciemności"	,359747: 	black
+80	237620: 	"licznik impulsów"	,307039: 	pulse counter
+81	400842: 	repudiacja	,323833: 	repudiation
+82	42419: 	przedtułów	,299015: 	prothorax
+83	227897: 	"pocisk powietrze-powietrze"	,299174: 	air-to-air missile
+84	11714: 	archipelag	,334335: 	archipelago
+85	20552: 	"zaimek zwrotny"	,319025: 	reflexive
+86	17365: 	"słuch absolutny"	,315936: 	perfect pitch
+87	20017: 	ćwierćfinał	,325277: 	quarterfinal
+88	16684: 	erekcja	,360025: 	hard-on
+89	5082: 	maj	,366489: 	May
+90	384532: 	piotroszowate	,292196: 	family Zeidae
+91	388024: 	dolichocefalia	,313639: 	dolichocephalism
+92	399992: 	"nadmierna senność"	,359952: 	hypersomnia
+93	252205: 	kretojeże	,294537: 	tendrac
+94	28970: 	samotność	,325659: 	desolation
+95	386657: 	gempylowate	,298763: 	family Gempylidae
+96	77532: 	mucyna	,363735: 	mucin
+97	249646: 	"marsylia czterolistna"	,354169: 	Marsilea quadrifolia
+98	31393: 	hydrosfera	,334877: 	hydrosphere
+99	37553: 	polenta	,326796: 	polenta
+	show biz
+100 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+14626	0.958663	0.971465		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+12 10 20 12 14 9 11 10 11 10 13 9 15 12 13 10 11 12 10 16 13 12 10 10 14 12 14 11 27 12 13 14 9 12 7 12 10 12 13 22 12 12 11 10 12 8 10 9 10 20 9 15 12 12 10 14 10 10 14 11 11 7 13 10 10 10 10 12 14 8 9 10 12 10 10 11 10 13 11 12 10 13 9 11 7 12 15 12 12 13 14 12 11 18 13 15 9 12 10 9 
+najlepszy - 70179: 	panicle
+20 15 19 19 16 18 15 14 19 21 16 21 15 17 18 14 18 17 16 20 17 21 17 15 23 14 16 16 19 20 16 16 15 14 14 20 18 15 19 19 16 15 18 16 16 10 15 17 17 19 17 21 17 15 15 20 18 19 19 21 17 22 17 16 19 15 19 18 18 14 21 11 19 17 21 17 18 19 18 18 16 20 14 16 12 19 21 18 20 19 19 16 18 18 18 19 19 18 14 14 
+prawdziwy - 25687: 	show-business
+18 13 15 15 14 12 13 15 17 19 14 17 13 15 10 10 12 12 14 16 13 15 15 13 19 12 14 11 15 16 12 14 15 7 6 16 12 11 15 15 11 9 14 14 4 10 5 13 15 15 13 16 14 9 13 16 16 14 15 15 15 18 13 14 15 10 17 14 14 10 19 11 15 15 19 14 16 15 14 14 8 15 14 6 10 14 17 14 16 15 15 12 16 16 14 15 14 16 12 15 
+0.971465
+	show biz
+1
+markery: 
+0	27861: 	taekwon-do	,289006: 	taekwondo
+1	22098: 	płaskoryt	,305476: 	half-relief
+2	41080: 	wełna	,294572: 	fleece
+3	400386: 	IgD	,365479: 	IgD
+4	18573: 	tracz	,342038: 	sawyer
+5	251936: 	"żółwie morskie"	,293299: 	family Chelonidae
+6	18333: 	pechowość	,311141: 	infelicity
+7	381391: 	"brzoza papierowa"	,350907: 	Betula papyrifera
+8	393903: 	rurobomba	,306610: 	pipe bomb
+9	389459: 	"łysienie plackowate"	,362312: 	alopecia areata
+10	36114: 	rozumność	,311967: 	sagaciousness
+11	33165: 	MW	,357728: 	megawatt
+12	31555: 	"zamach stanu"	,290664: 	takeover
+13	250861: 	drętwowate	,292430: 	family Torpedinidae
+14	8305: 	oaza	,331068: 	oasis
+15	386270: 	"grzybienie egipskie"	,348221: 	Nymphaea lotus
+16	2027: 	obwód	,313088: 	circumference
+17	4989: 	trapez	,359198: 	trapezium
+18	254538: 	"delfiny słodkowodne"	,295553: 	family Platanistidae
+19	46308: 	müsli	,326790: 	muesli
+20	255108: 	"buk zwyczajny"	,350812: 	Fagus sylvatica
+21	35637: 	ekwinokcjum	,366561: 	equinox
+22	257505: 	tymidyna	,365728: 	thymidine
+23	382397: 	kakadu	,294143: 	cockatoo
+24	36135: 	plenność	,313313: 	fertility
+25	78611: 	cynodonty	,293615: 	division Cynodontia
+26	4875: 	"płyta chodnikowa"	,303066: 	flagstone
+27	14230: 	pieczenie	,361553: 	burning
+28	27922: 	"skok w dal"	,286969: 	long jump
+29	30976: 	adamaszek	,301962: 	damask
+30	382390: 	"hiacynt wschodni"	,351758: 	Hyacinthus orientalis
+31	246131: 	wytrwałość	,311830: 	pertinacity
+32	21615: 	"fast food"	,325790: 	fast food
+33	14264: 	grot	,299439: 	arrowhead
+34	15085: 	"północny wschód"	,358914: 	NE
+35	253020: 	"pszczoła włoska"	,296360: 	Italian bee
+36	232951: 	kierki	,287243: 	Black Maria
+37	12743: 	piekarz	,337729: 	bread maker
+38	12583: 	zaułek	,299201: 	back street
+39	15745: 	campus	,331134: 	campus
+40	226633: 	supersymetria	,318004: 	supersymmetry
+41	21345: 	"słownik dwujęzyczny"	,319522: 	bilingual dictionary
+42	17744: 	sucharek	,326731: 	ship biscuit
+43	65035: 	"komputer stacjonarny"	,302082: 	desktop computer
+44	229059: 	"rada miasta"	,330126: 	city council
+45	252286: 	kokietnik	,347904: 	genus Phyllocladus
+46	74564: 	"temperatura krzepnięcia"	,312628: 	melting point
+47	42148: 	czatownik	,342581: 	stalker
+48	226826: 	"łóżko chowane w szafie"	,305724: 	Murphy bed
+49	37739: 	naganność	,311770: 	reprehensibility
+50	233437: 	drabinki	,308735: 	stall bar
+51	257876: 	rutwica	,352080: 	genus Galega
+52	381350: 	"wydrzyk pasożytny"	,295393: 	Stercorarius parasiticus
+53	233402: 	putter	,307080: 	putting iron
+54	12532: 	strumyczek	,334456: 	brooklet
+55	40366: 	cyjanoza	,361440: 	cyanosis
+56	400313: 	orleanista	,341087: 	Orleanist
+57	231070: 	"film telewizyjny"	,320524: 	telefilm
+58	231208: 	półmila	,357766: 	880 yards
+59	34351: 	antyfeminizm	,290723: 	antifeminism
+60	28807: 	ryżówka	,328028: 	rice beer
+61	78239: 	"kolcolist zachodni"	,352294: 	Ulex europaeus
+62	249798: 	"leming górski"	,297142: 	Lemmus lemmus
+63	397629: 	acebutolol	,299061: 	Sectral
+64	39917: 	pepsyna	,365185: 	pepsin
+65	13781: 	"wózek inwalidzki"	,310379: 	wheelchair
+66	231264: 	kamień	,358277: 	stone
+67	21320: 	"komedia dell'arte"	,322837: 	commedia dell'arte
+68	20097: 	roszada	,285540: 	castling
+69	8119: 	algebra	,317673: 	algebra
+70	74282: 	nitryfikacja	,357095: 	nitrification
+71	223865: 	przeszłość	,366104: 	past
+72	39594: 	prostopadłość	,312930: 	perpendicularity
+73	102658: 	środowisko	,331324: 	medium
+74	48412: 	"zdjęcia próbne"	,288838: 	screen test
+75	17142: 	"język ukraiński"	,322391: 	Ukrainian
+76	47572: 	"kalendarz nowego stylu"	,366290: 	New Style calendar
+77	24927: 	papuzica	,361282: 	parrot disease
+78	392948: 	desorpcja	,356808: 	desorption
+79	18193: 	Czech	,336936: 	Czech
+80	18869: 	żandarm	,339483: 	gendarme
+81	11117: 	mak	,327592: 	poppy seed
+82	75361: 	telepata	,342890: 	mind reader
+83	45558: 	"piła łańcuchowa"	,301004: 	chainsaw
+84	79113: 	skonto	,286572: 	deduction
+85	394863: 	perfenazyna	,306445: 	Triavil
+86	226435: 	grzbietorody	,293272: 	family Pipidae
+87	46052: 	miozyna	,365435: 	myosin
+88	257661: 	groenendael	,295750: 	groenendael
+89	44178: 	holenderka	,297528: 	Holstein-Friesian
+90	249337: 	shilling	,356402: 	shilling
+91	31881: 	antymateria	,362981: 	antimatter
+92	251579: 	"rzekotka królewska"	,293255: 	Hyla regilla
+93	40814: 	melancholik	,340611: 	melancholiac
+94	70809: 	abolicjonista	,337334: 	emancipationist
+95	30934: 	wylinka	,357075: 	ecdysis
+96	258275: 	sprężykowate	,296171: 	family Elateridae
+97	248159: 	prawiczek	,343259: 	virgin
+98	381763: 	"stokłosa kostrzeba"	,350109: 	Bromus secalinus
+99	20441: 	"kamień nazębny"	,335627: 	tophus
+100	247391: 	rzeźwość	,310705: 	jauntiness
+101	78797: 	tensor	,316978: 	tensor
+102	23741: 	"wiedza o literaturze"	,318261: 	literary study
+103	228956: 	gig	,303561: 	gig
+104	249914: 	torfowce	,347567: 	order Sphagnales
+	show biz
+105 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+2527	0.974439	0.979235		black walnut		show-business
+wektory: 
+szukany - 328924: 	show biz
+13 12 12 11 14 18 12 10 11 12 12 12 14 13 10 17 11 14 20 9 11 12 13 18 10 17 8 12 14 13 10 11 8 9 10 11 14 14 11 11 13 10 10 12 11 11 13 13 12 12 10 9 12 13 13 10 15 12 12 13 10 12 10 11 12 13 13 12 12 15 14 12 12 12 9 15 14 11 11 13 15 11 13 11 13 11 16 10 13 10 10 9 11 12 13 13 22 11 8 11 13 11 13 10 15 
+najlepszy - 42434: 	black walnut
+21 17 13 18 18 19 18 18 15 20 17 19 17 19 16 17 17 20 19 10 18 17 16 18 17 17 15 17 22 13 18 18 13 17 17 20 21 16 16 17 22 20 13 18 20 19 17 17 17 18 16 20 21 18 16 16 18 15 18 20 14 17 20 15 15 17 19 19 21 22 17 17 20 16 21 20 20 18 14 16 18 9 15 17 21 17 19 18 19 18 21 11 19 17 16 15 19 15 19 11 19 21 20 19 19 
+prawdziwy - 25687: 	show-business
+15 12 13 14 15 15 14 15 7 16 13 15 13 15 13 14 13 16 15 12 15 13 13 15 13 13 10 16 16 8 15 14 12 14 13 17 15 13 11 14 18 15 15 9 16 15 13 14 10 14 8 16 18 10 14 15 15 10 14 16 12 14 17 11 11 10 15 13 15 18 12 13 16 13 15 14 16 15 9 13 15 14 12 8 15 13 15 14 16 15 17 9 16 14 13 12 15 12 16 11 15 17 15 12 15 
+0.979235
+	show biz
+1
+markery: 
+0	20176: 	pilotaż	,315802: 	airmanship
+1	15339: 	kaszmir	,300868: 	cashmere
+2	35137: 	"lucerna sierpowata"	,352170: 	Medicago falcata
+3	386710: 	skaber	,298703: 	stargazer
+4	29417: 	współodkrywca	,338369: 	co-discoverer
+5	40064: 	biedrzeniec	,354090: 	genus Pimpinella
+6	259079: 	"kurka wodna"	,294003: 	moorhen
+7	245742: 	bezcenność	,313284: 	valuableness
+8	250781: 	jeżozwierzowate	,297154: 	family Hystricidae
+9	380787: 	"składowa harmoniczna"	,312495: 	harmonic
+10	395116: 	onchocerkoza	,362289: 	river blindness
+11	50618: 	zwilżacz	,301964: 	moistener
+12	23648: 	nihilizm	,317460: 	nihilism
+13	232012: 	klaustrofobik	,338326: 	claustrophobe
+14	31919: 	fibroblast	,314861: 	fibroblast
+15	67382: 	"pierwsza kwadra"	,366465: 	first quarter
+16	75003: 	łabędzica	,294383: 	pen
+17	262293: 	morszczynowce	,291964: 	order Fucales
+18	47686: 	"koktajl Mołotowa"	,305608: 	gasoline bomb
+19	77463: 	tarczownica	,354355: 	crotal
+20	46615: 	majownik	,351831: 	Maianthemum bifolium
+21	79868: 	przedsionek	,317379: 	foretaste
+22	41849: 	kaolinit	,363443: 	kaolinite
+23	77513: 	sagowcowate	,347666: 	cycad family
+24	23515: 	inkantacja	,323590: 	conjuration
+25	238154: 	"przymiotnik substantywizowany"	,318990: 	adnoun
+26	394213: 	nukleosynteza	,357105: 	nucleosynthesis
+27	386234: 	balsa	,350512: 	Ochroma lagopus
+28	256280: 	"stokrotka trwała"	,349291: 	Bellis perennis
+29	255547: 	"czerwona langusta"	,295045: 	sea crawfish
+30	236376: 	artykuł	,319378: 	clause
+31	385922: 	meprobamat	,305423: 	Meprin
+32	6682: 	edytor	,341651: 	publisher
+33	77797: 	kosmotron	,301664: 	cosmotron
+34	35101: 	dyrygentura	,290605: 	conducting
+35	257674: 	komondor	,295754: 	komondor
+36	45620: 	"lulek czarny"	,353898: 	Hyoscyamus niger
+37	233013: 	lego	,304890: 	Lego set
+38	20525: 	"kąt pełny"	,359266: 	round angle
+39	18044: 	"wosk uszny"	,365857: 	earwax
+40	227247: 	alergolog	,337467: 	allergist
+41	76722: 	mantikora	,335864: 	mantiger
+42	78796: 	"wyładowanie koronowe"	,347026: 	electric glow
+43	33414: 	wizualizm	,306007: 	op art
+44	32108: 	kadaweryna	,365862: 	cadaverine
+45	393400: 	kogut	,313856: 	cowlick
+46	72268: 	pszczołojad	,293018: 	Pernis apivorus
+47	251161: 	lamnowate	,292358: 	family Lamnidae
+48	14902: 	"dystrybutor paliw"	,303496: 	island dispenser
+49	38403: 	komunikant	,326648: 	Host
+50	236591: 	"mikrofalowy akcelerator liniowy"	,305495: 	microwave linear accelerator
+51	37289: 	mimetyzm	,290013: 	mimicry
+52	12682: 	kosztorys	,321438: 	estimate
+53	251946: 	"skorpucha jaszczurowata"	,293317: 	Chelydra serpentina
+54	397039: 	owerol	,304585: 	jumpsuit
+55	240607: 	technokrata	,342881: 	technocrat
+56	42381: 	szpicbródka	,313901: 	vandyke
+57	27113: 	mielonka	,325870: 	Spam
+58	229010: 	"szalupa ratunkowa"	,304932: 	lifeboat
+59	397327: 	terylen	,301948: 	Terylene
+60	39357: 	spaghetti	,326764: 	spaghetti
+61	47548: 	"łyżka do butów"	,308101: 	shoehorn
+62	15805: 	żłobek	,330630: 	nursery school
+63	23286: 	kwartet	,322969: 	quartette
+64	30574: 	brygantyna	,300410: 	hermaphrodite brig
+65	227368: 	"oświetlenie teatralne"	,309444: 	theater light
+66	33933: 	rekwiem	,322923: 	Requiem
+67	13452: 	cudzołóstwo	,289117: 	fornication
+68	258809: 	"scynk nadrzewny"	,293417: 	Eumeces skiltonianus
+69	14281: 	klin	,328167: 	hair of the dog
+70	29489: 	"paso doble"	,287462: 	paso doble
+71	19096: 	żyrandol	,301032: 	pendent
+72	249290: 	RON	,358003: 	leu
+73	26094: 	karoca	,300800: 	caroche
+74	71675: 	"piec hutniczy"	,300100: 	blast furnace
+75	39327: 	aminobenzen	,363851: 	phenylamine
+76	35371: 	rezonator	,308493: 	body
+77	23295: 	aromaterapia	,288159: 	aromatherapy
+78	27538: 	konkwistador	,338487: 	conquistador
+79	25554: 	aerolit	,334264: 	aerolite
+80	30147: 	hydrografia	,318059: 	hydrology
+81	31877: 	androgen	,363822: 	androgenic hormone
+82	227235: 	"stół operacyjny"	,306022: 	operating table
+83	382647: 	"lorysa białooka"	,294154: 	Glossopsitta versicolor
+84	387170: 	"atalia brazylijska"	,352341: 	Attalea funifera
+85	253864: 	"cyprysik nutkajski"	,347834: 	Chamaecyparis nootkatensis
+86	251587: 	"rzekotka krzyżowa"	,293254: 	Hyla crucifer
+87	17701: 	jak	,297511: 	Bos grunniens
+88	385746: 	klinkowate	,298714: 	family Clinidae
+89	21350: 	mirunga	,295601: 	sea elephant
+90	251767: 	papugowe	,294129: 	order Psittaciformes
+91	78281: 	tuberoza	,351860: 	genus Polianthes
+92	5691: 	bezpośredniość	,312110: 	straightforwardness
+93	253087: 	"modrzew syberyjski"	,347755: 	Larix russica
+94	232919: 	bagatela	,287271: 	bar billiards
+95	385680: 	"łysiczka trocinowa"	,354432: 	Stropharia rugoso-annulata
+96	397610: 	pindolol	,306587: 	Visken
+97	391589: 	karob	,326036: 	Saint-John's-bread
+98	43477: 	suchodrzew	,348279: 	Aquilegia canadensis
+99	35063: 	sekstet	,322971: 	sestet
+100	20450: 	"kanał portowy"	,308079: 	shipway
+101	32343: 	"płytka krwi"	,365441: 	thrombocyte
+102	262365: 	"bakteriofag lambda"	,291632: 	coliphage
+103	32265: 	kotangens	,358684: 	cotan
+104	75707: 	asterysk	,321682: 	star
+105	15393: 	ewanielia	,321469: 	creed
+106	255341: 	rakowate	,295046: 	Astacura
+107	251192: 	"ostronos długopłetwy"	,292366: 	Isurus paucus
+108	48542: 	championat	,325214: 	championship
+109	18011: 	dynamo	,302546: 	dynamo
+	show biz
+110 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+19075	0.965214	0.976906		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+14 10 10 10 13 10 11 13 19 7 11 8 13 15 10 15 8 16 10 9 10 11 13 17 14 12 14 10 10 13 8 12 12 13 14 11 10 9 12 11 14 10 12 14 11 11 10 13 9 9 11 12 9 10 10 14 13 9 12 9 11 9 12 11 12 10 12 13 12 11 12 10 12 15 10 10 9 13 13 9 16 13 10 10 11 10 11 9 15 9 17 9 12 11 15 10 11 8 9 10 12 11 18 13 9 12 21 12 12 11 
+najlepszy - 70179: 	panicle
+19 12 16 19 15 20 18 18 19 18 19 13 19 16 13 19 17 19 15 14 16 19 14 20 18 19 16 17 18 18 18 17 15 18 19 17 15 12 14 15 17 22 19 15 17 11 18 19 15 12 17 22 17 20 14 15 13 15 18 13 11 13 20 15 17 15 19 19 20 19 19 13 19 16 16 16 16 23 14 12 24 17 15 19 18 19 18 18 19 21 19 20 18 19 20 15 17 13 18 15 14 14 15 18 19 19 19 21 17 17 
+prawdziwy - 25687: 	show-business
+15 8 14 17 13 16 16 14 15 14 15 5 15 14 11 15 15 15 7 12 14 15 10 16 12 14 11 15 16 16 12 13 13 8 15 15 13 8 12 13 15 18 16 11 13 12 16 15 8 13 7 16 11 18 10 13 14 14 12 9 12 5 16 11 11 7 13 16 18 15 15 9 15 10 12 12 12 17 12 12 20 13 9 17 16 17 16 16 15 19 15 16 14 17 14 13 11 12 16 11 10 9 13 13 12 15 15 19 13 9 
+0.976906
+	show biz
+1
+markery: 
+0	252745: 	"sosna długoigielna"	,347736: 	Pinus palustris
+1	394828: 	trazodon	,309785: 	Desyrel
+2	253809: 	"cedr atlaski"	,347777: 	Cedrus atlantica
+3	22818: 	"płaszcz Ziemi"	,335071: 	mantle
+4	20623: 	ozokeryt	,363364: 	ozocerite
+5	80439: 	salangana	,294229: 	Collocalia inexpectata
+6	251842: 	"szczury workowate"	,294423: 	family Didelphidae
+7	235572: 	"steel pan"	,308810: 	steel drum
+8	8002: 	pakiet	,324263: 	packet
+9	258382: 	"wyciąg bezpodporowy"	,307553: 	rope tow
+10	77291: 	arcywróg	,340769: 	mortal enemy
+11	23497: 	gwasz	,303642: 	gouache
+12	237660: 	"zegar analogowy"	,299259: 	analog clock
+13	23989: 	balet	,329491: 	ballet company
+14	12869: 	jednorożec	,343148: 	unicorn
+15	259193: 	tasznikowate	,296524: 	family Capsidae
+16	246560: 	wyboistość	,312270: 	bumpiness
+17	10712: 	bunt	,323979: 	defiance
+18	259865: 	natrolit	,365929: 	natrolite
+19	387587: 	afereza	,356656: 	apheresis
+20	11488: 	kacerz	,339800: 	religious outcast
+21	6953: 	wagina	,315218: 	vagina
+22	77946: 	"puchlina brzuszna"	,360409: 	ascites
+23	76747: 	"organizacja terrorystyczna"	,330527: 	FTO
+24	232043: 	ph	,357705: 	phot
+25	74782: 	paramagnetyzm	,347238: 	paramagnetism
+26	246219: 	bezrozumność	,315882: 	incapacity
+27	251728: 	talapoin	,297986: 	Cercopithecus talapoin
+28	6699: 	pysio	,314100: 	mouth
+29	31777: 	zoolatria	,290152: 	animal-worship
+30	10751: 	osłuchiwanie	,289259: 	auscultation
+31	32803: 	awangarda	,330857: 	new wave
+32	26938: 	encyklika	,320592: 	encyclical letter
+33	28754: 	subdiakon	,342706: 	subdeacon
+34	47980: 	zaskoczenie	,325528: 	surprise
+35	39677: 	Zulus	,337301: 	Zulu
+36	417: 	cierpliwość	,310739: 	longanimity
+37	15115: 	majordom	,340476: 	seneschal
+38	5400: 	radio	,318789: 	wireless
+39	30883: 	literówka	,321367: 	literal
+40	259655: 	"wierzba migdałowa"	,353044: 	Salix amygdalina
+41	27405: 	odsyłacz	,321342: 	cross-index
+42	383044: 	tangerynka	,327083: 	ugli fruit
+43	35544: 	półfinalista	,342177: 	semifinalist
+44	25041: 	androfobia	,361903: 	androphobia
+45	387278: 	"czosnek grzebieniasty"	,351635: 	Allium carinatum
+46	73937: 	centryzm	,318474: 	moderatism
+47	48494: 	kolonia	,300680: 	summer camp
+48	387861: 	hemimorfit	,363439: 	calamine
+49	393903: 	rurobomba	,306610: 	pipe bomb
+50	6003: 	"błona plazmatyczna"	,314155: 	plasma membrane
+51	65688: 	prosperity	,366963: 	golden age
+52	80448: 	buławinka	,354213: 	genus Claviceps
+53	72511: 	cegielnia	,300391: 	brickfield
+54	24117: 	"nosacz sundajski"	,298013: 	Nasalis larvatus
+55	385161: 	"mahoniowiec właściwy"	,352914: 	Swietinia mahogani
+56	14162: 	latawiec	,304678: 	kite
+57	40252: 	"ciśnienie rozkurczowe"	,346966: 	diastolic pressure
+58	40261: 	"ciśnienie żylne"	,346968: 	venous pressure
+59	39409: 	"taśma miernicza"	,309283: 	tape measure
+60	7590: 	czesne	,356038: 	tuition fee
+61	257190: 	"sussex spaniel"	,295737: 	Sussex spaniel
+62	261478: 	radiolarie	,291890: 	order Radiolaria
+63	8120: 	geometria	,317630: 	geometry
+64	257473: 	inozyna	,364831: 	inosine
+65	11488: 	kacerz	,339800: 	religious outcast
+66	17513: 	celuloid	,365110: 	celluloid
+67	259592: 	korytozaur	,293540: 	genus Corythosaurus
+68	251178: 	"rekin ostronosy"	,292365: 	Isurus oxyrhincus
+69	13500: 	niewola	,359815: 	captivity
+70	224143: 	milusińska	,340765: 	moppet
+71	226430: 	"świerszczka północna"	,293260: 	Acris crepitans
+72	15918: 	parafina	,365858: 	paraffin wax
+73	73128: 	hortensjowate	,353341: 	hydrangea family
+74	226214: 	"sok jabłkowy"	,328255: 	apple juice
+75	235564: 	"hi hat"	,304073: 	high hat
+76	18386: 	lądowisko	,299172: 	strip
+77	21730: 	"biały metal"	,363678: 	bearing metal
+78	44243: 	eparch	,339094: 	eparch
+79	233139: 	drabinki	,301266: 	climbing frame
+80	26892: 	batik	,299833: 	batik
+81	230740: 	pikieta	,329593: 	picket
+82	387250: 	"pluskwiaki równoskrzydłe"	,296577: 	suborder Homoptera
+83	399976: 	interoreceptor	,314087: 	enteroceptor
+84	77345: 	opłucna	,314567: 	pleura
+85	380856: 	"bakterie mlekowe"	,291838: 	family Lactobacteriaceae
+86	389089: 	manna	,351055: 	manna
+87	33677: 	kwaszonka	,327419: 	ensilage
+88	249336: 	UGX	,358184: 	shilling
+89	257104: 	chruściki	,296717: 	order Trichoptera
+90	261353: 	świdośliwa	,352538: 	genus Amelanchier
+91	23467: 	utylitaryzm	,318339: 	utilitarianism
+92	7579: 	szlifierka	,303714: 	grinder
+93	380914: 	rozpławowate	,352468: 	pickerelweed family
+94	31812: 	kaszak	,360859: 	steatocystoma
+95	16452: 	szewc	,338362: 	shoemaker
+96	49216: 	termosfera	,335641: 	thermosphere
+97	259883: 	"sieweczka blada"	,295269: 	Charadrius melodus
+98	23767: 	parabola	,319263: 	parable
+99	16110: 	bankrut	,337763: 	insolvent
+100	39581: 	ciemiączko	,315339: 	soft spot
+101	250435: 	wężowidła	,296989: 	subclass Ophiurida
+102	13806: 	"układ kierowniczy"	,308823: 	steering mechanism
+103	42269: 	pętlica	,299126: 	aiguilette
+104	393897: 	"bomba burząca"	,300122: 	blockbuster
+105	76494: 	śniegowiec	,299399: 	gumshoe
+106	36751: 	rekwizytor	,341611: 	property master
+107	391161: 	bolognese	,327608: 	bolognese pasta sauce
+108	46288: 	marakasy	,305283: 	maraca
+109	19788: 	samopomoc	,288878: 	self-help
+110	243518: 	"okulary przeciwsłoneczne"	,309072: 	shades
+111	258857: 	bujankowate	,296285: 	family Bombyliidae
+112	232858: 	"korespondent wojenny"	,343337: 	war correspondent
+113	230863: 	podziemie	,330361: 	resistance
+114	395638: 	"kwas elaidynowy"	,364368: 	elaidic acid
+	show biz
+115 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+16664	0.959135	0.971564		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+10 11 11 10 8 9 20 10 9 10 13 10 12 12 8 22 10 12 10 11 13 9 10 10 14 11 10 9 9 13 17 11 10 14 12 13 13 13 10 11 11 11 12 12 14 11 13 12 12 11 12 12 10 10 8 11 8 14 14 9 10 12 18 15 13 13 11 11 12 12 13 11 9 16 11 11 9 10 13 9 12 13 21 10 11 17 10 8 12 20 10 12 10 14 11 14 10 10 10 14 9 17 9 11 11 9 14 9 10 10 10 22 17 10 14 
+najlepszy - 70179: 	panicle
+20 17 19 14 14 18 19 15 16 14 16 16 17 18 20 19 19 19 15 16 15 15 19 18 20 19 17 21 16 19 20 18 15 16 18 14 19 15 15 19 18 20 8 15 23 17 19 16 14 14 13 18 19 16 20 17 12 18 18 15 21 18 19 22 17 15 13 19 21 18 15 19 15 18 15 16 13 15 16 14 12 21 19 15 13 19 16 14 19 19 20 19 15 19 20 15 14 20 20 15 16 18 14 15 15 14 16 13 15 19 16 19 17 20 19 
+prawdziwy - 25687: 	show-business
+18 11 17 12 10 16 15 7 10 8 14 12 5 14 16 15 15 14 11 13 13 16 17 14 16 16 13 18 16 13 14 14 11 14 14 12 15 13 9 13 16 14 13 13 19 15 15 14 10 7 15 14 15 14 17 15 8 15 15 3 17 16 15 18 13 13 12 15 19 14 13 17 13 16 12 8 9 8 14 8 8 17 15 15 15 15 9 12 15 15 16 15 7 15 18 13 12 18 14 13 16 14 6 11 8 10 14 16 7 13 6 15 15 16 14 
+0.971564
+	show biz
+1
+markery: 
+0	246369: 	mroźność	,312638: 	frostiness
+1	17375: 	"seans spirytystyczny"	,330666: 	session
+2	391238: 	psylomelan	,363521: 	psilomelane
+3	40198: 	"niezdolność czytania"	,360346: 	word blindness
+4	46897: 	"chmura kłębiasto-pierzasta"	,334545: 	cirrocumulus cloud
+5	34749: 	gołębnik	,302361: 	columbary
+6	388526: 	"dzięcioł zielony"	,294262: 	Picus viridis
+7	76583: 	łaźce	,294257: 	order Piciformes
+8	386652: 	cyjanamid	,364286: 	cyanamid
+9	258905: 	chihuahua	,295629: 	Chihuahua
+10	31440: 	chityna	,363745: 	chitin
+11	52370: 	zachód	,366264: 	sundown
+12	16799: 	miętówka	,326093: 	mint candy
+13	252248: 	peba	,297818: 	Dasypus novemcinctus
+14	17728: 	temperówka	,306387: 	pencil sharpener
+15	259539: 	welociraptor	,293599: 	genus Velociraptor
+16	13390: 	tapeta	,365851: 	wallpaper
+17	19474: 	akredytacja	,290637: 	accreditation
+18	34200: 	federalizm	,318494: 	federalism
+19	389332: 	trzęsakowce	,354670: 	order Tremellales
+20	394313: 	"zmienna zależna"	,316942: 	dependent variable
+21	41179: 	czartysta	,338242: 	Chartist
+22	33790: 	virreinato	,331861: 	viceroyalty
+23	39759: 	"kajman krokodylowy"	,293501: 	Caiman sclerops
+24	251943: 	"żółwie skórzaste"	,293311: 	family Dermochelyidae
+25	35404: 	epicentrum	,331362: 	epicentre
+26	397728: 	"spływ popiołowy"	,324929: 	lahar
+27	259318: 	ceratopsy	,293523: 	suborder Ceratopsia
+28	18226: 	rycerstwo	,330508: 	knighthood
+29	39309: 	fałdowce	,295511: 	family Balaenopteridae
+30	37399: 	rutyl	,365354: 	rutile
+31	252470: 	"świerk syberyjski"	,347786: 	Picea obovata
+32	246994: 	rewizjonista	,341874: 	revisionist
+33	11268: 	chrust	,364050: 	brushwood
+34	30623: 	sampan	,307714: 	sampan
+35	387874: 	sprzeciwność	,347366: 	reactance
+36	80318: 	widzownia	,329630: 	audience
+37	18555: 	powroźnik	,341946: 	roper
+38	389632: 	kwashiorkor	,360842: 	kwashiorkor
+39	261830: 	edmontonia	,293518: 	Edmontonia
+40	74629: 	bibop	,323109: 	bebop
+41	35755: 	rdestnica	,352502: 	genus Potamogeton
+42	14219: 	"ser topiony"	,327750: 	processed cheese
+43	102922: 	cienkość	,312482: 	high frequency
+44	387269: 	"oszloch morski"	,351779: 	Urginea maritima
+45	235483: 	"krąg czarownic"	,354412: 	fairy circle
+46	232311: 	DZD	,357862: 	dinar
+47	13453: 	cyniczność	,325706: 	cynicism
+48	380875: 	"galangal większy"	,351283: 	Alpinia galanga
+49	71836: 	wegetacja	,357356: 	vegetation
+50	229554: 	"lasówka rudogardła"	,292782: 	Dendroica fusca
+51	396107: 	makintosz	,305177: 	macintosh
+52	19351: 	aktywizacja	,285906: 	activation
+53	30228: 	ekoturystyka	,286226: 	ecotourism
+54	47656: 	"przymiotno pomarańczowe"	,349427: 	Erigeron aurantiacus
+55	31411: 	efemeryda	,296680: 	shadfly
+56	16799: 	miętówka	,326093: 	mint candy
+57	257308: 	"tytoń szlachetny"	,353916: 	Nicotiana tabacum
+58	381086: 	"schizofrenia hebefreniczna"	,362002: 	disorganized type schizophrenia
+59	74024: 	"cukier drzewny"	,365905: 	xylose
+60	382390: 	"hiacynt wschodni"	,351758: 	Hyacinthus orientalis
+61	74950: 	chiromanta	,341145: 	chiromancer
+62	30666: 	biosynteza	,356689: 	biogenesis
+63	237910: 	"szyk antenowy"	,299434: 	array
+64	20678: 	pulman	,307036: 	Pullman car
+65	30457: 	radiotelefonia	,318785: 	wireless telephone
+66	41578: 	oz	,334697: 	esker
+67	229196: 	gruchot	,300214: 	boneshaker
+68	5081: 	listopad	,366501: 	Nov
+69	33083: 	mezalians	,359648: 	mesalliance
+70	25746: 	winiarnia	,310472: 	wine bar
+71	26079: 	kart	,303608: 	go-kart
+72	77279: 	tymol	,365729: 	thymic acid
+73	239391: 	"Żyd Wieczny Tułacz"	,343331: 	Wandering Jew
+74	35336: 	adenina	,363609: 	A
+75	384454: 	ryby-żołnierze	,292182: 	family Holocentridae
+76	386540: 	kataleksa	,323241: 	catalexis
+77	385793: 	piaskolcowate	,298236: 	family Gonorhynchidae
+78	15113: 	"gra w berka"	,287207: 	tag
+79	23843: 	tabulatura	,321616: 	tablature
+80	383352: 	"winorośl labruska"	,355041: 	Vitis labrusca
+81	19889: 	miauk	,324824: 	miaul
+82	41137: 	"orzech nanerczowy"	,353201: 	Anacardium occidentale
+83	73137: 	"nagonasienne drobnolistne"	,347692: 	Coniferophyta
+84	37184: 	sztyft	,304105: 	hobnail
+85	17356: 	pekińczyk	,295632: 	Peke
+86	13247: 	krótkodystansowiec	,342549: 	sprinter
+87	257655: 	bobtail	,295755: 	bobtail
+88	46356: 	"muzyka programowa"	,324264: 	programme music
+89	46555: 	"pole bitwy"	,331069: 	field
+90	26842: 	"wstrząśnienie mózgu"	,324967: 	concussion
+91	7468: 	dziennik	,318733: 	daily
+92	250353: 	flebodium	,355218: 	genus Phlebodium
+93	22794: 	ragtime	,323098: 	rag
+94	260850: 	aretuza	,294650: 	jellyfish
+95	250435: 	wężowidła	,296989: 	subclass Ophiurida
+96	7078: 	"akt urodzenia"	,319796: 	birth certificate
+97	252242: 	"czapla śniada"	,295185: 	Egretta caerulea
+98	43483: 	wstydliwość	,313391: 	nuisance value
+99	46111: 	"bułka tarta"	,326213: 	breadcrumb
+100	240179: 	$L	,357904: 	Liberian dollar
+101	26034: 	adiustator	,341607: 	reader
+102	23651: 	ezoteryka	,317476: 	occultism
+103	260251: 	"szarańcza wędrowna"	,296469: 	Locusta migratoria
+104	5807: 	płytkość	,313256: 	shallowness
+105	226377: 	blacharka	,287926: 	sheet-metal work
+106	16552: 	spoina	,310354: 	weld
+107	30962: 	hybrydyzacja	,289126: 	hybridizing
+108	76856: 	kosmograf	,337655: 	cosmographist
+109	388933: 	"rumień wielopostaciowy"	,360996: 	erythema multiforme
+110	250837: 	"skąpokolec malajski"	,297159: 	Trichys lipura
+111	102799: 	zwymyślanie	,321130: 	billingsgate
+112	21798: 	"gorzknik kanadyjski"	,348320: 	Hydrastis Canadensis
+113	25233: 	wychód	,335252: 	rock outcrop
+114	39900: 	łamliwość	,312786: 	frangibility
+115	251749: 	"makak jawajski"	,298005: 	Macaca irus
+116	391867: 	koalescencja	,286669: 	conglutination
+117	19939: 	przepych	,313308: 	sumptuousness
+118	258954: 	"legwan obrożny"	,293387: 	collared lizard
+119	15711: 	łopatka	,313985: 	shoulder bone
+	show biz
+120 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+3067	0.969027	0.976638		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+11 12 10 10 14 9 11 17 10 11 12 13 10 9 9 12 9 12 13 16 13 13 9 13 18 10 13 25 11 20 10 11 16 9 11 12 10 13 10 11 11 10 9 13 10 10 12 12 10 11 10 11 13 13 10 11 10 10 12 15 10 12 13 8 13 16 11 9 13 15 11 11 12 14 12 14 13 14 13 10 10 12 10 14 10 11 15 12 9 11 10 11 11 11 12 17 10 12 13 10 10 13 13 9 12 15 8 13 16 9 9 13 10 9 13 9 11 14 12 10 
+najlepszy - 70179: 	panicle
+16 18 14 19 18 15 18 19 16 16 18 21 15 19 14 19 14 21 19 19 21 15 15 19 19 14 20 19 20 19 14 19 17 13 19 17 17 16 19 22 19 19 11 18 16 18 19 19 16 15 20 12 21 21 16 17 15 16 21 17 17 17 16 16 16 15 13 14 19 21 17 16 16 14 17 19 21 19 20 19 16 19 18 18 16 16 16 17 15 15 22 16 19 17 17 18 19 19 19 20 19 16 19 20 19 20 15 17 14 20 20 18 15 10 18 21 22 20 20 13 
+prawdziwy - 25687: 	show-business
+13 15 10 18 15 11 16 15 11 14 12 17 15 17 8 15 10 17 15 15 17 13 13 17 15 12 15 15 16 15 10 17 15 11 13 14 13 14 16 20 13 15 12 14 14 15 15 15 14 12 18 8 15 17 14 15 15 14 17 13 15 15 11 8 10 9 12 8 15 17 11 10 12 12 12 15 15 15 14 13 14 15 16 14 8 14 14 15 11 13 18 10 15 12 15 14 13 17 15 16 15 14 15 18 15 14 9 14 12 17 18 12 13 10 14 18 16 16 18 14 
+0.976638
+	show biz
+1
+markery: 
+0	253568: 	"zbójnica krwista"	,296439: 	Formica sanguinea
+1	229757: 	trzepaczka	,302579: 	eggwhisk
+2	259666: 	krasnodrzew	,352861: 	genus Erythroxylum
+3	76600: 	operon	,314814: 	operon
+4	262503: 	"wirus coxsackie"	,291648: 	Coxsackie virus
+5	72188: 	owogeneza	,357111: 	oogenesis
+6	32951: 	krystalograf	,338641: 	crystallographer
+7	17894: 	dopełnienie	,318961: 	complement
+8	50948: 	grupa	,329506: 	task force
+9	230849: 	"agent nieruchomości"	,341775: 	house agent
+10	232034: 	aH	,357694: 	abhenry
+11	103085: 	gaz	,303477: 	gas fitting
+12	394959: 	glutetimid	,303593: 	Doriden
+13	3501: 	totalizm	,318470: 	totalism
+14	397870: 	wiroid	,291630: 	virusoid
+15	386422: 	backdoor	,319168: 	backdoor
+16	22193: 	"kotik zwyczajny"	,295585: 	Callorhinus ursinus
+17	387031: 	thatcheryzm	,317570: 	Thatcherism
+18	233860: 	"wykrywacz metalu"	,305443: 	metal detector
+19	33131: 	jakuza	,329686: 	yakuza
+20	226817: 	patriarcha	,341215: 	patriarch
+21	40809: 	asfalt	,363951: 	asphalt
+22	36131: 	wszechwiedza	,362319: 	omniscience
+23	257594: 	"pudel toy"	,295806: 	toy poodle
+24	226813: 	guru	,339673: 	guru
+25	390430: 	łopata	,358581: 	spadeful
+26	16046: 	mitra	,287744: 	episcopate
+27	386367: 	koryfenowate	,298526: 	family Coryphaenidae
+28	258843: 	"nasionnica jabłkówka"	,296292: 	Rhagoletis pomonella
+29	251392: 	"żarłacz czarnopłetwy"	,292394: 	Carcharhinus limbatus
+30	386445: 	ścieki	,364458: 	sewer water
+31	394505: 	kręgozmyk	,361403: 	spondylolisthesis
+32	255532: 	"żbik europejski"	,295879: 	Felis silvestris
+33	29499: 	arabesque	,312979: 	arabesque
+34	2338: 	grzbiet	,315408: 	dorsum
+35	257575: 	"orzech arachidowy"	,351974: 	Apios tuberosa
+36	34182: 	kazuistyka	,318220: 	casuistry
+37	37322: 	"alaskan malamute"	,295785: 	Alaskan malamute
+38	30849: 	trójkątność	,312932: 	triangularity
+39	33211: 	lukarna	,302335: 	dormer window
+40	33470: 	pointylizm	,306774: 	pointillism
+41	77495: 	peroksydaza	,365192: 	peroxidase
+42	73048: 	agama	,293436: 	agama
+43	39023: 	synekdocha	,323327: 	synecdoche
+44	231476: 	"pracownik pralni chemicznej"	,338328: 	dry cleaner
+45	102895: 	"nietolerancja laktozy"	,362561: 	milk intolerance
+46	257255: 	"płomień Afryki"	,351929: 	Poinciana regia
+47	252638: 	"żabiru argentyński"	,295154: 	Jabiru mycteria
+48	23335: 	dwutygodnik	,320415: 	biweekly
+49	42196: 	nihilista	,340935: 	nihilist
+50	34536: 	"malwa czarna"	,350428: 	Althea rosea
+51	43967: 	"ekspert sądowy"	,339164: 	expert witness
+52	255347: 	"rak amerykański"	,295051: 	American crayfish
+53	20250: 	ubezpieczeniowiec	,340031: 	underwriter
+54	27826: 	banian	,351499: 	Ficus bengalensis
+55	28078: 	cisza	,359448: 	silence
+56	19818: 	wypaczenie	,362549: 	warp
+57	47922: 	odkrycie	,324352: 	eye opener
+58	38043: 	wyzwoleniec	,339396: 	freedwoman
+59	24407: 	doberman	,295764: 	Doberman pinscher
+60	21656: 	wklęsłorzeźba	,299217: 	high relief
+61	46906: 	"purpura wzrokowa"	,365824: 	retinal purple
+62	257540: 	"foksterier krótkowłosy"	,295690: 	smooth-haired fox terrier
+63	30728: 	polimeryzacja	,357173: 	polymerisation
+64	33377: 	kenotafium	,300963: 	empty tomb
+65	381854: 	"chiński ziemniak"	,349997: 	Dioscorea batata
+66	72137: 	"oposy australijskie"	,294460: 	family Phalangeridae
+67	258249: 	konikleca	,352106: 	genus Hippocrepis
+68	20364: 	"język paszto"	,322576: 	Afghan
+69	71499: 	gąskowate	,354460: 	family Tricholomataceae
+70	258706: 	"fasola limeńska"	,352215: 	Phaseolus lunatus
+71	25660: 	kręgowce	,292301: 	subphylum Craniata
+72	46648: 	lateryt	,364898: 	laterite
+73	238126: 	"zaimek wskazujący"	,319012: 	demonstrative
+74	43207: 	storczyk	,349783: 	genus Orchis
+75	394561: 	euploidia	,362913: 	polyploidy
+76	257847: 	gila	,293462: 	Heloderma suspectum
+77	248124: 	toea	,357963: 	toea
+78	13062: 	car	,338677: 	tzar
+79	396703: 	mimansa	,318588: 	Mimamsa
+80	45227: 	histeryk	,339953: 	hysteric
+81	75863: 	radiotelegram	,318784: 	radiogram
+82	43379: 	sandarak	,347870: 	sandarach
+83	30600: 	korweta	,301661: 	corvette
+84	26042: 	kołowrót	,309939: 	turnstile
+85	26715: 	gejsza	,339481: 	geisha girl
+86	232200: 	kib	,357627: 	kibit
+87	395486: 	syntetyzm	,309190: 	synthetism
+88	46918: 	"indukcja własna"	,347175: 	self-induction
+89	392786: 	bateria	,328424: 	battery
+90	19818: 	wypaczenie	,362549: 	warp
+91	6968: 	nerka	,314260: 	kidney
+92	22701: 	żerdziowina	,365878: 	wood
+93	71569: 	wawrzynkowate	,351230: 	daphne family
+94	251538: 	łopatogłów	,292424: 	Sphyrna tiburo
+95	237631: 	"dedykowany serwer plików"	,302025: 	dedicated file server
+96	252537: 	"zebra Grevy'ego"	,297440: 	Equus grevyi
+97	20018: 	finał	,325275: 	final
+98	78687: 	łaziec	,298377: 	A. testudineus
+99	80025: 	adenozyna	,363610: 	adenosine
+100	40796: 	kraal	,304720: 	kraal
+101	381435: 	"pelargonia pasiasta"	,352851: 	Pelargonium hortorum
+102	11022: 	"kapusta warzywna brukselska"	,348982: 	Brassica oleracea gemmifera
+103	13037: 	alpinista	,337476: 	alpinist
+104	39893: 	regeneracja	,285151: 	reclamation
+105	34370: 	jumper	,304578: 	jumper
+106	262065: 	curry	,327564: 	curry powder
+107	393522: 	"drożny przewód Botalla"	,314713: 	patent ductus arteriosus
+108	44739: 	rdzenność	,311508: 	endemism
+109	226415: 	"naparstnica żółta"	,353807: 	Digitalis lutea
+110	257847: 	gila	,293462: 	Heloderma suspectum
+111	227486: 	pokój	,321389: 	pacification
+112	255593: 	"buk karbowany"	,350816: 	Japanese beech
+113	20511: 	"bębenek baskijski"	,309253: 	tambourine
+114	256569: 	krocionóg	,293941: 	milliped
+115	44223: 	mieszkaniec	,291515: 	denizen
+116	42708: 	półanalfabeta	,339433: 	functional illiterate
+117	396292: 	mechanista	,340599: 	mechanist
+118	31885: 	starzyzna	,299254: 	anachronism
+119	78197: 	nicienie	,294743: 	phylum Aschelminthes
+120	255643: 	"pantera florydzka"	,295880: 	Felis concolor
+121	255306: 	"mamba czarna"	,293785: 	Dendroaspis augusticeps
+122	249640: 	wiąślowate	,354174: 	family Salviniaceae
+123	25780: 	szpak	,292833: 	Sturnus vulgaris
+124	250861: 	drętwowate	,292430: 	family Torpedinidae
+	show biz
+125 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+4018	0.973164	0.979915		English walnut		show-business
+wektory: 
+szukany - 328924: 	show biz
+12 9 10 9 18 14 14 14 12 15 12 9 12 11 11 11 9 13 8 12 14 8 10 11 14 9 13 15 10 12 6 11 9 14 9 11 13 11 8 13 14 11 11 10 13 10 10 11 10 12 10 14 13 15 10 11 12 11 14 12 12 12 12 13 9 10 20 9 15 18 11 12 11 12 10 11 12 12 13 13 15 9 11 12 12 12 11 12 13 10 12 9 9 16 11 13 10 12 11 13 9 11 10 13 13 11 10 13 13 10 12 12 11 10 10 7 15 14 5 17 11 12 18 12 13 
+najlepszy - 42435: 	English walnut
+20 15 19 17 18 16 16 20 19 17 19 16 14 19 16 20 23 21 15 17 16 13 16 17 16 17 20 19 19 21 14 19 18 19 14 16 21 18 19 16 15 15 21 19 18 18 18 20 18 15 19 15 19 17 18 17 20 19 17 19 17 16 19 15 14 17 19 20 20 19 19 18 15 17 19 17 21 19 16 20 17 16 15 17 17 16 18 15 18 16 20 17 13 18 21 18 19 19 17 16 16 17 17 16 18 14 9 19 17 17 21 20 18 17 16 13 17 17 12 18 18 21 19 20 19 
+prawdziwy - 25687: 	show-business
+17 8 15 12 15 13 13 14 15 14 15 11 10 15 13 14 20 15 6 13 13 8 12 14 13 13 14 15 16 18 10 16 15 15 13 13 17 15 15 9 10 12 18 13 15 15 15 17 13 12 16 12 16 14 15 13 16 15 14 16 12 12 16 10 9 14 15 16 14 15 16 14 9 13 15 13 18 15 13 16 14 10 12 10 12 13 14 10 15 12 16 16 10 15 18 9 16 14 14 13 11 14 14 13 14 7 14 18 13 14 18 14 15 8 13 10 14 14 7 14 15 18 15 17 15 
+0.979915
+	show biz
+1
+markery: 
+0	35705: 	przyczepność	,312196: 	bond
+1	252959: 	"cis krótkolistny"	,347965: 	Taxus brevifolia
+2	38269: 	"kotewka orzech wodny"	,351242: 	Trapa natans
+3	40261: 	"ciśnienie żylne"	,346968: 	venous pressure
+4	44961: 	piętrówka	,300523: 	bunk
+5	400243: 	nullipara	,340980: 	nullipara
+6	32400: 	La	,363284: 	atomic number 57
+7	27020: 	topologia	,317700: 	analysis situs
+8	249340: 	KRW	,358201: 	won
+9	246425: 	haniebność	,311552: 	ignominiousness
+10	246918: 	nierealistyczność	,311324: 	unreality
+11	36806: 	geoda	,334766: 	geode
+12	75229: 	hydrożel	,363020: 	hydrogel
+13	387371: 	cyklopropan	,301932: 	cyclopropane
+14	27405: 	odsyłacz	,321342: 	cross-index
+15	13387: 	szarfa	,303571: 	waistcloth
+16	24421: 	motek	,303912: 	hank
+17	32991: 	różokrzyżowiec	,341952: 	Rosicrucian
+18	388522: 	"dzięcioł wielkodzioby"	,294271: 	Campephilus principalis
+19	261311: 	"czeremcha późna"	,352663: 	Prunus serotina
+20	241532: 	koncertowicz	,338455: 	music lover
+21	224039: 	"opcja call"	,285088: 	call
+22	235572: 	"steel pan"	,308810: 	steel drum
+23	47178: 	"zajęcza warga"	,360920: 	cheiloschisis
+24	40205: 	proteinuria	,361227: 	proteinuria
+25	229548: 	"lasówka obrożna"	,292774: 	Parula americana
+26	75481: 	monoteletyzm	,318352: 	Monothelitism
+27	46699: 	"obrońca z urzędu"	,341647: 	public defender
+28	71382: 	"monetka aksamitna"	,354490: 	Flammulina velutipes
+29	40377: 	"torbiel skórzasta"	,360851: 	dermoid cyst
+30	26481: 	piętnastka	,358437: 	XV
+31	77963: 	żmijowate	,293800: 	family Viperidae
+32	47419: 	"wspólny mianownik"	,358366: 	common denominator
+33	35644: 	rzeźnik	,300568: 	meat market
+34	36470: 	manica	,300351: 	brassard
+35	79554: 	kalcytonina	,314689: 	thyrocalcitonin
+36	23110: 	czelista	,338194: 	violoncellist
+37	47967: 	"zbrodnia wojenna"	,288775: 	war crime
+38	12430: 	meczet	,305656: 	mosque
+39	262170: 	"karbieniec pospolity"	,353653: 	Lycopus europaeus
+40	34375: 	drożność	,312993: 	patency
+41	14918: 	lira	,305155: 	lyre
+42	4483: 	Au	,356301: 	gold
+43	44240: 	eparcha	,339095: 	eparch
+44	72359: 	dyslektyk	,338979: 	dyslexic
+45	255459: 	"swercja trwała"	,350989: 	Swertia perennia
+46	7590: 	czesne	,356038: 	tuition fee
+47	77891: 	angioplastyka	,288185: 	angioplasty
+48	17913: 	dzikość	,312058: 	wildness
+49	18278: 	półksiężyc	,359285: 	crescent
+50	16505: 	wolta	,286489: 	about turn
+51	237313: 	"butelka do wina"	,310473: 	wine bottle
+52	235846: 	"elektryczna maszynka do golenia"	,308028: 	electric razor
+53	256084: 	"kasztan zębaty"	,350820: 	Castanea dentata
+54	16215: 	impet	,312744: 	impulse
+55	77711: 	kizeryt	,363445: 	kieserite
+56	18339: 	anormalność	,361941: 	aberration
+57	14228: 	sułtanka	,327115: 	currant
+58	14523: 	soccer	,287160: 	association football
+59	40871: 	rozcieńczalnik	,364338: 	thinner
+60	246874: 	niefartowność	,313388: 	unpropitiousness
+61	387944: 	"basso continuo"	,322916: 	thorough bass
+62	33236: 	idololatria	,290132: 	idol worship
+63	18153: 	alarmista	,341697: 	trembler
+64	258235: 	"przelot uprawny"	,351972: 	Anthyllis vulneraria
+65	39561: 	kuszetka	,308330: 	wagon-lit
+66	6222: 	tramwajarz	,340788: 	motorman
+67	41435: 	apercepcja	,316192: 	apperception
+68	240563: 	S$	,357906: 	Singapore dollar
+69	73851: 	pełnorożce	,297667: 	family Cervidae
+70	14662: 	kołatka	,304712: 	rapper
+71	71661: 	politologia	,318171: 	government
+72	20051: 	mundial	,325260: 	World Cup
+73	262888: 	egeria	,352497: 	genus Egeria
+74	79217: 	bezpancerzowce	,295108: 	order Anostraca
+75	8032: 	mniejszość	,313189: 	minority
+76	38249: 	"kokorycz pełna"	,349123: 	Corydalis solida
+77	79175: 	teropody	,293568: 	suborder Theropoda
+78	15707: 	żebro	,313982: 	costa
+79	40502: 	"mleczko pszczele"	,363981: 	royal jelly
+80	46658: 	"wciornastek tytoniowiec"	,296737: 	Frankliniella fusca
+81	237340: 	"taca na kostki lodu"	,304310: 	icetray
+82	257841: 	"groch zwyczajny"	,352224: 	Pisum sativum
+83	47910: 	internowany	,340044: 	internee
+84	24977: 	przyzębica	,360247: 	periodontitis
+85	18373: 	infrastruktura	,304372: 	substructure
+86	42816: 	"seter irlandzki"	,295727: 	red setter
+87	253210: 	"nosorożec pancerny"	,297445: 	Rhinoceros unicornis
+88	21709: 	"gaz kopalniany"	,363721: 	firedamp
+89	16310: 	berceuse	,323039: 	berceuse
+90	249340: 	KRW	,358201: 	won
+91	386019: 	"gąska tygrysia"	,354468: 	Tricholoma pardinum
+92	258368: 	gomfotery	,298113: 	gomphothere
+93	39962: 	auksyna	,363809: 	auxin
+94	233839: 	akademik	,337350: 	academician
+95	10875: 	niezrozumienie	,316674: 	incomprehension
+96	72434: 	figlarność	,310784: 	whimsicality
+97	77014: 	psiankowate	,353848: 	potato family
+98	32859: 	magnetyt	,364992: 	magnetic iron-ore
+99	382063: 	kiczua	,322191: 	Kechuan
+100	386672: 	"tuńczyk północny"	,298791: 	Thunnus thynnus
+101	251730: 	"koczkodan zielonosiwy"	,297987: 	Cercopithecus aethiops
+102	38939: 	tancbuda	,304146: 	dive
+103	237647: 	"sieć Ethernet"	,302762: 	ethernet
+104	26749: 	proletariat	,329445: 	proletariat
+105	390830: 	hipotonia	,362951: 	hypotonicity
+106	257653: 	"pierwiosnka bezłodygowa"	,350009: 	Primula vulgaris
+107	21916: 	gamma	,347142: 	gamma ray
+108	246605: 	niehonorowość	,311874: 	dishonourableness
+109	22107: 	"pion wentylacyjny"	,299164: 	airway
+110	238663: 	"przetwarzanie języka naturalnego"	,318141: 	human language technology
+111	44247: 	zwiotczałość	,312212: 	flaccidity
+112	233318: 	"rosyjska ruletka"	,285673: 	Russian roulette
+113	386440: 	albakora	,298792: 	Thunnus albacares
+114	233706: 	"kotwica grzybkowa"	,305729: 	mushroom anchor
+115	46559: 	"ciężkie czasy"	,366002: 	hard times
+116	381854: 	"chiński ziemniak"	,349997: 	Dioscorea batata
+117	32646: 	"Kościół unicki"	,329020: 	Greek Church
+118	385620: 	"łysiczka okazała"	,354431: 	Stropharia hornemannii
+119	262768: 	"kwadrat magiczny"	,321452: 	acrostic
+120	46737: 	gliptyka	,303597: 	lithoglyptics
+121	256512: 	"kanianka amerykańska"	,353520: 	Cuscuta gronovii
+122	233523: 	diaspora	,330940: 	diaspora
+123	25392: 	chianti	,328050: 	Chianti
+124	12693: 	"bieg maratoński"	,325232: 	marathon
+125	251876: 	Tazzy	,294481: 	Thylacinus cynocephalus
+126	31899: 	retrospektywa	,330604: 	retrospective
+127	35008: 	adagio	,323014: 	adagio
+128	226436: 	"żaba szponiasta"	,293278: 	Xenopus laevis
+129	72690: 	dziesięciocentówka	,356405: 	dime
+	show biz
+130 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+5232	0.969618	0.974605		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+12 10 11 14 11 12 11 15 12 11 12 10 10 10 11 10 8 12 12 12 12 15 10 10 10 10 11 15 10 12 11 22 13 10 7 13 14 12 10 10 11 11 11 14 12 10 10 13 15 8 12 10 9 11 12 10 11 11 14 11 13 11 15 13 11 13 13 12 10 21 8 15 13 10 20 7 10 23 10 10 9 9 11 13 11 8 11 10 10 12 12 10 21 13 12 11 12 16 11 15 11 9 12 11 10 10 10 12 13 9 15 10 13 11 9 12 10 14 11 15 15 9 10 14 13 9 17 11 10 10 
+najlepszy - 70179: 	panicle
+19 19 16 18 16 15 15 22 19 18 17 16 16 17 20 13 13 16 18 20 15 21 15 19 15 20 18 16 15 20 19 19 19 16 16 17 16 22 14 15 19 17 21 18 13 15 21 21 17 17 21 15 17 17 19 14 20 10 21 13 20 19 19 14 15 16 14 18 19 19 13 21 18 19 19 19 21 19 13 16 18 15 17 15 17 18 18 19 14 16 19 15 19 14 16 17 18 18 16 18 18 21 16 16 17 19 16 19 18 15 21 18 21 18 16 18 16 22 15 20 16 16 17 17 19 19 18 15 18 21 
+prawdziwy - 25687: 	show-business
+15 17 14 15 10 13 10 18 15 14 13 14 9 13 14 8 9 14 16 18 13 15 7 15 15 18 14 14 13 18 15 15 15 12 12 13 14 16 10 13 14 9 17 16 11 13 17 15 13 13 15 9 10 15 15 10 16 15 16 10 16 14 13 12 13 10 12 14 15 15 5 17 14 15 15 15 17 15 14 11 16 9 15 13 14 14 16 17 9 12 15 13 17 12 14 13 14 16 12 12 16 18 12 10 13 15 14 16 14 11 17 14 15 16 9 14 14 18 13 14 12 14 13 14 15 17 14 11 16 17 
+0.974605
+	show biz
+1
+markery: 
+0	227086: 	"fotel obrotowy"	,309173: 	swivel chair
+1	27232: 	egzegeza	,323652: 	exegesis
+2	5473: 	północ	,358909: 	N
+3	29478: 	breakdance	,287398: 	break dance
+4	75552: 	dezinflacja	,356824: 	disinflation
+5	236918: 	siodło	,335425: 	saddle
+6	71532: 	nerecznicowate	,355295: 	family Athyriaceae
+7	259863: 	"siewka złota"	,295273: 	golden plover
+8	252761: 	"jeleń wirgiński"	,297682: 	Odocoileus Virginianus
+9	12483: 	przecinka	,331344: 	fireguard
+10	261602: 	"lilak pospolity"	,351054: 	Syringa vulgaris
+11	385393: 	kaliniak	,292123: 	Tinca tinca
+12	392386: 	strajkowicz	,342681: 	striker
+13	80575: 	łączność	,358709: 	communication
+14	15426: 	"promieniowanie infraczerwone"	,347180: 	infrared emission
+15	46295: 	"łuszczyk indygowy"	,292594: 	Passerina cyanea
+16	41440: 	asercja	,321166: 	asseveration
+17	81013: 	prażmowate	,298575: 	family Sparidae
+18	31500: 	bezpretensjonalność	,311442: 	unpretentiousness
+19	37406: 	bukinista	,337866: 	bibliopolist
+20	34678: 	szczękościsk	,362922: 	trismus
+21	25886: 	makolągwa	,292556: 	Carduelis cannabina
+22	78234: 	kolcolist	,352293: 	genus Ulex
+23	245068: 	"mięsień trójgłowy"	,315515: 	triceps
+24	257505: 	tymidyna	,365728: 	thymidine
+25	261493: 	"brodziec krwawodzioby"	,295292: 	Tringa totanus
+26	252715: 	skrzydłoszpon	,294398: 	crested screamer
+27	26401: 	zajzajer	,364782: 	chlorohydric acid
+28	226188: 	"czekolada gorzka"	,326065: 	cooking chocolate
+29	18243: 	wasal	,343203: 	feudatory
+30	17709: 	"fenkuł włoski"	,354070: 	Foeniculum vulgare
+31	77085: 	nienaganność	,312014: 	impeccability
+32	8054: 	zarys	,317089: 	scheme
+33	22356: 	bolszewizm	,330400: 	sovietism
+34	71556: 	"sromotnik wstydliwy"	,354576: 	Phallus impudicus
+35	229479: 	drewno	,339706: 	ham actor
+36	233706: 	"kotwica grzybkowa"	,305729: 	mushroom anchor
+37	45132: 	tie-break	,366624: 	tiebreaker
+38	398536: 	brzytwodzioby	,295387: 	family Rynchopidae
+39	72611: 	neurobiologia	,317925: 	neurobiology
+40	258978: 	"frynosoma rogata"	,293402: 	Phrynosoma cornutum
+41	47616: 	"groszek łąkowy"	,352134: 	Lathyrus pratensis
+42	30941: 	lęg	,356945: 	hatching
+43	250562: 	"żaba błotna"	,293205: 	Rana palustris
+44	26384: 	harmonium	,303927: 	reed organ
+45	78458: 	"harfa Eola"	,299111: 	wind harp
+46	230917: 	"opiekunka do dziecka"	,337698: 	minder
+47	5730: 	gatunek	,297524: 	grade
+48	47941: 	gabro	,364914: 	gabbro
+49	262557: 	"laseczka jadu kiełbasianego"	,291713: 	Clostridium botulinum
+50	247752: 	niskość	,312487: 	deepness
+51	48369: 	"zespół suchego oka"	,362726: 	conjunctivitis arida
+52	383992: 	kariamy	,295214: 	family Cariamidae
+53	389641: 	"rumień guzowaty"	,360997: 	erythema nodosum
+54	20923: 	madrepora	,294673: 	madriporian coral
+55	32960: 	oceanograf	,341008: 	oceanographer
+56	14280: 	klin	,359425: 	cuneus
+57	257789: 	kacykowate	,292799: 	family Icteridae
+58	22928: 	schizofrenik	,342056: 	schizophrenic
+59	39517: 	"turkuć pospolity"	,296483: 	mole cricket
+60	254591: 	miłorzębowe	,347972: 	subdivision Ginkgophyta
+61	30875: 	doświadczalnik	,336534: 	experimenter
+62	45554: 	grzbietnica	,299606: 	back saw
+63	76995: 	akcelerometr	,299047: 	accelerometer
+64	32219: 	polipeptyd	,363795: 	polypeptide
+65	31812: 	kaszak	,360859: 	steatocystoma
+66	33741: 	technicolor	,315978: 	technicolor
+67	35932: 	lemiesz	,315673: 	vomer
+68	40491: 	anachoreta	,341830: 	hermit
+69	232204: 	Gib	,357635: 	Gibit
+70	232324: 	centavo	,357845: 	centavo
+71	73839: 	"kwas hialuronowy"	,364770: 	hyaluronic acid
+72	23464: 	monolatria	,318528: 	monotheism
+73	55675: 	czad	,364123: 	CO
+74	227858: 	miner	,342022: 	sapper
+75	14803: 	maszt	,305326: 	mast
+76	255737: 	"hortensja wielkolistna"	,353346: 	Hydrangea macrophylla hortensis
+77	380872: 	"galangal mniejszy"	,351284: 	Alpinia officinalis
+78	256385: 	koza	,295317: 	genus Capella
+79	390282: 	"kuropatwa skalna"	,294078: 	Alectoris graeca
+80	385850: 	grotnikowate	,298837: 	family Gobiesocidae
+81	28662: 	niedokonaność	,358772: 	imperfective aspect
+82	78324: 	"wygaszacz ekranu"	,307840: 	screen saver
+83	238248: 	szahid	,342221: 	shaheed
+84	237015: 	"siodło wyścigowe"	,307654: 	saddle
+85	868: 	"nauka o materii"	,317956: 	natural philosophy
+86	255593: 	"buk karbowany"	,350816: 	Japanese beech
+87	233876: 	"wkładka gramofonowa"	,300837: 	pickup
+88	231992: 	trędowaty	,340288: 	lazar
+89	249315: 	OMR	,358095: 	rial
+90	17932: 	gorycz	,316235: 	bitterness
+91	11458: 	kat	,339729: 	harasser
+92	27935: 	imiennik	,340851: 	namesake
+93	391320: 	ulung	,328335: 	oolong
+94	46918: 	"indukcja własna"	,347175: 	self-induction
+95	39709: 	szpachla	,308551: 	spatula
+96	8308: 	parking	,331577: 	parking area
+97	34960: 	firn	,335192: 	neve
+98	13649: 	limka	,304975: 	limo
+99	256501: 	cedrówka	,292996: 	Bombycilla cedrorun
+100	7579: 	szlifierka	,303714: 	grinder
+101	76025: 	piżmian	,350419: 	genus Abelmoschus
+102	6276: 	młoteczek	,314227: 	hammer
+103	257552: 	"manchester terrier"	,295687: 	black-and-tan terrier
+104	3749: 	gody	,329828: 	wedding reception
+105	390664: 	"marmurkowatość kości"	,360895: 	marble bones disease
+106	77520: 	"sagowiec podwinięty"	,347669: 	Cycas circinalis
+107	258666: 	"paw kongijski"	,294046: 	Afropavo congensis
+108	28909: 	"śliwa tarnina"	,352667: 	Prunus spinosa
+109	38791: 	masielniczka	,300572: 	butter dish
+110	76887: 	staroraki	,293944: 	class Merostomata
+111	252903: 	brzmik	,296366: 	cuckoo-bumblebee
+112	80753: 	tabor	,304731: 	lager
+113	35058: 	parlando	,323202: 	recitative
+114	30708: 	konwekcja	,356755: 	convection
+115	256553: 	"myszołów rdzawosterny"	,293013: 	Buteo jamaicensis
+116	16906: 	plankton	,291860: 	plankton
+117	384731: 	"morwa czarna"	,351486: 	Morus nigra
+118	14661: 	patera	,306712: 	platter
+119	256135: 	"nachyłek barwierski"	,349384: 	Coreopsis tinctoria
+120	253210: 	"nosorożec pancerny"	,297445: 	Rhinoceros unicornis
+121	232703: 	kislew	,366508: 	Chislev
+122	25782: 	"szpak różowy"	,292835: 	Pastor roseus
+123	42514: 	trombina	,363767: 	thrombin
+124	47841: 	kwarcówka	,307114: 	quartz lamp
+125	42264: 	oscylograf	,306065: 	oscillograph
+126	391241: 	eutrofizacja	,356875: 	eutrophication
+127	11645: 	szwagierka	,342334: 	sister-in-law
+128	27576: 	hakenkreuz	,321979: 	Hakenkreuz
+129	32490: 	"linie lotnicze"	,299158: 	airway
+130	257675: 	"kuvasz węgierski"	,295744: 	kuvasz
+131	19687: 	koncesjonariusz	,338456: 	concessioner
+132	17932: 	gorycz	,316235: 	bitterness
+133	13493: 	paroksyzm	,360260: 	convulsion
+134	34108: 	kunopies	,295825: 	Nyctereutes procyonides
+	show biz
+135 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+11962	0.967171	0.978906		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+9 11 10 10 12 11 18 10 9 11 11 10 10 12 13 9 10 15 13 15 10 11 11 11 13 12 11 13 11 13 10 13 10 12 11 12 9 9 20 15 12 9 13 11 11 12 14 9 10 10 12 10 17 10 11 15 14 19 16 8 15 15 11 10 12 11 13 10 12 11 12 12 14 10 15 10 11 10 8 10 15 14 10 10 9 16 11 9 13 12 13 13 11 12 13 11 12 11 12 11 10 10 9 12 12 11 10 10 11 10 19 12 12 9 11 12 8 10 10 10 10 14 12 12 10 11 13 13 8 13 11 12 13 10 8 
+najlepszy - 70179: 	panicle
+16 19 19 17 14 13 19 20 17 16 17 21 14 16 20 20 18 19 17 17 16 19 20 17 17 20 19 16 11 14 16 19 19 21 14 16 16 18 19 22 21 17 15 18 14 17 16 16 15 15 19 18 19 20 17 14 19 19 16 18 18 15 16 15 17 20 19 13 16 18 19 19 20 17 15 15 17 16 19 17 19 19 13 16 15 21 17 16 15 19 21 17 13 14 18 14 16 12 17 19 15 20 15 18 20 18 18 17 16 14 15 18 16 16 15 18 12 19 15 16 19 19 19 17 16 14 14 15 14 19 17 17 21 20 17 
+prawdziwy - 25687: 	show-business
+10 13 14 13 11 11 15 18 15 14 15 19 12 11 17 18 12 15 13 15 16 17 16 17 13 18 17 11 12 12 14 15 13 17 12 14 9 14 15 18 19 15 12 16 4 9 14 14 11 9 15 14 15 17 15 12 16 15 14 16 14 13 10 3 13 18 15 14 14 14 15 13 16 12 13 9 15 14 15 15 15 14 9 14 7 17 15 8 13 15 17 15 11 16 15 8 14 10 11 17 7 16 16 16 16 15 16 15 14 8 13 16 12 12 10 16 10 17 11 14 17 15 17 12 8 7 11 13 10 12 15 15 17 16 15 
+0.978906
+	show biz
+1
+markery: 
+0	31628: 	anabaptyzm	,318567: 	Anabaptism
+1	31216: 	butyl	,365351: 	butyl
+2	13355: 	fryza	,303296: 	fraise
+3	8123: 	arytmetyka	,317628: 	arithmetic
+4	19946: 	przykazanie	,323640: 	commandment
+5	41038: 	tasiemnica	,352515: 	genus Zostera
+6	382492: 	"gorączka Lassa"	,360532: 	Lassa fever
+7	261236: 	"owsik ludzki"	,294754: 	Enterobius vermicularis
+8	17854: 	brutalizm	,311659: 	savagery
+9	24166: 	trufla	,354319: 	genus Tuber
+10	237860: 	LYD	,357875: 	dinar
+11	236704: 	ankus	,299294: 	ankus
+12	386235: 	"ryba ukwiałowa"	,298673: 	Amphiprion percula
+13	33741: 	technicolor	,315978: 	technicolor
+14	391128: 	halo	,347279: 	halo
+15	239378: 	dżungla	,331081: 	jungle
+16	229487: 	dialog	,322805: 	dialog
+17	38866: 	piżmowiec	,297701: 	Moschus moschiferus
+18	79729: 	firewall	,303025: 	firewall
+19	261969: 	arki	,294925: 	genus Arca
+20	252627: 	"sosna wydmowa"	,347731: 	Pinus contorta
+21	250771: 	"ryby właściwe"	,298141: 	Pisces
+22	235520: 	dźwięcznik	,299936: 	bell
+23	36449: 	rozczulenie	,325500: 	tenderness
+24	44140: 	"cykl gospodarczy"	,325138: 	trade cycle
+25	71551: 	"pióropusznik strusi"	,355324: 	Onoclea struthiopteris
+26	251581: 	"płaszczki właściwe"	,292457: 	family Rajidae
+27	71629: 	nektarynka	,327101: 	nectarine
+28	21286: 	"dok pływający"	,303130: 	floating dry dock
+29	4645: 	egzystowanie	,290251: 	vegetation
+30	257102: 	rybiki	,296722: 	order Thysanura
+31	17856: 	wybujałość	,313156: 	voluptuousness
+32	257837: 	perfluoroetylen	,365699: 	tetrafluoroethylene
+33	31436: 	In	,363277: 	atomic number 49
+34	23741: 	"wiedza o literaturze"	,318261: 	literary study
+35	26312: 	pentoda	,306416: 	pentode
+36	259769: 	palcat	,307445: 	hunting crop
+37	261195: 	przywry	,294719: 	class Trematoda
+38	384158: 	"granatowiec właściwy"	,351226: 	Punica granatum
+39	73476: 	tylnica	,308846: 	sternpost
+40	18322: 	belweder	,299961: 	belvedere
+41	33009: 	symbolista	,342811: 	symbolist
+42	14468: 	inkrustacja	,304353: 	encrustation
+43	32713: 	hioscyna	,307820: 	hyoscine
+44	5400: 	radio	,318789: 	wireless
+45	20488: 	"karabin skałkowy"	,303123: 	firelock
+46	262377: 	"HSV 2"	,291652: 	herpes simplex virus
+47	245792: 	gęstość	,312226: 	denseness
+48	249306: 	DOP	,358058: 	peso
+49	231164: 	smażalnik	,339422: 	fry cook
+50	75044: 	"grubodziób białoskrzydły"	,292613: 	Hesperiphona vespertina
+51	33717: 	jidisz	,322430: 	Yiddish
+52	395649: 	"kwas rącznikowy"	,363793: 	ricinoleic acid
+53	103291: 	pączek	,348048: 	gemma
+54	72690: 	dziesięciocentówka	,356405: 	dime
+55	249787: 	rondo	,319151: 	round hand
+56	247339: 	delikatność	,312076: 	mildness
+57	20484: 	zimowit	,351744: 	genus Colchicum
+58	257505: 	tymidyna	,365728: 	thymidine
+59	30186: 	karnisz	,301650: 	pelmet
+60	23128: 	tekściarz	,340436: 	lyrist
+61	255303: 	prosionek	,295092: 	sow bug
+62	258851: 	"borówka wielkożurawinowa"	,350740: 	Vaccinium macrocarpon
+63	236303: 	tabu	,311933: 	tabu
+64	256303: 	"kocanka czerwona"	,349196: 	mountain everlasting
+65	76032: 	sitar	,308254: 	sitar
+66	380802: 	"ukośnica królewska"	,351305: 	Begonia rex
+67	383170: 	homogenat	,364760: 	homogenate
+68	36667: 	izobara	,331433: 	isobar
+69	17162: 	"protokół dyplomatyczny"	,320812: 	protocol
+70	7746: 	kawalkada	,330718: 	wagon train
+71	228656: 	"przyczepa na konie"	,304190: 	horsebox
+72	223755: 	"obóz pracy"	,304736: 	labour camp
+73	32798: 	dermatolog	,338793: 	skin doctor
+74	390999: 	"czosnek zwisły"	,351641: 	Allium cernuum
+75	16538: 	kaucja	,356174: 	deposit
+76	382969: 	kupkówka	,350137: 	genus Dactylis
+77	391148: 	"drewno tekowe"	,353962: 	teakwood
+78	40082: 	hyzop	,353632: 	hyssop oil
+79	47978: 	inżektor	,304378: 	injector
+80	238606: 	ateńczyk	,337016: 	Athenian
+81	386594: 	kobiowate	,298480: 	family Rachycentridae
+82	4967: 	kula	,359302: 	sphere
+83	254752: 	kikutnica	,293943: 	pycnogonid
+84	259161: 	płoszczycowate	,296556: 	family Nepidae
+85	255685: 	"wireonek siwy"	,292992: 	Vireo solitarius solitarius
+86	24021: 	homeopata	,339861: 	homoeopath
+87	38868: 	prepozycja	,319817: 	preposition
+88	257665: 	"owczarek francuski briard"	,295752: 	briard
+89	224781: 	"świat fantazji"	,315790: 	fairyland
+90	73795: 	olejowiec	,352368: 	genus Elaeis
+91	19023: 	słoność	,316237: 	salinity
+92	260110: 	alef	,321740: 	aleph
+93	226997: 	"stacja benzynowa"	,303493: 	petrol station
+94	46207: 	"krzesło elektryczne"	,302605: 	hot seat
+95	1667: 	finezja	,311572: 	civilisation
+96	44156: 	mezanin	,305474: 	entresol
+97	18750: 	emir	,339047: 	ameer
+98	231182: 	yd²	,357540: 	sq yd
+99	235558: 	koto	,304719: 	koto
+100	261388: 	piasecznik	,294781: 	lobworm
+101	41161: 	bentos	,284808: 	benthos
+102	31077: 	pieprzowate	,355063: 	pepper family
+103	78973: 	"gambuzja pospolita"	,292176: 	Gambusia affinis
+104	10835: 	lekceważenie	,318440: 	disrespect
+105	73119: 	mimozowe	,348409: 	subfamily Mimosoideae
+106	251147: 	"bóbr górski"	,297254: 	Aplodontia rufa
+107	234996: 	"nóż myśliwski"	,304258: 	hunting knife
+108	33683: 	sukcesja	,285098: 	taking over
+109	75033: 	pizzeria	,306652: 	pizza parlor
+110	390289: 	"kuropatwa czerwona"	,294077: 	Alectoris ruffa
+111	25579: 	szkutnik	,342262: 	ship builder
+112	77099: 	cross-country	,325234: 	cross country
+113	45721: 	singelton	,308246: 	singleton
+114	381595: 	aleuron	,363729: 	aleurone
+115	75695: 	antystrofa	,319346: 	antistrophe
+116	18893: 	cięciwa	,300298: 	bowstring
+117	400118: 	"węzeł flagowy"	,306104: 	overhand knot
+118	76351: 	prolina	,363476: 	proline
+119	387492: 	miękkopłetwe	,298162: 	subclass Dipnoi
+120	32938: 	etymolog	,339129: 	etymologist
+121	52498: 	zachód	,287958: 	difficulty
+122	5665: 	nasycenie	,362278: 	satiation
+123	33211: 	lukarna	,302335: 	dormer window
+124	7643: 	armia	,329540: 	war machine
+125	252151: 	"soplica australijska"	,347893: 	Agathis australis
+126	46210: 	"polityka zagraniczna"	,320787: 	foreign policy
+127	71240: 	"bariera krew-mózg"	,334425: 	blood-brain barrier
+128	22523: 	akwanauta	,337572: 	oceanaut
+129	26075: 	garłacz	,294100: 	pouter
+130	261420: 	kryzelnica	,296968: 	phoronid
+131	31697: 	"błyszcz ołowiu"	,363425: 	galena
+132	46690: 	eozyna	,365235: 	bromeosin
+133	47298: 	"żyła podkolanowa"	,314504: 	vena poplitea
+134	77359: 	izotropowość	,312105: 	symmetry
+135	235412: 	"organy parowe"	,300651: 	steam organ
+136	237611: 	"kalkulator kieszonkowy"	,303870: 	pocket calculator
+137	381628: 	karmnik	,348692: 	pearl-weed
+138	33438: 	żwacz	,314061: 	masseter
+139	388400: 	kalla	,348551: 	genus Calla
+	show biz
+1
+markery: 
+0	12615: 	ballada	,319291: 	ballade
+1	232622: 	jodler	,343531: 	yodeller
+2	252403: 	"czapla amerykańska"	,295190: 	Egretta albus
+3	394119: 	zwlekanie	,290265: 	shillyshally
+4	393339: 	"prawo kanoniczne"	,330798: 	ecclesiastical law
+5	47389: 	"kubek smakowy"	,314113: 	gustatory organ
+6	250937: 	"zając amerykański"	,297047: 	Lepus americanus
+7	251165: 	"aguti złocisty"	,297267: 	Dasyprocta aguti
+8	381013: 	"kampsis korzeniowy"	,353460: 	Campsis radicans
+9	26914: 	GB	,357633: 	GB
+10	22980: 	obejście	,299222: 	ambulatory
+11	250861: 	drętwowate	,292430: 	family Torpedinidae
+12	383089: 	aplet	,320276: 	applet
+13	38453: 	warzucha	,349020: 	genus Cochlearia
+14	38957: 	hydrazyna	,364773: 	hydrazine
+15	232967: 	Euker	,287224: 	five hundred
+16	255959: 	"grzechotnik zielony"	,293821: 	Crotalus viridis
+17	30184: 	ucios	,359382: 	facet
+18	249494: 	sześćdziesiątka	,366153: 	mid-sixties
+19	41883: 	monada	,291588: 	monad
+20	5026: 	wąż	,319435: 	squiggle
+21	77520: 	"sagowiec podwinięty"	,347669: 	Cycas circinalis
+22	80640: 	akwakultura	,289482: 	aquaculture
+23	22024: 	harmonista	,337360: 	accordionist
+24	16516: 	bookmacher	,337951: 	bookie
+25	71700: 	sort	,362149: 	tier
+26	32013: 	mieczyk	,292170: 	Xyphophorus helleri
+27	31257: 	pendent	,299649: 	baldrick
+28	249855: 	"chomik syryjski"	,297132: 	Mesocricetus auratus
+29	250305: 	"jeżowiec jadalny"	,296999: 	Echinus esculentus
+30	232416: 	"ogniwo Leclanchégo"	,304880: 	Leclanche cell
+31	3057: 	serwis	,307966: 	table service
+32	235433: 	Sioux	,336756: 	Siouan
+33	38468: 	miodownik	,326301: 	honey cake
+34	237360: 	"ślepy tor"	,284869: 	blind alley
+35	385800: 	wstęgorowate	,298334: 	family Trachipteridae
+36	25496: 	"arka Noego"	,299407: 	ark
+37	255944: 	goryczel	,349607: 	Picris echioides
+38	259161: 	płoszczycowate	,296556: 	family Nepidae
+39	79312: 	inselberg	,354861: 	duramen
+40	26717: 	bulla	,321154: 	papal bull
+41	384164: 	"medinilla wspaniała"	,351248: 	Medinilla magnifica
+42	231165: 	fahrenheit	,358240: 	F
+43	76296: 	molinezja	,292180: 	molly
+44	26213: 	przeglądarka	,310133: 	viewer
+45	33809: 	latynizm	,318866: 	Latinism
+46	256877: 	kurtodrozdy	,292768: 	family Timaliidae
+47	28150: 	wyżerka	,325820: 	grub
+48	26799: 	arszyn	,357771: 	archine
+49	25746: 	winiarnia	,310472: 	wine bar
+50	8879: 	"ściana boczna"	,308195: 	sidewall
+51	21316: 	"druk offsetowy"	,320892: 	offset printing
+52	45949: 	czernina	,350752: 	Viccinium myrtillus
+53	29074: 	maoizm	,318479: 	Maoism
+54	252264: 	"leniwiec trójpalczasty"	,297834: 	Bradypus tridactylus
+55	383723: 	cewiak	,354637: 	genus Fistulina
+56	255532: 	"żbik europejski"	,295879: 	Felis silvestris
+57	259865: 	natrolit	,365929: 	natrolite
+58	227270: 	"lampa stołowa"	,309206: 	table lamp
+59	256636: 	"grzechotniczek pospolity"	,293829: 	Sistrurus catenatus
+60	403754: 	STD	,357920: 	dobra
+61	27985: 	meronim	,318867: 	part name
+62	5067: 	ojcostwo	,358815: 	paternity
+63	1594: 	marszałek	,342493: 	Speaker
+64	74134: 	diaskop	,308346: 	slide projector
+65	249726: 	lygodium	,354158: 	genus Lygodium
+66	32530: 	Sc	,363328: 	atomic number 21
+67	44861: 	epanalepsa	,323273: 	epanalepsis
+68	260250: 	szarańczowate	,296465: 	family Locustidae
+69	38542: 	smagliczka	,348953: 	genus Alyssum
+70	387861: 	hemimorfit	,363439: 	calamine
+71	45736: 	"karta choroby"	,319997: 	anamnesis
+72	27992: 	hiponimia	,358787: 	subordination
+73	42470: 	polówka	,301670: 	camp bed
+74	239479: 	posypka	,326077: 	sprinkles
+75	37481: 	synoptyk	,343375: 	weather forecaster
+76	19633: 	rotacja	,312794: 	rotation
+77	236572: 	serigrafia	,289599: 	serigraphy
+78	19474: 	akredytacja	,290637: 	accreditation
+79	15691: 	szew	,307881: 	seam
+80	18395: 	naczepa	,307945: 	semi
+81	102884: 	paleta	,306201: 	pallet
+82	102817: 	klęska	,325327: 	licking
+83	37410: 	"tkanka glejowa"	,314962: 	glia
+84	72264: 	"jastrząb wróblarz"	,293008: 	Accipiter nisus
+85	37010: 	dmuchacz	,339530: 	glassblower
+86	380787: 	"składowa harmoniczna"	,312495: 	harmonic
+87	47656: 	"przymiotno pomarańczowe"	,349427: 	Erigeron aurantiacus
+88	12585: 	"zbiornik retencyjny"	,307381: 	man-made lake
+89	257609: 	"wyżeł niemiecki krótkowłosy"	,295723: 	German short-haired pointer
+90	41473: 	kilokaloria	,358313: 	nutritionist's calorie
+91	79805: 	enancjomorfizm	,358900: 	mirror-image relation
+92	35868: 	podnóżek	,303234: 	tuffet
+93	389085: 	"fondue czekoladowe"	,327868: 	chocolate fondue
+94	390615: 	"padaczka skroniowa"	,360296: 	temporal lobe epilepsy
+95	38323: 	wyka	,352295: 	genus Vicia
+96	14434: 	harpun	,303932: 	harpoon
+97	20479: 	"złocień maruna"	,349705: 	Chrysanthemum parthenium
+98	234072: 	"system zarządzania relacyjną bazą danych"	,320381: 	relational database management system
+99	259500: 	sieweczkowate	,295266: 	family Charadriidae
+100	392730: 	niezliczoność	,358625: 	myriad
+101	36646: 	Dy	,363255: 	atomic number 66
+102	25908: 	czaplowate	,295178: 	family Ardeidae
+103	387678: 	"sansewieria gwinejska"	,351866: 	Sansevieria trifasciata
+104	25769: 	"modraszka zwyczajna"	,292928: 	Parus caeruleus
+105	43003: 	mrowisko	,329468: 	swarm
+106	76980: 	repelent	,364835: 	repellant
+107	241666: 	prohibicjonista	,338960: 	prohibitionist
+108	15553: 	"przyrost naturalny"	,357174: 	population growth
+109	34456: 	spluwaczka	,308626: 	cuspidor
+110	383947: 	"grypa świń"	,360471: 	swine flu
+111	18881: 	B	,358232: 	B
+112	30581: 	dżonka	,304570: 	junk
+113	25848: 	"chronometr okrętowy"	,301171: 	chronometer
+114	46780: 	"ciąża wieloraka"	,360074: 	para
+115	35515: 	mejoza	,357057: 	reduction division
+116	391908: 	wymiernik	,359050: 	standard of measurement
+117	27131: 	rolmops	,327315: 	rollmops
+118	45531: 	eksplozywność	,312607: 	chemical property
+119	49236: 	"pole minowe"	,331072: 	minefield
+120	12913: 	rekin	,292362: 	Lamna nasus
+121	5250: 	rondo	,309729: 	roundabout
+122	233131: 	"zestaw konstrukcyjny"	,305381: 	Meccano set
+123	260309: 	nocówkowate	,293410: 	family Xantusiidae
+124	389284: 	drakunkulus	,348562: 	genus Dracunculus
+125	256522: 	"sikora dwubarwna"	,292926: 	Parus bicolor
+126	48799: 	"szwadron śmierci"	,329553: 	death squad
+127	246174: 	nieprawdopodobność	,362435: 	inconceivableness
+128	40235: 	sygmatyzm	,362017: 	lisp
+129	395605: 	"kwas adypinowy"	,363139: 	adipic acid
+130	14677: 	nocnik	,301024: 	thunder mug
+131	390945: 	"pochrzyn trójdzielny"	,350002: 	Dioscorea trifida
+132	232275: 	"jednostka alokacji"	,357621: 	allocation unit
+133	15111: 	somnambulik	,342378: 	noctambulist
+134	397484: 	izmailita	,340071: 	Ismailian
+135	38458: 	łasuch	,339538: 	trencherman
+136	384364: 	cynwaldyt	,365937: 	zinnwaldite
+137	77259: 	paraplegia	,362844: 	paraplegia
+138	40782: 	chana	,300766: 	caravan inn
+139	261597: 	"ligustr pospolity"	,351042: 	Ligustrum vulgare
+	show biz
+140 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+13628	0.960086	0.972216		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+12 14 13 11 10 10 9 10 10 11 9 13 10 9 10 14 12 8 13 12 10 10 10 13 14 12 10 10 10 10 12 9 14 11 12 14 9 9 22 11 10 10 12 10 10 11 19 9 12 11 9 15 10 13 9 10 9 10 11 12 11 10 15 13 11 11 11 11 22 9 12 11 13 11 8 16 11 17 12 8 12 10 10 11 11 15 7 10 9 12 12 12 9 10 11 10 9 10 10 19 9 11 18 11 11 11 9 14 12 10 11 13 10 13 14 13 11 11 12 11 10 9 8 22 10 11 11 11 13 12 10 10 12 13 14 14 12 11 12 12 
+najlepszy - 70179: 	panicle
+19 17 20 19 17 16 20 18 19 18 14 19 22 20 15 20 21 17 18 13 19 18 23 16 14 18 21 15 19 16 16 14 15 12 19 19 17 15 19 13 21 16 19 21 14 17 19 14 18 17 14 18 17 20 19 19 17 15 15 21 19 16 16 15 16 19 15 19 19 20 14 20 17 16 12 16 19 21 21 15 14 14 18 10 18 16 18 16 15 18 18 18 16 14 19 20 14 15 21 19 17 15 19 17 19 18 15 15 14 14 19 18 17 17 19 15 17 14 16 15 20 15 12 19 19 19 20 19 20 17 14 16 18 15 15 16 15 21 15 17 
+prawdziwy - 25687: 	show-business
+13 15 18 15 13 16 18 16 17 14 10 15 16 16 12 14 19 14 14 11 13 16 19 14 12 14 19 8 17 14 8 10 13 13 13 15 11 13 15 11 15 14 15 19 6 12 15 12 14 11 8 11 15 16 17 15 15 11 9 19 15 11 11 13 6 15 10 13 15 16 10 14 12 10 13 14 15 15 17 9 8 10 14 12 16 14 14 14 13 16 14 13 10 14 18 16 8 13 15 15 13 10 15 15 17 14 10 13 11 8 16 14 11 5 15 12 13 15 12 13 18 13 8 15 15 17 16 15 16 12 8 14 14 13 13 14 11 19 11 15 
+0.972216
+	show biz
+1
+markery: 
+0	26523: 	sulfan	,364790: 	hydrogen sulfide
+1	36763: 	doksologia	,322937: 	doxology
+2	76354: 	seryna	,365432: 	serine
+3	254484: 	"żywotnik olbrzymi"	,347874: 	Thuja plicata
+4	250683: 	merzyk	,347566: 	genus Mnium
+5	41200: 	"ogniwo termoelektryczne"	,309453: 	thermocouple junction
+6	261701: 	bobroszczury	,297084: 	genus Hydromys
+7	29046: 	wilczomlecz	,353964: 	genus Euphorbia
+8	24749: 	sarong	,307734: 	sarong
+9	31236: 	rzęska	,292230: 	cilium
+10	35991: 	"uraz psychiczny"	,361347: 	psychic trauma
+11	33083: 	mezalians	,359648: 	mesalliance
+12	47253: 	"zimna krew"	,312039: 	sang-froid
+13	27057: 	hieroglif	,319430: 	hieroglyphic
+14	23407: 	arywista	,338140: 	career man
+15	16914: 	końcówka	,358802: 	remnant
+16	250962: 	"suseł północny"	,297223: 	Citellus parryi
+17	231473: 	nabijacz	,340377: 	loader
+18	397377: 	włochacz	,308010: 	shag
+19	385918: 	akrylan	,365293: 	acrylate
+20	250090: 	zanokcicowate	,355234: 	family Aspleniaceae
+21	250437: 	rozgwiazdy	,296986: 	class Asteroidea
+22	233439: 	"koń z łękami"	,306805: 	side horse
+23	388556: 	sierpodudek	,294213: 	wood hoopoe
+24	381988: 	pleszczotka	,348974: 	genus Biscutella
+25	18419: 	kipiel	,324594: 	breakers
+26	7768: 	"orkiestra dęta"	,329791: 	brass band
+27	20687: 	"ułamek właściwy"	,358369: 	proper fraction
+28	12777: 	szelest	,324853: 	whispering
+29	19122: 	gitarzysta	,339667: 	guitar player
+30	229193: 	Humvee	,304256: 	Hum-Vee
+31	392786: 	bateria	,328424: 	battery
+32	248034: 	rozstrzygnięcie	,316589: 	closure
+33	26929: 	przekomarzanie	,321408: 	backchat
+34	249653: 	poprawka	,321138: 	amendment
+35	73476: 	tylnica	,308846: 	sternpost
+36	15454: 	eliksir	,364371: 	elixir
+37	382667: 	"tasznik pospolity"	,349007: 	Capsella bursa-pastoris
+38	381623: 	"gołąb skalny"	,294103: 	Columba livia
+39	262044: 	tag	,324219: 	tag
+40	400115: 	"węzeł babski"	,303668: 	granny
+41	78965: 	"dziwaczek peruwiański"	,348817: 	Mirabilis uniflora
+42	26591: 	kontrafagot	,301568: 	double bassoon
+43	32714: 	spacja	,321763: 	blank
+44	33536: 	pterodaktyl	,293634: 	pterodactyl
+45	37385: 	wigonia	,297722: 	Vicugna vicugna
+46	26685: 	szewstwo	,287924: 	cobbling
+47	14952: 	hurtownik	,340105: 	wholesaler
+48	36646: 	Dy	,363255: 	atomic number 66
+49	382020: 	"kapusta właściwa chińska"	,348995: 	Brassica rapa pekinensis
+50	73203: 	cymbalista	,338671: 	cymbalist
+51	48714: 	"tajemnica spowiedzi"	,313478: 	priest-penitent privilege
+52	74714: 	fitofag	,291576: 	herbivore
+53	28094: 	"tanie wino"	,328062: 	plonk
+54	25903: 	"głuptak biały"	,295447: 	gannet
+55	17559: 	dywetyna	,309035: 	suede
+56	25934: 	"biegus zmienny"	,295289: 	Erolia alpina
+57	23680: 	kreskówka	,320538: 	toon
+58	13598: 	cysterna	,309262: 	storage tank
+59	35991: 	"uraz psychiczny"	,361347: 	psychic trauma
+60	103998: 	"energia jądrowa"	,346942: 	nuclear energy
+61	27785: 	koszyczek	,354986: 	head
+62	31831: 	szacowanie	,289221: 	computing
+63	46061: 	protrombina	,365713: 	factor II
+64	40380: 	latimeria	,298161: 	Latimeria chalumnae
+65	47975: 	"gorąca linia"	,304221: 	hot line
+66	78646: 	strunogłowe	,292278: 	subphylum Cephalochordata
+67	20617: 	piżmowół	,297551: 	Ovibos moschatus
+68	73240: 	przylaszczka	,348318: 	liverleaf
+69	22547: 	glosator	,339537: 	glossarist
+70	21836: 	niewierność	,288674: 	venial sin
+71	248122: 	jiao	,358207: 	jiao
+72	388954: 	"skórno-śluzówkowy zespół węzłów chłonnych"	,360226: 	mucocutaneous lymph node syndrome
+73	7527: 	gr	,358214: 	grosz
+74	227243: 	angiolog	,337526: 	angiologist
+75	393489: 	"zaćma jądrowa"	,361163: 	nuclear cataract
+76	12864: 	jaguar	,295903: 	Felis onca
+77	73974: 	karylion	,300796: 	carillon
+78	23767: 	parabola	,319263: 	parable
+79	25104: 	prenumerata	,355774: 	subscription
+80	231976: 	"stały klient"	,341821: 	fixture
+81	249862: 	"pingwin toniec"	,295471: 	Spheniscus demersus
+82	32713: 	hioscyna	,307820: 	hyoscine
+83	18559: 	"jabłoń rajska"	,352590: 	Malus pumila
+84	75332: 	durian	,327177: 	durian
+85	257991: 	macho	,310870: 	machismo
+86	227618: 	"samolot typu delta"	,302046: 	delta wing
+87	10869: 	nieśmiertelność	,312845: 	immortality
+88	383787: 	pia	,357994: 	pya
+89	13653: 	magistrala	,305227: 	main line
+90	76888: 	skrzypłocze	,293945: 	order Xiphosura
+91	383257: 	"rzęsa drobna"	,348599: 	Lemna minor
+92	227273: 	"lampa biurkowa"	,308991: 	student lamp
+93	27221: 	"tekst poboczny"	,321467: 	stage direction
+94	29824: 	pruderyjność	,312023: 	Grundyism
+95	54262: 	azymut	,359271: 	AZ
+96	16292: 	"harmonijka ustna"	,303926: 	mouth harp
+97	31734: 	świętopietrze	,355715: 	Peter's pence
+98	260248: 	prostoskrzydłe	,296462: 	order Orthoptera
+99	73128: 	hortensjowate	,353341: 	hydrangea family
+100	235354: 	"tłocznia wina"	,310478: 	winepress
+101	381541: 	"runianka japońska"	,353139: 	Pachysandra terminalis
+102	236535: 	"dzbanek do herbaty"	,309325: 	teapot
+103	35844: 	pszczelarz	,337824: 	apiculturist
+104	13218: 	reemigrant	,341842: 	repatriate
+105	77750: 	serwer	,307965: 	host
+106	39759: 	"kajman krokodylowy"	,293501: 	Caiman sclerops
+107	45823: 	"wkładka do butów"	,304395: 	innersole
+108	54258: 	"podkład kolejowy"	,309530: 	sleeper
+109	41511: 	koksiak	,300358: 	brasier
+110	19795: 	tantiema	,355640: 	royalty
+111	71904: 	"cisza nocna"	,366313: 	curfew
+112	32856: 	klinicysta	,338337: 	clinician
+113	242240: 	RWF	,357945: 	Rwanda franc
+114	8315: 	"państwo totalitarne"	,329655: 	totalitation regime
+115	71527: 	"kopytnik pospolity"	,348638: 	Asarum europaeum
+116	19818: 	wypaczenie	,362549: 	warp
+117	257918: 	ostrołódka	,352194: 	genus Oxytropis
+118	31954: 	girlaska	,338290: 	chorine
+119	18803: 	miecznik	,295550: 	Orcinus orca
+120	21146: 	"ślub cywilny"	,290095: 	civil marriage
+121	14091: 	meteorologia	,318054: 	meteorology
+122	40751: 	rymokleta	,341880: 	poetiser
+123	19301: 	desygnacja	,285528: 	nomination
+124	22556: 	mag	,340461: 	magus
+125	8624: 	"źródło energii"	,347086: 	energy
+126	11146: 	okoń	,298374: 	perch
+127	257081: 	"paka górska"	,297271: 	mountain paca
+128	78441: 	kiryśniki	,298187: 	family Laricariidae
+129	6614: 	rektor	,341626: 	provost
+130	396905: 	"kort tenisowy"	,309389: 	tennis court
+131	18215: 	komuna	,330435: 	commune
+132	3431: 	szyja	,315346: 	cervix
+133	21896: 	"pstrąg potokowy"	,298282: 	Salmo trutta
+134	234887: 	"olimpiada zimowa"	,325211: 	Winter Olympics
+135	33889: 	mikrosekunda	,366634: 	microsecond
+136	32026: 	"rdzawiec pacyficzny"	,298203: 	Gadus merlangus
+137	260903: 	pachycefalozaur	,293522: 	pachycephalosaurus
+138	249774: 	skalirzęs	,354138: 	genus Trichomanes
+139	22436: 	"yerba mate"	,328277: 	mate
+140	41353: 	porowatość	,312219: 	porousness
+141	80696: 	krokomierz	,306363: 	pedometer
+142	231212: 	głowa	,357786: 	head
+143	229129: 	trójpokładowiec	,309487: 	three-decker
+144	259863: 	"siewka złota"	,295273: 	golden plover
+145	244473: 	stupa	,309008: 	tope
+146	44193: 	rektorstwo	,287821: 	rectorate
+147	74075: 	"żółwie trójpazurzaste"	,293349: 	family Trionychidae
+148	382427: 	nimfa	,294147: 	Nymphicus hollandicus
+149	387608: 	sulfonian	,363167: 	sulfonate
+	show biz
+150 markerow, 	show biz
+pozycja: 	wartosc	max_cos	najlepszy	prawdziwy
+18271	0.963624	0.975869		panicle		show-business
+wektory: 
+szukany - 328924: 	show biz
+10 13 12 12 10 9 21 10 9 9 12 15 12 9 12 5 10 13 11 11 18 17 11 10 9 11 12 9 13 14 11 10 9 13 10 9 10 10 10 10 11 11 13 11 10 8 13 13 11 11 13 11 8 12 11 11 12 13 10 12 15 10 17 10 10 13 15 9 10 15 11 12 9 12 15 13 10 10 10 10 13 10 11 11 10 12 12 14 12 10 20 9 10 11 15 9 12 12 20 16 11 11 11 15 15 11 13 9 9 10 11 12 13 12 13 10 12 10 16 8 12 15 11 12 12 9 10 9 14 13 11 11 8 11 14 12 10 11 11 11 12 10 12 10 10 10 14 18 11 11 
+najlepszy - 70179: 	panicle
+16 18 16 19 19 16 19 20 15 15 18 21 19 17 16 15 20 16 12 16 19 18 16 17 20 19 19 21 18 16 15 16 19 18 17 15 14 16 18 19 18 18 19 19 19 19 20 17 15 16 17 22 13 16 19 12 20 15 14 18 17 7 19 18 18 14 18 18 15 16 21 19 17 19 17 17 18 16 20 19 17 20 15 19 8 17 18 19 19 14 19 16 16 17 20 14 16 20 19 18 15 18 15 15 15 15 19 19 15 14 19 17 16 19 19 16 20 20 16 22 22 22 15 21 16 16 19 18 19 17 17 17 14 18 19 16 20 21 19 14 17 15 18 16 20 15 20 19 17 16 
+prawdziwy - 25687: 	show-business
+11 14 12 17 15 4 15 16 11 15 14 17 15 11 14 10 18 14 8 11 15 14 9 15 16 14 15 17 15 14 9 12 15 12 11 9 11 14 16 12 10 16 11 12 17 17 14 15 10 14 15 16 11 13 17 8 18 11 7 14 14 11 13 13 16 8 14 16 13 14 15 15 14 15 15 14 16 8 14 15 15 18 12 17 13 13 11 15 15 12 15 14 10 11 16 12 8 16 15 16 7 16 9 13 13 7 17 17 7 6 15 13 14 15 15 14 16 16 14 20 16 18 13 15 14 13 17 16 15 15 15 13 14 16 15 12 18 19 15 11 13 3 14 10 18 11 14 15 15 11 
+0.975869
+	show biz
+1
+markery: 
+0	381802: 	"chrzan pospolity"	,348967: 	horseradish root
+1	25389: 	cabernet	,328051: 	Cabernet Sauvignon
+2	39041: 	workowce	,294421: 	order Marsupialia
+3	257216: 	whippet	,295667: 	whippet
+4	396370: 	"canapé à confidents"	,305115: 	vis-a-vis
+5	227364: 	"światło przeciwmgielne przednie"	,303199: 	foglamp
+6	28572: 	teodycea	,318322: 	theodicy
+7	18498: 	gil	,292574: 	Pyrrhula pyrrhula
+8	386956: 	"błyszcz molibdenu"	,363462: 	molybdenite
+9	40177: 	siatkówczak	,361137: 	retinoblastoma
+10	5094: 	styczeń	,366481: 	Jan
+11	18026: 	jęczenie	,323418: 	moan
+12	80866: 	fraktal	,317282: 	fractal
+13	25885: 	gazomierz	,303490: 	gasometer
+14	38648: 	"wiersz aleksandryjski"	,319137: 	Alexandrine
+15	232919: 	bagatela	,287271: 	bar billiards
+16	45943: 	borówka	,327053: 	blueberry
+17	79568: 	TSH	,365731: 	TSH
+18	251906: 	"krety workowate"	,294488: 	family Notoryctidae
+19	71623: 	opolnik	,292739: 	wheatear
+20	33579: 	efektor	,314082: 	effector
+21	262783: 	"języki drawidyjskie"	,322603: 	Dravidian language
+22	241115: 	humanitarysta	,339924: 	humanitarian
+23	254450: 	jaskólak	,293023: 	Elanoides forficatus
+24	32569: 	wikłacz	,292628: 	weaver finch
+25	73307: 	araliowate	,348608: 	ivy family
+26	14553: 	"szach i mat"	,285547: 	mate
+27	14643: 	czajnik	,309322: 	teakettle
+28	74782: 	paramagnetyzm	,347238: 	paramagnetism
+29	256739: 	"szeflera promieniolistna"	,348626: 	Brassaia actinophylla
+30	71383: 	"grzyby podstawkowe"	,354368: 	subdivision Basidiomycotina
+31	27265: 	"doktor honoris causa"	,321039: 	honoris causa
+32	391314: 	darjeeling	,328330: 	Darjeeling
+33	231981: 	abΩ	,357740: 	abohm
+34	25497: 	"ślepota zmierzchowa"	,362815: 	moon blindness
+35	251839: 	prakolczatka	,294414: 	anteater
+36	229304: 	wagonik	,309742: 	tram
+37	392145: 	poszczęk	,324787: 	clatter
+38	34313: 	biomasa	,363477: 	biomass
+39	26125: 	amfora	,299245: 	amphora
+40	16791: 	kL	,357612: 	cubic metre
+41	6619: 	kompatriota	,338579: 	countryman
+42	227257: 	"laboratorium fizyczne"	,306500: 	physics laboratory
+43	44864: 	bezstylowość	,311591: 	homeliness
+44	13163: 	mleczarz	,340680: 	milkman
+45	249280: 	DKK	,357980: 	krone
+46	105801: 	"koszt alternatywny"	,355924: 	opportunity cost
+47	391933: 	kubek	,358568: 	mugful
+48	31044: 	filatelista	,341303: 	stamp collector
+49	73707: 	prognatyzm	,362965: 	prognathism
+50	382046: 	"mklik próchniczek"	,296837: 	Ephestia elutella
+51	29222: 	chedyw	,340153: 	Khedive
+52	233402: 	putter	,307080: 	putting iron
+53	391943: 	solicytacja	,323734: 	solicitation
+54	43321: 	lubaszka	,327104: 	damson plum
+55	11151: 	ość	,297892: 	fishbone
+56	254202: 	lądzieniowate	,293906: 	family Trombidiidae
+57	87153: 	"cielenie się"	,356708: 	calving
+58	403774: 	pesewa	,357851: 	pesewa
+59	255816: 	"sęp kasztanowaty"	,293075: 	Aegypius monachus
+60	74059: 	dropie	,295244: 	family Otididae
+61	383814: 	lignina	,364933: 	lignin
+62	254540: 	narwalowate	,295555: 	family Monodontidae
+63	258857: 	bujankowate	,296285: 	family Bombyliidae
+64	50712: 	"Międzynarodowy Układ Jednostek Miar"	,357380: 	International System
+65	396370: 	"canapé à confidents"	,305115: 	vis-a-vis
+66	3162: 	"spółka z ograniczoną odpowiedzialnością"	,329475: 	Ld.
+67	14174: 	żółć	,314660: 	gall
+68	13870: 	chrzan	,348965: 	genus Armoracia
+69	13826: 	strzemiączko	,308943: 	shoulder strap
+70	12456: 	podokiennik	,310462: 	windowsill
+71	71787: 	różowate	,352518: 	rose family
+72	39038: 	stekowce	,294408: 	order Monotremata
+73	381088: 	"balsamka pospolita"	,350401: 	Momordica balsamina
+74	231226: 	BTU	,358314: 	B.Th.U.
+75	255541: 	łuszczydłowce	,355443: 	order Lepidodendrales
+76	18895: 	kolt	,301451: 	Colt
+77	42430: 	synchronizator	,309183: 	synchromesh
+78	79540: 	ACTH	,314666: 	corticotrophin
+79	35941: 	dekarstwo	,287925: 	roofing
+80	39681: 	łącznica	,309170: 	plugboard
+81	395160: 	sedacja	,361377: 	sedation
+82	31467: 	melanina	,363864: 	melanin
+83	20821: 	"kwas moczowy"	,365803: 	uric acid
+84	14375: 	karton	,300833: 	carton
+85	384065: 	"choroba bornholmska"	,361591: 	Bornholm disease
+86	388845: 	"trądzik młodzieńczy"	,360973: 	acne vulgaris
+87	48973: 	"pamięć krótkotrwała"	,316451: 	immediate memory
+88	262741: 	enterokinaza	,364420: 	enterokinase
+89	262295: 	przegrzebkowate	,294941: 	family Pectinidae
+90	257078: 	anyż	,354091: 	Pimpinella anisum
+91	11540: 	margrabia	,340544: 	marquess
+92	233806: 	"mikrofon elektrostatyczny"	,301527: 	capacitor mike
+93	385157: 	dennik	,298907: 	Liparis liparis
+94	13952: 	baryton	,337772: 	barytone
+95	20049: 	maszynopis	,319357: 	typescript
+96	42556: 	"torebka włosowa"	,315204: 	hair follicle
+97	16184: 	humanizm	,330907: 	humanism
+98	23855: 	dossier	,319927: 	dossier
+99	28961: 	przemyślenie	,321352: 	reflexion
+100	47694: 	"wata cukrowa"	,326082: 	candyfloss
+101	17607: 	wodolot	,304276: 	hydroplane
+102	74109: 	snowboardzista	,342421: 	snowboarder
+103	399257: 	chronologia	,358995: 	chronology
+104	229794: 	"statek wycieczkowy"	,301836: 	cruise liner
+105	238450: 	malakolog	,340481: 	malacologist
+106	236975: 	kalka	,365749: 	tracing paper
+107	33470: 	pointylizm	,306774: 	pointillism
+108	11468: 	kurwiszcze	,338650: 	bitch
+109	11067: 	groch	,352221: 	genus Pisum
+110	384368: 	żaglonowate	,298322: 	genus Alepisaurus
+111	390819: 	"gorączka dum-dum"	,360740: 	dumdum fever
+112	37866: 	rozpuszczalność	,313626: 	solubility
+113	229136: 	"podwodny statek badawczy"	,299559: 	auxiliary research submarine
+114	74636: 	szanta	,323027: 	shanty
+115	77546: 	midrasz	,321335: 	Midrash
+116	36161: 	natręctwo	,316148: 	fixation
+117	20595: 	"wyraz pokrewny"	,318843: 	cognate word
+118	390914: 	kauzalgia	,361554: 	causalgia
+119	18932: 	jurta	,310608: 	yurt
+120	37947: 	szantung	,308018: 	shantung
+121	2748: 	kontyngent	,355828: 	quota
+122	22549: 	interpretator	,320308: 	interpretive program
+123	34852: 	libella	,321124: 	libel
+124	79219: 	kleszczotki	,293855: 	order Pseudoscorpiones
+125	249303: 	kobo	,358032: 	kobo
+126	249298: 	TMT	,358147: 	manat
+127	251474: 	młotowate	,292419: 	family Sphyrnidae
+128	34501: 	pularda	,293981: 	pullet
+129	17089: 	grafik	,319896: 	timetable
+130	29598: 	synergizm	,357313: 	synergism
+131	5841: 	magister	,340564: 	master
+132	12588: 	ładowisko	,300789: 	storage area
+133	245527: 	E£	,358071: 	pound
+134	78751: 	kontroferta	,323615: 	counteroffer
+135	28935: 	kitnia	,348540: 	genus Anthurium
+136	73226: 	liliowate	,351602: 	lily family
+137	390818: 	splenomegalia	,361830: 	splenomegaly
+138	258041: 	"pasówka śpiewna"	,292589: 	Melospiza melodia
+139	18442: 	wartownica	,303747: 	guardroom
+140	255381: 	langustynka	,295042: 	Nephrops norvegicus
+141	31945: 	histamina	,314694: 	histamine
+142	72064: 	barramunda	,298168: 	Neoceratodus forsteri
+143	260251: 	"szarańcza wędrowna"	,296469: 	Locusta migratoria
+144	390100: 	szalotka	,326913: 	shallot
+145	395619: 	skarpeta	,324120: 	drogue
+146	390603: 	dekstrokardia	,360315: 	dextrocardia
+147	26545: 	kontralt	,321914: 	alto
+148	80434: 	stonkowate	,296132: 	family Chrysomelidae
+149	238122: 	"urządzenie wyjścia"	,306085: 	output device
+150	14896: 	mocodawca	,341426: 	policy maker
+151	250937: 	"zając amerykański"	,297047: 	Lepus americanus
+152	25731: 	"jezioro meandrowe"	,335258: 	oxbow lake
+153	257260: 	"hematoksylon kampechiański"	,351938: 	Haematoxylum campechianum
+154	385325: 	"wiąz drobnolistny"	,351522: 	Ulmus parvifolia
+155	76032: 	sitar	,308254: 	sitar
+156	13872: 	chrzan	,327568: 	horseradish
+157	258485: 	"amadyna zebrowata"	,292639: 	Poephila castanotis
+158	232834: 	dziewiątka	,305877: 	nine
+159	13339: 	kalesony	,305080: 	long johns
