@@ -296,10 +296,34 @@ int NodesFactory::dijkstra(int source, int target, int z, char lang) {
     return dist[target];
 }
 void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
-    int inf = 1000000000;
+    int inf = 1000;
     int* dist = new int[z];
-    int* prev = new int[z];
+    for (int i=0;i<z;++i){
+        dist[i]=inf;
+    }
     source = nodes_[source]->getIndex();
+    set<pair<int, int> > q;
+    q.insert(make_pair(0,source));
+    dist[source] = 0;
+    int juz=0;
+    int min,imin, in;
+    while (!q.empty()){
+        min=inf;
+        imin=-1;
+        pair<int, int> top = *q.begin();
+        min=top.first;
+        imin=top.second;
+        q.erase(q.begin());
+        for (vector<int>::iterator it=dzieci[imin].begin();it != dzieci[imin].end(); ++it){
+            in = *it;
+            if (dist[imin] + 1 < dist[in]){
+                dist[in] = dist[imin]+1;
+                q.insert(make_pair(dist[in],in));
+            }
+        }
+    }
+
+    //stary kod
     int min=inf, imin=0, key, index;
     for (int i=0;i<z;++i){
         dist[i]=inf;

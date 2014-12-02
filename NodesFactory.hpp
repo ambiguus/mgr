@@ -11,6 +11,8 @@
 #include <iterator>
 #include <cmath>
 #include <ctime>
+#include <algorithm>
+#include <set>
 
 class NodesFactory{
 public:
