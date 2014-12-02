@@ -10,6 +10,7 @@
 #include <stack>
 #include <iterator>
 #include <cmath>
+#include <ctime>
 
 class NodesFactory{
 public:

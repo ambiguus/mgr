@@ -440,44 +440,6 @@ void NodesFactory::countCos(int i) {
     std::cout<<std::endl;
     std::cout<<distance(paths_en_[mkey], paths_pl_[index], markers_count_)<<std::endl;
 }
-void NodesFactory::countAvgCos() { //cos tu nie bangla - pamięć pada
-    int *v = new int[markers_count_];
-    int trans, index, trans_pos, trans_in, i, count=0, avg=0;
-    double cos, tcos, mcos = -10.0;
-    for (int ii=0; ii<count_pl_; ++ii) {
-        i = keys_pl_[ii];
-        if (nodes_[i]->getInMax()) {
-            trans = nodes_[i]->getLinksTrans();
-            index = ii;
-            for (int j = 0; j < markers_count_; ++j) {
-                v[j] = paths_pl_[index][j];
-            }
-            mcos = -10.0;
-            trans_pos = 0;
-            trans_in = nodes_[trans]->getIndex();
-            tcos = cosine(v, paths_en_[trans_in], markers_count_);
-            if (isnan(tcos)) {
-                std::cout << "nan: " << trans_in << ", " << trans << std::endl;
-                std::cout << "slowo\ttrans\tmarkers" << std::endl;
-                for (int i = 0; i < markers_count_; ++i) {
-                    std::cout << v[i] << "\t" << paths_en_[trans_in][i] << "\t" << markers_en_[i] << std::endl;
-                }
-            }
-            for (int j = 0; j < count_en_; ++j) {
-                cos = cosine(v, paths_en_[j], markers_count_);
-                if (cos > tcos) {
-                    trans_pos++;
-                }
-                if (cos > mcos) {
-                    mcos = cos;
-                }
-            }
-            count++;
-            avg += trans_pos;
-        }
-    }
-    std::cout << markers_count_ << "\t"<<avg<< std::endl;
-}
 
 void NodesFactory::countSizeMax() {
     int comp;

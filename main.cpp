@@ -15,23 +15,20 @@ int main(int argc, char* argv[]) {
 
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
-//    nodes->printSample(342854);
     nodes->printSample(328924);
-//    nodes->printSample(284799);
-//    nodes->printSample(17285);
 //    nodes->printSample(33756); //domator
 //    std::cout<<nodes->dijkstra(17285, 33756, 111824, Node::pl)<<std::endl;
     nodes->countSizeMax();
     nodes->setMainComp();
-    int i = 25;
+    int i = 10;
     if (argc > 1){
         i = atoi(argv[1]);
     }
     nodes->setMarkersCount(i);
     nodes->setMarkers();
+
     nodes->countPaths();
     nodes->countCos(328924);
-//    nodes->countAvgCos();
     nodes->clearMarkers();
     delete nodes;
     return 0;
