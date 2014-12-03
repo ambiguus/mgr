@@ -3,6 +3,10 @@
 #include "NodesFactory.hpp"
 using namespace std;
 
+inline double interwal (const timespec &poczatek, const timespec &koniec)
+{
+    return (koniec.tv_sec + koniec.tv_nsec * 1e-9) - (poczatek.tv_sec + poczatek.tv_nsec * 1e-9);
+}
 int main(int argc, char* argv[]) {
     NodesFactory* nodes = new NodesFactory();
     nodes->addNodes("rzeczowniki_pl2.txt", Node::pl);
@@ -15,20 +19,19 @@ int main(int argc, char* argv[]) {
 
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
-    nodes->printSample(328924);
-//    nodes->printSample(33756); //domator
+//    nodes->printSample(328924);
+    nodes->printSample(33756); //domator
 //    std::cout<<nodes->dijkstra(17285, 33756, 111824, Node::pl)<<std::endl;
     nodes->countSizeMax();
     nodes->setMainComp();
-    int i = 10;
+    int i = 1000;
     if (argc > 1){
         i = atoi(argv[1]);
     }
     nodes->setMarkersCount(i);
     nodes->setMarkers();
-
     nodes->countPaths();
-    nodes->countCos(328924);
+    nodes->compareTopMarkers(20, 33756);
     nodes->clearMarkers();
     delete nodes;
     return 0;
