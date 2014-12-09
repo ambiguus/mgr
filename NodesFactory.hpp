@@ -47,6 +47,7 @@ public:
     void clearMarkers();
     void countAvgCos();
     double distance(int *v, int *u, int size);
+    void setMarkersBySource(int source);
     ~NodesFactory();
 
 protected:

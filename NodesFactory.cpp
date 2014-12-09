@@ -302,66 +302,32 @@ void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
         dist[i]=inf;
     }
     source = nodes_[source]->getIndex();
-    set<pair<int, int> > q;
-    q.insert(make_pair(0,source));
-    dist[source] = 0;
-    int juz=0;
-    int min,imin, in;
-    while (!q.empty()){
-        min=inf;
-        imin=-1;
-        pair<int, int> top = *q.begin();
-        min=top.first;
-        imin=top.second;
-        q.erase(q.begin());
-        for (vector<int>::iterator it=dzieci[imin].begin();it != dzieci[imin].end(); ++it){
-            in = *it;
-            if (dist[imin] + 1 < dist[in]){
-                dist[in] = dist[imin]+1;
-                q.insert(make_pair(dist[in],in));
-            }
-        }
-    }
-
-    //stary kod
-    int min=inf, imin=0, key, index;
-    for (int i=0;i<z;++i){
-        dist[i]=inf;
-        prev[i]=-1;
-    }
-    std::vector<int> q;
+    std::set<std::pair<int, int> > q;
     std::vector<int> nn;
-    q.push_back(source);
+    q.insert(std::make_pair(0,source));
     dist[source] = 0;
-    std::vector<int> s;
+    int min,imin, in, key;
     while (!q.empty()){
-        min=inf;
-        imin=0;
-        for (std::vector<int>::iterator it=q.begin();it != q.end(); ++it){
-            if (dist[*it] < min){
-                min = dist[*it];
-                imin = *it;
+            min=inf;
+            imin=-1;
+            std::pair<int, int> top = *q.begin();
+            min=top.first;
+            imin=top.second;
+            q.erase(q.begin());
+            if (lang == Node::pl){
+                key = keys_pl_[imin];
+            }else{
+                key = keys_en_[imin];
             }
-        }
-        q.erase(std::remove(q.begin(),q.end(), imin), q.end());
-        s.push_back(imin);
-        nn.clear();
-        if (lang == Node::pl){
-            key = keys_pl_[imin];
-        }else{
-            key = keys_en_[imin];
-        }
-        nn = nodes_[key]->getLinksInside();
-        for (std::vector<int>::iterator it=nn.begin();it != nn.end(); ++it){
-            index = nodes_[*it]->getIndex();
-            if (std::find(s.begin(), s.end(), index) == s.end()){ //nie zawiera
-                if (dist[imin] + 1 < dist[index]){
-                    dist[index] = dist[imin]+1;
-                    prev[index] = imin;
-                    q.push_back(index);
+            nn.clear();
+            nn = nodes_[key]->getLinksInside();
+            for (std::vector<int>::iterator it=nn.begin();it != nn.end(); ++it){
+                in = nodes_[*it]->getIndex();
+                if (dist[imin] + 1 < dist[in]){
+                    dist[in] = dist[imin]+1;
+                    q.insert(std::make_pair(dist[in],in));
                 }
             }
-        }
     }
     if (lang == Node::pl){
         for (int i=0;i<z;++i){
@@ -512,6 +478,69 @@ double NodesFactory::distance(int *v, int *u, int size) {
 void NodesFactory::printSample(int id){
     std::cout<<nodes_[id]->getSample()<<std::endl;
     std::cout<<nodes_[id]->getComp()<<std::endl;
+}
+void NodesFactory::setMarkersBySource(int source) {
+    char lang = nodes_[source]->getLang();
+    int z;
+    if (lang == Node::pl){
+        z = count_pl_;
+    }else{
+        z = count_en_;
+    }
+    int inf = 1000;
+    int* dist = new int[z];
+    for (int i=0;i<z;++i){
+        dist[i]=inf;
+    }
+    source = nodes_[source]->getIndex();
+    std::set<std::pair<int, int> > q;
+    std::vector<int> nn;
+    q.insert(std::make_pair(0,source));
+    dist[source] = 0;
+    int min,imin, in, key;
+    std::pair<int, int> top;
+    while (!q.empty()){
+        min=inf;
+        imin=-1;
+        top = *q.begin();
+        min=top.first;
+        imin=top.second;
+        q.erase(q.begin());
+        if (lang == Node::pl){
+            key = keys_pl_[imin];
+        }else{
+            key = keys_en_[imin];
+        }
+        nn.clear();
+        nn = nodes_[key]->getLinksInside();
+        for (std::vector<int>::iterator it=nn.begin();it != nn.end(); ++it){
+            in = nodes_[*it]->getIndex();
+            if (dist[imin] + 1 < dist[in]){
+                dist[in] = dist[imin]+1;
+                q.insert(std::make_pair(dist[in],in));
+            }
+        }
+    }
+    std::set<std::pair<int, int> > path;
+    for (int i=0;i<z;++i){
+        path.insert(std::make_pair(dist[i], i));
+    }
+    std::vector<int> marks;
+    int kk, cc=0;
+    while (cc < markers_count_){
+        top = *path.begin();
+        path.erase(path.begin());
+        if (lang == Node::pl){
+            kk = keys_pl_[top.second];
+        }else{
+            kk = keys_en_[top.second];
+        }
+        if (nodes_[kk]->getMain()){
+            marks.push_back(kk);
+            std::cout<<top.first<<std::endl;
+            cc++;
+        }
+    }
 }
 void NodesFactory::clearMarkers() {
     delete markers_en_;
