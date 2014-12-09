@@ -37,6 +37,8 @@ public:
     void addRanking(double v);
     void addTransCos(double v);
     int getTransPos(); //szuka pozycji tlumaczenia w rankingu
+    void addRating(int n);
+    double divRating(int n);
     ~Node();
 //    int* getLoc(NodesFactory::NodesFactory &factory);
 //    int* countLoc(NodesFactory::NodesFactory &factory);
@@ -58,6 +60,6 @@ protected:
     int index_;
     int best_i_, trans_pos_;
     double trans_cos_;
-
+    double rating_;
 };
 #endif
