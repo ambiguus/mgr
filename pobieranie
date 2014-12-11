@@ -5,8 +5,8 @@ select * from relationtypes;
 select * from lexicalrelations where relation = 209;
 select count(*), parent from synsetrelations where relation=173 group by parent limit 1000000000;
 select count(*) from synset where pos="rzeczownik";
-select * from synset where id=363639;
-select * from synsetrelations where relation=173 and parent=299507;
+select * from synset where pos="rzeczownik";
+select * from synsetrelations where relation=10 and child=1027;
 299342, 363639,305746,299320,365485
 6692
 6231

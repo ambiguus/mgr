@@ -10,3 +10,5 @@ ranking*
 *.svg
 skrypt*
 paths/
+plain
+*.gnumeric
