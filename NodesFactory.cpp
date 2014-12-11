@@ -43,6 +43,11 @@ void NodesFactory::addNodes(std::string nazwa, char lang){
     }
 //    std::cout<<"cPl: "<<cPl<<std::endl;
 //    std::cout<<"cEn: "<<cEn<<std::endl;
+    if (lang == Node::pl){
+        count_pl_ = cPl;
+    }else{
+        count_en_ = cEn;
+    }
     file.close();
 }
 void NodesFactory::addLinksInside(std::string nazwa){
@@ -535,10 +540,76 @@ void NodesFactory::setMarkersBySource(int source) {
         }else{
             kk = keys_en_[top.second];
         }
-        if (nodes_[kk]->getMain()){
+        if (nodes_[kk]->getMain() && top.second != source){
             marks.push_back(kk);
-            std::cout<<top.first<<std::endl;
+            std::cout<<top.first<<nodes_[kk]->getSample()<<std::endl;
             cc++;
+        }
+    }
+    int last = top.first;
+    top = *path.begin();
+    while (top.first == last){
+        path.erase(path.begin());
+        if (lang == Node::pl){
+            kk = keys_pl_[top.second];
+        }else{
+            kk = keys_en_[top.second];
+        }
+        if (nodes_[kk]->getMain() && top.second != source){
+            marks.push_back(kk);
+            std::cout<<top.first<<nodes_[kk]->getSample()<<std::endl;
+            cc++;
+        }
+        top = *path.begin();
+    }
+    markers_count_=cc;
+    markers_pl_ = new int[markers_count_];
+    markers_en_ = new int[markers_count_];
+    if (lang == Node::pl){
+        for (int i=0;i<markers_count_; ++i){
+            markers_pl_[i] = kk;
+            markers_en_[i] = nodes_[kk]->getLinksTrans();
+        }
+    }else{
+        for (int i=0; i<markers_count_; ++i){
+            markers_en_[i] = kk;
+            markers_pl_[i] = nodes_[kk]->getLinksTrans();
+        }
+    }
+}
+void NodesFactory::countPathsLang(char lang) {
+    if (lang == Node::en) {
+        paths_en_ = new int *[count_en_];
+        for (int i = 0; i < count_en_; ++i) {
+            paths_en_[i] = new int[markers_count_];
+            for (int j = 0; j < markers_count_; ++j) {
+                paths_en_[i][j] = -1;
+            }
+        }
+        for (int j=0;j<markers_count_;++j){
+            dijkstraFrom(markers_en_[j],count_en_, Node::en,j);
+        }
+    }else {
+        paths_pl_ = new int *[count_pl_];
+        for (int i = 0; i < count_pl_; ++i) {
+            paths_pl_[i] = new int[markers_count_];
+            for (int j = 0; j < markers_count_; ++j) {
+                paths_pl_[i][j] = -1;
+            }
+        }
+        for (int j = 0; j < markers_count_; ++j) {
+            dijkstraFrom(markers_pl_[j], count_pl_, Node::pl, j);
+        }
+    }
+}
+void NodesFactory::getRankingLang(char lang) {
+    int kk;
+    if (lang == Node::pl){
+        for (int i=0; i<count_pl_;++i){
+            kk = keys_pl_[i];
+            if (nodes_[kk]->getInMax()){
+                
+            }
         }
     }
 }

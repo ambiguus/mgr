@@ -48,6 +48,8 @@ public:
     void countAvgCos();
     double distance(int *v, int *u, int size);
     void setMarkersBySource(int source);
+    void countPathsLang(char lang); // lang - jezyk, w ktorym liczymy sciezki
+    void getRankingLang(char lang);
     ~NodesFactory();
 
 protected:
