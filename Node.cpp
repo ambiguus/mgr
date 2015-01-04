@@ -1,12 +1,10 @@
 #include "Node.hpp"
 Node::Node():id_(0),lang_(Node::pl), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
-    rating_ = 0;
+
 }
 Node::Node(int id, char lang):id_(id),lang_(lang), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
-    rating_ = 0;
 }
 Node::Node(int id, char lang, std::string sample):id_(id),lang_(lang), sample_(sample), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
-    rating_ = 0;
 }
 char Node::getLang(){
     return lang_;
@@ -97,13 +95,6 @@ void Node::addTransCos(double v) {
 }
 int Node::getTransPos() {
     return trans_pos_;
-}
-void Node::addRating(int n){
-    rating_ += n;
-}
-double Node::divRating(int n){
-    rating_ = (double)rating_/n;
-    return rating_;
 }
 //int* getLoc(NodesFactory &factory){}
 //int* countLoc(NodesFactory &factory);
