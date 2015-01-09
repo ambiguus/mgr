@@ -1,10 +1,13 @@
 #include "Node.hpp"
 #include "NodesFactory.hpp"
 
+//construct
 NodesFactory::NodesFactory():markers_count_(10), max_comp_pl_(-1), max_comp_en_(-1){
         count_en_ = 82192; //liczba angielskich
         count_pl_ = 111824; //liczba polskich
 }
+
+//addNodes - dodaje węzły do sieci - czyta z pliku w formacie: id (tab) przykladowe_slowo
 void NodesFactory::addNodes(std::string nazwa, char lang){
     int id, cPl=0, cEn=0;
     std::string sample;
@@ -27,6 +30,8 @@ void NodesFactory::addNodes(std::string nazwa, char lang){
     count_pl_ = cPl;
     file.close();
 }
+
+//addLinksInside - dodaje linki pomiędzy węzłami wewnątrz sieci jednego języka - czyta z pliku w formacie: id1 (\t) id2
 void NodesFactory::addLinksInside(std::string nazwa){
     int id1, id2;
     std::ifstream file (nazwa.c_str());
@@ -42,6 +47,8 @@ void NodesFactory::addLinksInside(std::string nazwa){
     }
     file.close();
 }
+
+//addLinksTrans - dodaje linki tłumaczeń pomiędzy językami, format jw
 void NodesFactory::addLinksTrans(std::string nazwa){
     int id1, id2;
     std::ifstream file (nazwa.c_str());
@@ -55,20 +62,28 @@ void NodesFactory::addLinksTrans(std::string nazwa){
     }
     file.close();
 }
+
+//setMarkersCount - ustawia liczbę markerów
 void NodesFactory::setMarkersCount(int markers_count){
     markers_count_=markers_count;
 }
 
+//printMapSize - drukuje liczbę markerów
 void NodesFactory::printMapSize() {
     std::cout<<nodes_.size()<<std::endl;
 }
 
+//getMarkersPl - zwraca markery w sieci języka polskiego
 int* NodesFactory::getMarkersPl() {
     return markers_pl_;
 }
+
+//getMarkersEn - jw, ale w sieci języka angielskiego
 int* NodesFactory::getMarkersEn() {
     return markers_en_;
 }
+
+//setMarkers - ustala markery w obu sieciach
 void NodesFactory::setMarkers() {
     markers_en_ = new int[markers_count_];
     markers_pl_ = new int[markers_count_];
@@ -90,6 +105,8 @@ void NodesFactory::setMarkers() {
         }
     }
 }
+
+//getMaxDegree - zwraca maksymalny stopień węzła w obu sieciach
 int NodesFactory::getMaxDegree() {
     int max = 0, m;
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it!=nodes_.end(); ++it){
@@ -100,6 +117,8 @@ int NodesFactory::getMaxDegree() {
     }
     return max;
 }
+
+//printDegrees - drukuje rozklad stopni wierzchołków obu sieci dla stopni mniejszych niż max
 void NodesFactory::printDegrees(int max) {
     int* hist = new int[max];
     for (int i=0; i< max; ++i){
@@ -117,6 +136,7 @@ void NodesFactory::printDegrees(int max) {
     }
 }
 
+//dfs - algorytm dfs
 int NodesFactory::DFS(int i, int flag) {
     std::vector<int> nn;
     nn.clear();
@@ -150,6 +170,8 @@ int NodesFactory::DFS(int i, int flag) {
     return size;
 }
 
+
+//countcomps - nadaje węzłom sieci lang numery ich komponentów i znajduje maksymalny komponent
 void NodesFactory::countComps(char lang) {
     if (lang == Node::pl) {
         comps_pl_.clear();
@@ -183,12 +205,15 @@ void NodesFactory::countComps(char lang) {
 //    std::cout<<lang<<": "<<max<<std::endl;
 }
 
+//getMaxComp - zwraca numer maksymalnego komponentu danej sieci
 int NodesFactory::getMaxComp(char lang){
     if (lang == Node::pl)
         return max_comp_pl_;
     else return max_comp_en_;
 }
 
+//setMainComp - nadaje węzłom sieci wartość true zmiennej main, jeśli węzeł może być markerem (ma odpowiednik w drugiej sieci)
+//i wartość true zmiennej inMax, jeśli węzeł należy do maksymalnego komponentu
 void NodesFactory::setMainComp() {
     int pl=0, en=0, trans;
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end();++it) {
@@ -216,6 +241,8 @@ void NodesFactory::setMainComp() {
         }
     }
 }
+
+//dijkstraFrom - liczy drogi z węzła source do wszystkich węzłów danej sieci lang, source jest j-tym markerem sieci lang, z oznacza liczbę węzłów w tej sieci
 void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
     int inf = 1000;
     int* dist = new int[z];
@@ -261,6 +288,8 @@ void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
     }
     delete dist;
 }
+
+//countPaths - liczy drogi od markerów do pozostałych węzłów danej sieci
 void NodesFactory::countPaths(){
     paths_pl_ = new std::set<std::pair<int, int> >[count_pl_];
     paths_en_ = new std::set<std::pair<int, int> >[count_en_];
@@ -270,6 +299,7 @@ void NodesFactory::countPaths(){
     }
 }
 
+//countSizeMax - wyznacza rozmiary maksymalnych komponentów
 void NodesFactory::countSizeMax() {
     int comp;
     char lang;
@@ -287,13 +317,17 @@ void NodesFactory::countSizeMax() {
     }
 }
 
+//getSizeMaxEn - zwraca rozmiar maksymalnego komponentu sieci angielskiej
 int NodesFactory::getSizeMaxEn() {
     return size_max_en_;
 }
+
+//getSizeMaxPl - jw, sieć polska
 int NodesFactory::getSizeMaxPl() {
     return size_max_pl_;
 }
 
+//cosine - liczy podobieństwo cosinusowe dwóch wektorów
 double NodesFactory::cosine(int *v, int *u, int size) {
     double sum=0.0;
     double qv=0.0, qu=0.0, q;
@@ -305,6 +339,8 @@ double NodesFactory::cosine(int *v, int *u, int size) {
     q = sqrt(qv)*sqrt(qu);
     return double(sum)/q;
 }
+
+//distance - liczy odległość Euklidesową między dwoma wektorami
 double NodesFactory::distance(int *v, int *u, int size) {
     double sum=0.0;
     for (int i=0;i<size;++i){
@@ -314,16 +350,21 @@ double NodesFactory::distance(int *v, int *u, int size) {
     return sqrt(sum)/size;
 }
 
+//printSample - drukuje przykładowe słowo i numer komponentu danego synsetu (węzła)
 void NodesFactory::printSample(int id){
     std::cout<<nodes_[id]->getSample()<<std::endl;
     std::cout<<nodes_[id]->getComp()<<std::endl;
 }
+
+//clearMarkers - czyści tablice markerów i dróg
 void NodesFactory::clearMarkers() {
     delete markers_en_;
     delete markers_pl_;
     delete paths_en_;
     delete paths_pl_;
 }
+
+
 void NodesFactory::compareTopMarkers(int nTop, int source) {
     int max, iMax, tRate, tEqual=0, tNear, count, trans, tt; //max - najlepsza zbieżność, imax - indeks tego najbardziej zbieżnego, tRate - pozycja tłumaczenia, tNear - liczba zbieżnych
     //paths - indexy od 0
