@@ -12,14 +12,19 @@ int main(int argc, char* argv[]) {
     nodes->addLinksTrans("syn_miedzy.txt");
     nodes->setMarkersCount(10);
 //    nodes->printSample(328924); //show biznes
-
+    cout<<"markery"<<endl;
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
+    cout<<"comps"<<endl;
     nodes->printSample(33756); //domator
     nodes->countSizeMax();
     nodes->setMainComp();
-    nodes->setMarkersCount(10);
+    nodes->setMarkersCount(20);
     nodes->setMarkersBySource(33756);
+    nodes->countPathsLang(Node::en);
+    cout<<"paths"<<endl;
+    nodes->getRankingLang(Node::en, 33756);
+    cout<<"ranking"<<endl;
     delete nodes;
     return 0;
 }
