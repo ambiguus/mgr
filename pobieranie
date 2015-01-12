@@ -7,12 +7,8 @@ select count(*), parent from synsetrelations where relation=173 group by parent 
 select count(*) from synset where pos="rzeczownik";
 select * from synset where id=363639;
 select * from synsetrelations where relation=173 and parent=299507;
-299342, 363639,305746,299320,365485
-6692
-6231
-
-select synset.id, sample from synset join synlex on synset_id = synset.id join lexicalunit on lexical_id = lexicalunit.id where synset.id = 328924;
-328924, 25691
+select synset.id, sample from synset join synlex on synset_id = synset.id join lexicalunit on lexical_id = lexicalunit.id where synset.id = 557;
+28924, 25691
 
 root: 11263
 284816

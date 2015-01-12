@@ -26,8 +26,11 @@ void NodesFactory::addNodes(std::string nazwa, char lang){
         }
     }
     //liczba wezlów w sieci
+    if (lang == Node::en) {
     count_en_ = cEn;
+    }else {
     count_pl_ = cPl;
+    }
     file.close();
 }
 
@@ -254,12 +257,10 @@ void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
     std::vector<int> nn;
     q.insert(std::make_pair(0,source));
     dist[source] = 0;
-    int min,imin, in, key;
+    int imin, in, key;
     while (!q.empty()){
-        min=inf;
         imin=-1;
         std::pair<int, int> top = *q.begin();
-        min=top.first;
         imin=top.second;
         q.erase(q.begin());
         if (lang == Node::pl){
@@ -270,20 +271,24 @@ void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
         nn.clear();
         nn = nodes_[key]->getLinksInside();
         for (std::vector<int>::iterator it=nn.begin();it != nn.end(); ++it){
+//            std::cout<<"it"<<*it<<std::endl;
+//            std::cout<<nodes_[*it]->getSample()<<std::endl;
             in = nodes_[*it]->getIndex();
+//            std::cout<<"in"<<in<<std::endl;
             if (dist[imin] + 1 < dist[in]){
                 dist[in] = dist[imin]+1;
                 q.insert(std::make_pair(dist[in],in));
             }
         }
     }
+//    std::cout<<"after while"<<std::endl;
     if (lang == Node::pl){
         for (int i=0;i<z;++i){
-            paths_pl_[i].insert(std::make_pair(dist[i], i));
+            paths_pl_[i][j] = dist[i];
         }
     }else{
         for (int i=0;i<z;++i){
-            paths_en_[i].insert(std::make_pair(dist[i], i));
+            paths_en_[i][j] = dist[i];
         }
     }
     delete dist;
@@ -291,12 +296,144 @@ void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
 
 //countPaths - liczy drogi od markerów do pozostałych węzłów danej sieci
 void NodesFactory::countPaths(){
-    paths_pl_ = new std::set<std::pair<int, int> >[count_pl_];
-    paths_en_ = new std::set<std::pair<int, int> >[count_en_];
+    paths_pl_ = new int*[count_pl_];
+    paths_en_ = new int*[count_en_];
+    for (int i=0;i<count_en_;++i){
+        paths_en_[i] = new int[markers_count_];
+        for (int j=0;j<markers_count_;++j){
+            paths_en_[i][j] = -1;
+        }
+    }
+    for (int i=0;i<count_pl_;++i){
+        paths_pl_[i] = new int[markers_count_];
+        for (int j=0;j<markers_count_;++j){
+            paths_pl_[i][j] = -1;
+        }
+    }
     for (int j=0;j<markers_count_;++j){
         dijkstraFrom(markers_pl_[j], count_pl_, Node::pl, j);
         dijkstraFrom(markers_en_[j],count_en_, Node::en,j);
     }
+}
+
+double NodesFactory::similarity(int* v, int* u, int size){
+    double sv, su,top=0,sqv=0,squ=0;
+    for (int i=0; i<size; ++i){
+        if (v[i] == 1000 || u[i] == 1000){
+            return 0;
+        }
+        sv = 1.0/float(v[i]);
+        su = 1.0/float(u[i]);
+        top += (sv*su);
+        sqv += (sv*sv);
+        squ += (su*su);
+    }
+    return top/(sqrt(sqv*squ));
+}
+
+///////za długa !!!!!!!!!!!!!!!!!!!!!!!!!111
+void NodesFactory::countCos(int i) {
+//    std::cout<<nodes_[i]->getSample()<<std::endl;
+    char lang = nodes_[i]->getLang();
+    int trans = nodes_[i]->getLinksTrans();
+    int* v = new int[markers_count_];
+    int index = nodes_[i]->getIndex();
+    if (lang == Node::pl){
+        for (int j=0;j<markers_count_;++j){
+            v[j] = paths_pl_[index][j];
+        }
+    }else{
+        for (int j=0;j<markers_count_;++j){
+            v[j] = paths_en_[index][j];
+        }
+    }
+    double cos, tcos, mcos=-10.0;
+    int trans_pos = 1, mkey=1;
+    int trans_in = nodes_[trans]->getIndex();
+    if (lang == Node::pl){
+        tcos = similarity(v, paths_en_[trans_in], markers_count_);
+    }else{
+        tcos = similarity(v, paths_pl_[trans_in], markers_count_);
+    }
+    if (isnan(tcos)){
+        std::cout<<"nan: "<<trans_in<<", "<<trans<<std::endl;
+        std::cout<<"slowo\ttrans\tmarkers"<<std::endl;
+        if (lang == Node::pl){
+            for (int i=0;i<markers_count_;++i){
+                std::cout<<v[i]<<"\t"<<paths_en_[trans_in][i]<<"\t"<<markers_en_[i]<<std::endl;
+            }
+        }else{
+            for (int i=0;i<markers_count_;++i){
+                std::cout<<v[i]<<"\t"<<paths_pl_[trans_in][i]<<"\t"<<markers_pl_[i]<<std::endl;
+            }
+        }
+    }
+    if (lang == Node::pl){
+        for (int j=0;j<count_en_;++j){
+            cos = similarity(v, paths_en_[j], markers_count_);
+            if (cos > tcos){
+                trans_pos++;
+            }
+            if (cos > mcos){
+                mcos = cos;
+                mkey = j;
+            }
+        }
+    }else{
+        for (int j=0;j<count_pl_;++j){
+            cos = similarity(v, paths_pl_[j], markers_count_);
+            if (cos > tcos){
+                trans_pos++;
+            }
+            if (cos > mcos){
+                mcos = cos;
+                mkey = j;
+            }
+        }
+    }
+    std::cout<<markers_count_<<" markerow, "<<nodes_[i]->getSample()<<std::endl;
+    std::cout<<"pozycja: \twartosc\tmax_cos\tnajlepszy\tprawdziwy"<<std::endl;
+    if (lang == Node::pl){
+        std::cout<<trans_pos<<"\t"<<tcos<<"\t"<<mcos<<"\t"<<nodes_[keys_en_[mkey]]->getSample()<<"\t"<<nodes_[trans]->getSample()<<std::endl;
+    }else{
+        std::cout<<trans_pos<<"\t"<<tcos<<"\t"<<mcos<<"\t"<<nodes_[keys_pl_[mkey]]->getSample()<<"\t"<<nodes_[trans]->getSample()<<std::endl;
+    }
+    std::cout<<"wektory: "<<std::endl;
+    std::cout<<"szukany - "<<i<<": "<<nodes_[i]->getSample()<<std::endl;
+    if (lang == Node::pl){
+        for (int j=0;j<markers_count_; ++j){
+            std::cout<<paths_pl_[index][j]<<" ";
+        }
+    }else{
+        for (int j=0;j<markers_count_; ++j){
+            std::cout<<paths_en_[index][j]<<" ";
+        }
+    }
+    std::cout<<std::endl;
+    if (lang == Node::pl){
+        std::cout<<"najlepszy - "<<mkey<<": "<<nodes_[keys_en_[mkey]]->getSample()<<std::endl;
+        for (int j=0;j<markers_count_; ++j){
+            std::cout<<paths_en_[mkey][j]<<" ";
+        }
+    }else{
+        std::cout<<"najlepszy - "<<mkey<<": "<<nodes_[keys_pl_[mkey]]->getSample()<<std::endl;
+        for (int j=0;j<markers_count_; ++j){
+            std::cout<<paths_pl_[mkey][j]<<" ";
+        }
+    }
+    std::cout<<std::endl;
+    std::cout<<"prawdziwy - "<<trans<<": "<<nodes_[trans]->getSample()<<std::endl;
+    if (lang == Node::pl){
+        for (int j=0;j<markers_count_; ++j){
+            std::cout<<paths_en_[trans_in][j]<<" ";
+        }
+    }else{
+        for (int j=0;j<markers_count_; ++j){
+            std::cout<<paths_pl_[trans_in][j]<<" ";
+        }
+    }
+    std::cout<<std::endl;
+    std::cout<<similarity(paths_en_[mkey], paths_pl_[index], markers_count_)<<std::endl;
 }
 
 //countSizeMax - wyznacza rozmiary maksymalnych komponentów
@@ -364,94 +501,94 @@ void NodesFactory::clearMarkers() {
     delete paths_pl_;
 }
 
-
-void NodesFactory::compareTopMarkers(int nTop, int source) {
-    int max, iMax, tRate, tEqual=0, tNear, count, trans, tt; //max - najlepsza zbieżność, imax - indeks tego najbardziej zbieżnego, tRate - pozycja tłumaczenia, tNear - liczba zbieżnych
-    //paths - indexy od 0
-    std::cout<<nodes_[source]->getSample()<<std::endl;
-    trans = nodes_[source]->getLinksTrans();
-    std::cout<<"tlumaczenie: "<<nodes_[trans]->getSample()<<std::endl;
-    char lang = nodes_[source]->getLang();
-    source = nodes_[source]->getIndex();
-    trans = nodes_[trans]->getIndex();
-    int* near = new int[nTop];
-    std::pair<int, int> top;
-
-    for (int i=0;i<nTop;++i){
-        if (lang == Node::pl) {
-            top = *paths_pl_[source].begin();
-            paths_pl_[source].erase(paths_pl_[source].begin());
-        }
-        else {
-            top = *paths_en_[source].begin();
-            paths_en_[source].erase(paths_en_[source].begin());
-        }
-        if (lang == Node::pl){
-            tt = keys_pl_[top.second];
-        }else{
-            tt = keys_en_[top.second];
-        }
-        tt = nodes_[tt]->getLinksTrans();
-        near[i] = nodes_[tt]->getIndex();
-    } //wypełniłam tablicę najbliższych markerów - tlumaczen
-
-    count=0;
-    for (int i=0;i < nTop; ++i){
-        if (lang == Node::en) { //tlumaczenie
-            top = *paths_pl_[trans].begin();
-            paths_pl_[trans].erase(paths_pl_[trans].begin());
-        }
-        else {
-            top = *paths_en_[trans].begin();
-            paths_en_[trans].erase(paths_en_[trans].begin());
-        }
-        if (std::find(std::begin(near), std::end(near), top.second) != std::end(near)){ //istnieje
-            count++;
-        }
-    }
-    tNear = count;
-    tRate = 0;
-    int lCount;
-    if (lang == Node::pl) {
-        lCount = count_en_;
-    }else {
-        lCount = count_pl_;
-    }
-    for (int j=0; j < lCount; ++j){
-        count=0;
-        for (int i=0;i < nTop; ++i){
-            if (lang == Node::en) {
-                top = *paths_pl_[trans].begin();
-                paths_pl_[trans].erase(paths_pl_[trans].begin());
-            }else {
-                top = *paths_en_[trans].begin();
-                paths_en_[trans].erase(paths_en_[trans].begin());
-            }
-            if (std::find(std::begin(near), std::end(near), top.second) != std::end(near)){ //istnieje
-                count++;
-            }
-        }
-        if (count > max){
-            max = count;
-            iMax = j;
-        }
-        if (count > tNear){
-            tRate++;
-        }
-        if (count == tNear){
-            tEqual++;
-        }
-    }
-    std::cout<<"zbieznosc"<<nTop<<"/"<<markers_count_<<" markerow"<<std::endl;
-    int kk;
-    if (lang == Node::pl){
-        kk = keys_en_[iMax];
-    }else{
-        kk = keys_pl_[iMax];
-    }
-    std::cout<<"Najlepsze: "<<kk<<", "<<nodes_[kk]->getSample()<<", zbieznosc"<<max<<std::endl;
-    std::cout<<"Poprawne: miejsce: "<<tRate<<", rownowaznych: "<<tEqual<<std::endl;
-}
+//////////////////////////za długa funkcja!!!!!!!!!
+//void NodesFactory::compareTopMarkers(int nTop, int source) {
+//    int max, iMax, tRate, tEqual=0, tNear, count, trans, tt; //max - najlepsza zbieżność, imax - indeks tego najbardziej zbieżnego, tRate - pozycja tłumaczenia, tNear - liczba zbieżnych
+//    //paths - indexy od 0
+//    std::cout<<nodes_[source]->getSample()<<std::endl;
+//    trans = nodes_[source]->getLinksTrans();
+//    std::cout<<"tlumaczenie: "<<nodes_[trans]->getSample()<<std::endl;
+//    char lang = nodes_[source]->getLang();
+//    source = nodes_[source]->getIndex();
+//    trans = nodes_[trans]->getIndex();
+//    int* near = new int[nTop];
+//    std::pair<int, int> top;
+//
+//    for (int i=0;i<nTop;++i){
+//        if (lang == Node::pl) {
+//            top = *paths_pl_[source].begin();
+//            paths_pl_[source].erase(paths_pl_[source].begin());
+//        }
+//        else {
+//            top = *paths_en_[source].begin();
+//            paths_en_[source].erase(paths_en_[source].begin());
+//        }
+//        if (lang == Node::pl){
+//            tt = keys_pl_[top.second];
+//        }else{
+//            tt = keys_en_[top.second];
+//        }
+//        tt = nodes_[tt]->getLinksTrans();
+//        near[i] = nodes_[tt]->getIndex();
+//    } //wypełniłam tablicę najbliższych markerów - tlumaczen
+//
+//    count=0;
+//    for (int i=0;i < nTop; ++i){
+//        if (lang == Node::en) { //tlumaczenie
+//            top = *paths_pl_[trans].begin();
+//            paths_pl_[trans].erase(paths_pl_[trans].begin());
+//        }
+//        else {
+//            top = *paths_en_[trans].begin();
+//            paths_en_[trans].erase(paths_en_[trans].begin());
+//        }
+//        if (std::find(std::begin(near), std::end(near), top.second) != std::end(near)){ //istnieje
+//            count++;
+//        }
+//    }
+//    tNear = count;
+//    tRate = 0;
+//    int lCount;
+//    if (lang == Node::pl) {
+//        lCount = count_en_;
+//    }else {
+//        lCount = count_pl_;
+//    }
+//    for (int j=0; j < lCount; ++j){
+//        count=0;
+//        for (int i=0;i < nTop; ++i){
+//            if (lang == Node::en) {
+//                top = *paths_pl_[trans].begin();
+//                paths_pl_[trans].erase(paths_pl_[trans].begin());
+//            }else {
+//                top = *paths_en_[trans].begin();
+//                paths_en_[trans].erase(paths_en_[trans].begin());
+//            }
+//            if (std::find(std::begin(near), std::end(near), top.second) != std::end(near)){ //istnieje
+//                count++;
+//            }
+//        }
+//        if (count > max){
+//            max = count;
+//            iMax = j;
+//        }
+//        if (count > tNear){
+//            tRate++;
+//        }
+//        if (count == tNear){
+//            tEqual++;
+//        }
+//    }
+//    std::cout<<"zbieznosc"<<nTop<<"/"<<markers_count_<<" markerow"<<std::endl;
+//    int kk;
+//    if (lang == Node::pl){
+//        kk = keys_en_[iMax];
+//    }else{
+//        kk = keys_pl_[iMax];
+//    }
+//    std::cout<<"Najlepsze: "<<kk<<", "<<nodes_[kk]->getSample()<<", zbieznosc"<<max<<std::endl;
+//    std::cout<<"Poprawne: miejsce: "<<tRate<<", rownowaznych: "<<tEqual<<std::endl;
+//}
 NodesFactory::~NodesFactory() {
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         delete it->second;

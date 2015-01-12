@@ -10,3 +10,10 @@ ranking*
 *.svg
 skrypt*
 paths/
+/CMakeCache.txt
+/cmake_install.cmake
+/compile_commands.json
+/CMakeFiles/
+/plain
+/rank_euklides.gnumeric
+/nbproject/

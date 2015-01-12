@@ -21,17 +21,18 @@ int main(int argc, char* argv[]) {
     nodes->countComps(Node::pl);
 //    nodes->printSample(328924);
     nodes->printSample(33756); //domator
-//    std::cout<<nodes->dijkstra(17285, 33756, 111824, Node::pl)<<std::endl;
     nodes->countSizeMax();
     nodes->setMainComp();
-    int i = 1000;
+    int i = 15;
     if (argc > 1){
         i = atoi(argv[1]);
     }
     nodes->setMarkersCount(i);
     nodes->setMarkers();
     nodes->countPaths();
-    nodes->compareTopMarkers(20, 33756);
+    cout<<"paths"<<endl;
+    nodes->countCos(33756);
+    cout<<"cos"<<endl;
     nodes->clearMarkers();
     delete nodes;
     return 0;

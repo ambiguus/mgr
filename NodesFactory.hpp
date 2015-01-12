@@ -38,6 +38,8 @@ public:
     int getSizeMaxPl();
     int getSizeMaxEn();
     double cosine(int* v, int* u, int size);
+    double similarity(int* v, int* u, int size);
+    void countCos(int i);
     void printSample(int id);
     void clearMarkers();
     double distance(int *v, int *u, int size);
@@ -52,8 +54,8 @@ protected:
     std::vector<int> comps_pl_, comps_en_; //wektor: numer komponentu -> liczba wierzcholkow
     int max_comp_pl_, max_comp_en_;
     std::vector<int> keys_pl_, keys_en_;
-    std::set<std::pair<int, int> > * paths_pl_; //zmienione z int**, żeby można było wyszukiwać najbliższe markery
-    std::set<std::pair<int, int> > * paths_en_;
+    int** paths_pl_;
+    int** paths_en_;
     int size_max_pl_, size_max_en_;
     int count_pl_, count_en_;
 };
