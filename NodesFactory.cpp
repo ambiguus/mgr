@@ -92,11 +92,12 @@ void NodesFactory::setMarkers() {
     markers_pl_ = new int[markers_count_];
     int set=0, size = nodes_.size();
     srand(time(NULL));
+    std::cout<<"markery:"<<std::endl;
     while (set < markers_count_){
         std::unordered_map<int, Node*>::iterator it = nodes_.begin();
         std::advance(it, rand() % size);
         int trans = it->second->getLinksTrans();
-        if (it->second->getMain()){ //tu było jeszcze sprawdzanie czy to liść, ale teraz nie robi
+        if (it->second->getMain() && it->second->getDegree() == 1){ //tu było jeszcze sprawdzanie czy to liść, ale teraz nie robi
                 if (it->second->getLang() == Node::pl) {
                     markers_pl_[set] = it->first;
                     markers_en_[set] = trans;
@@ -104,6 +105,7 @@ void NodesFactory::setMarkers() {
                     markers_en_[set] = it->first;
                     markers_pl_[set] = trans;
                 }
+                std::cout<<set<<": id - "<<it->first<<", "<<it->second->getSample()<<", tlumaczenie: id - "<<trans<<", "<<nodes_[trans]->getSample()<<std::endl;
                 set++;
         }
     }
@@ -490,7 +492,12 @@ double NodesFactory::distance(int *v, int *u, int size) {
 //printSample - drukuje przykładowe słowo i numer komponentu danego synsetu (węzła)
 void NodesFactory::printSample(int id){
     std::cout<<nodes_[id]->getSample()<<std::endl;
-    std::cout<<nodes_[id]->getComp()<<std::endl;
+    std::cout<<nodes_[id]->getMain()<<std::endl;
+    int a = nodes_[id]->getLinksTrans();
+    if (a > 0){
+        std::cout<<nodes_[a]->getSample()<<std::endl;
+        std::cout<<nodes_[a]->getMain()<<std::endl;
+    }
 }
 
 //clearMarkers - czyści tablice markerów i dróg

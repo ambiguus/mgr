@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
 //    nodes->printSample(328924);
-    nodes->printSample(33756); //domator
+    
     nodes->countSizeMax();
     nodes->setMainComp();
     int i = 15;
@@ -31,8 +31,9 @@ int main(int argc, char* argv[]) {
     nodes->setMarkers();
     nodes->countPaths();
     cout<<"paths"<<endl;
-    nodes->countCos(33756);
-    cout<<"cos"<<endl;
+    int word = 33756;
+    nodes->printSample(word); //domator
+    nodes->countCos(word);
     nodes->clearMarkers();
     delete nodes;
     return 0;
