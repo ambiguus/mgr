@@ -39,11 +39,12 @@ public:
     int getSizeMaxEn();
     double cosine(int* v, int* u, int size);
     double similarity(int* v, int* u, int size);
-    void countCos(int i);
+    int countCos(int i);
     void printSample(int id);
     void clearMarkers();
     double distance(int *v, int *u, int size);
     void compareTopMarkers(int nTop, int source); //nTop - liczba porownywanych najlepszych markerow, source - wezel z ktorym porownujemy wezly drugiej sieci
+    void countAllCos(std::string nazwa);
     ~NodesFactory();
 
 protected:

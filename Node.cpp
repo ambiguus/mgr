@@ -1,10 +1,10 @@
 #include "Node.hpp"
-Node::Node():id_(0),lang_(Node::pl), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
+Node::Node():id_(0),lang_(Node::pl), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false), is_marker_(false){
 
 }
-Node::Node(int id, char lang):id_(id),lang_(lang), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
+Node::Node(int id, char lang):id_(id),lang_(lang), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false), is_marker_(false){
 }
-Node::Node(int id, char lang, std::string sample):id_(id),lang_(lang), sample_(sample), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false){
+Node::Node(int id, char lang, std::string sample):id_(id),lang_(lang), sample_(sample), linksTrans_(0), k_(0), k_changed_(false), comp_(-1), in_max_(false), main_(false), is_marker_(false){
 }
 char Node::getLang(){
     return lang_;
@@ -58,10 +58,10 @@ bool Node::getInMax() {
     return in_max_;
 }
 void Node::setInMax(bool in_max) {
-    in_max_=in_max;
+    in_max_=in_max; //jest w maksymalnym komponencie
 }
 void Node::setMain(bool main) {
-    main_ = main;
+    main_ = main; //moze byc markerem - jest w maksymalnym komponencie i ma tlumaczenie
 }
 bool Node::getMain() {
     return main_;
@@ -95,6 +95,12 @@ void Node::addTransCos(double v) {
 }
 int Node::getTransPos() {
     return trans_pos_;
+}
+bool Node::getIsMarker(){
+    return is_marker_;
+}
+void Node::setIsMarker(bool is){
+    is_marker_ = is;
 }
 //int* getLoc(NodesFactory &factory){}
 //int* countLoc(NodesFactory &factory);

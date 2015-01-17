@@ -2,13 +2,13 @@ select * from synset where pos = "rzeczownik pwn";
 select synset_id, count(*) from synlex group by synset_id;
 select * from synlex;
 select * from relationtypes;
-select * from lexicalrelations where relation = 209;
+select * from synsetrelations where relation = 209;
 select count(*), parent from synsetrelations where relation=173 group by parent limit 1000000000;
 select count(*) from synset where pos="rzeczownik";
 select * from synset where id=363639;
 select * from synsetrelations where relation=173 and parent=299507;
-select synset.id, sample from synset join synlex on synset_id = synset.id join lexicalunit on lexical_id = lexicalunit.id where synset.id = 557;
-28924, 25691
+select synset.id, sample from synset join synlex on synset_id = synset.id join lexicalunit on lexical_id = lexicalunit.id where synset.id = 25691;
+323784, 342611, 338319
 
 root: 11263
 284816

@@ -92,7 +92,7 @@ void NodesFactory::setMarkers() {
     markers_pl_ = new int[markers_count_];
     int set=0, size = nodes_.size();
     srand(time(NULL));
-    std::cout<<"markery:"<<std::endl;
+//    std::cout<<"markery:"<<std::endl;
     while (set < markers_count_){
         std::unordered_map<int, Node*>::iterator it = nodes_.begin();
         std::advance(it, rand() % size);
@@ -105,7 +105,9 @@ void NodesFactory::setMarkers() {
                     markers_en_[set] = it->first;
                     markers_pl_[set] = trans;
                 }
-                std::cout<<set<<": id - "<<it->first<<", "<<it->second->getSample()<<", tlumaczenie: id - "<<trans<<", "<<nodes_[trans]->getSample()<<std::endl;
+                it->second->setIsMarker(true);
+                nodes_[trans]->setIsMarker(true);
+//                std::cout<<set<<": id - "<<it->first<<", "<<it->second->getSample()<<", tlumaczenie: id - "<<trans<<", "<<nodes_[trans]->getSample()<<std::endl;
                 set++;
         }
     }
@@ -226,7 +228,7 @@ void NodesFactory::setMainComp() {
             en++;
             trans = it->second->getLinksTrans();
             if (trans > 0){
-                if (nodes_[trans]->getComp() == max_comp_pl_){
+                if (nodes_[trans]->getComp() == max_comp_pl_ && nodes_[trans]->getLinksTrans() == it->first){
                     it->second->setMain(true);
                     nodes_[trans]->setMain(true);
                 }
@@ -237,7 +239,7 @@ void NodesFactory::setMainComp() {
             pl++;
             trans = it->second->getLinksTrans();
             if (trans > 0){
-                if (nodes_[trans]->getComp() == max_comp_en_){
+                if (nodes_[trans]->getComp() == max_comp_en_ && nodes_[trans]->getLinksTrans() == it->first){
                     it->second->setMain(true);
                     nodes_[trans]->setMain(true);
                 }
@@ -322,7 +324,8 @@ double NodesFactory::similarity(int* v, int* u, int size){
     double sv, su,top=0,sqv=0,squ=0;
     for (int i=0; i<size; ++i){
         if (v[i] == 1000 || u[i] == 1000){
-            return 0;
+            std::cout<<"marker "<<i<<std::endl;
+            return 2;
         }
         sv = 1.0/float(v[i]);
         su = 1.0/float(u[i]);
@@ -334,7 +337,7 @@ double NodesFactory::similarity(int* v, int* u, int size){
 }
 
 ///////za długa !!!!!!!!!!!!!!!!!!!!!!!!!111
-void NodesFactory::countCos(int i) {
+int NodesFactory::countCos(int i) {
 //    std::cout<<nodes_[i]->getSample()<<std::endl;
     char lang = nodes_[i]->getLang();
     int trans = nodes_[i]->getLinksTrans();
@@ -350,12 +353,16 @@ void NodesFactory::countCos(int i) {
         }
     }
     double cos, tcos, mcos=-10.0;
-    int trans_pos = 1, mkey=1;
+    int trans_pos = 0, mkey=1;
     int trans_in = nodes_[trans]->getIndex();
     if (lang == Node::pl){
         tcos = similarity(v, paths_en_[trans_in], markers_count_);
     }else{
         tcos = similarity(v, paths_pl_[trans_in], markers_count_);
+    }
+    if (tcos == 2){
+        std::cout<<"straange"<<std::endl;
+        printSample(trans);
     }
     if (isnan(tcos)){
         std::cout<<"nan: "<<trans_in<<", "<<trans<<std::endl;
@@ -372,6 +379,9 @@ void NodesFactory::countCos(int i) {
     }
     if (lang == Node::pl){
         for (int j=0;j<count_en_;++j){
+            if (!nodes_[keys_en_[j]]->getInMax()){
+                continue;
+            }
             cos = similarity(v, paths_en_[j], markers_count_);
             if (cos > tcos){
                 trans_pos++;
@@ -380,9 +390,15 @@ void NodesFactory::countCos(int i) {
                 mcos = cos;
                 mkey = j;
             }
+            if (cos == 2){
+                std::cout<<"------------------------"<<nodes_[keys_en_[j]]->getSample()<<", "<<nodes_[keys_en_[j]]->getInMax()<<", "<<nodes_[keys_en_[j]]->getMain()<<std::endl;
+            }
         }
     }else{
         for (int j=0;j<count_pl_;++j){
+            if (!nodes_[keys_pl_[j]]->getInMax()){
+                continue;
+            }
             cos = similarity(v, paths_pl_[j], markers_count_);
             if (cos > tcos){
                 trans_pos++;
@@ -391,8 +407,14 @@ void NodesFactory::countCos(int i) {
                 mcos = cos;
                 mkey = j;
             }
+            if (cos == 2){
+                std::cout<<"------------------------"<<nodes_[keys_pl_[j]]->getSample()<<", "<<nodes_[keys_pl_[j]]->getInMax()<<", "<<nodes_[keys_pl_[j]]->getMain()<<std::endl;
+            }
         }
+        
     }
+    //drukowanie informacji o miejscu w rankingu
+    /*
     std::cout<<markers_count_<<" markerow, "<<nodes_[i]->getSample()<<std::endl;
     std::cout<<"pozycja: \twartosc\tmax_cos\tnajlepszy\tprawdziwy"<<std::endl;
     if (lang == Node::pl){
@@ -413,12 +435,12 @@ void NodesFactory::countCos(int i) {
     }
     std::cout<<std::endl;
     if (lang == Node::pl){
-        std::cout<<"najlepszy - "<<mkey<<": "<<nodes_[keys_en_[mkey]]->getSample()<<std::endl;
+        std::cout<<"najlepszy - "<<keys_en_[mkey]<<": "<<nodes_[keys_en_[mkey]]->getSample()<<std::endl;
         for (int j=0;j<markers_count_; ++j){
             std::cout<<paths_en_[mkey][j]<<" ";
         }
     }else{
-        std::cout<<"najlepszy - "<<mkey<<": "<<nodes_[keys_pl_[mkey]]->getSample()<<std::endl;
+        std::cout<<"najlepszy - "<<keys_pl_[mkey]<<": "<<nodes_[keys_pl_[mkey]]->getSample()<<std::endl;
         for (int j=0;j<markers_count_; ++j){
             std::cout<<paths_pl_[mkey][j]<<" ";
         }
@@ -436,6 +458,8 @@ void NodesFactory::countCos(int i) {
     }
     std::cout<<std::endl;
     std::cout<<similarity(paths_en_[mkey], paths_pl_[index], markers_count_)<<std::endl;
+     */
+    return trans_pos;
 }
 
 //countSizeMax - wyznacza rozmiary maksymalnych komponentów
@@ -596,6 +620,16 @@ void NodesFactory::clearMarkers() {
 //    std::cout<<"Najlepsze: "<<kk<<", "<<nodes_[kk]->getSample()<<", zbieznosc"<<max<<std::endl;
 //    std::cout<<"Poprawne: miejsce: "<<tRate<<", rownowaznych: "<<tEqual<<std::endl;
 //}
+
+void NodesFactory::countAllCos(std::string nazwa){
+    std::ofstream file (nazwa.c_str());
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
+        if (it->second->getMain() && !it->second->getIsMarker()){
+            file<<countCos(it->first)<<std::endl;
+        }
+    }
+}
+
 NodesFactory::~NodesFactory() {
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         delete it->second;

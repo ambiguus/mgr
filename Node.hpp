@@ -37,6 +37,8 @@ public:
     void addRanking(double v);
     void addTransCos(double v);
     int getTransPos(); //szuka pozycji tlumaczenia w rankingu
+    bool getIsMarker();
+    void setIsMarker(bool is);
     ~Node();
 //    int* getLoc(NodesFactory::NodesFactory &factory);
 //    int* countLoc(NodesFactory::NodesFactory &factory);
@@ -58,6 +60,6 @@ protected:
     int index_;
     int best_i_, trans_pos_;
     double trans_cos_;
-
+    bool is_marker_;
 };
 #endif

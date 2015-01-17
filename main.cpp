@@ -8,6 +8,10 @@ inline double interwal (const timespec &poczatek, const timespec &koniec)
     return (koniec.tv_sec + koniec.tv_nsec * 1e-9) - (poczatek.tv_sec + poczatek.tv_nsec * 1e-9);
 }
 int main(int argc, char* argv[]) {
+    if (argc < 3){
+        std::cout<<"argumenty: 1 - liczba markerow, 2 - nazwa pliku wyjsciowego"<<std::endl;
+        return -1;
+    }
     NodesFactory* nodes = new NodesFactory();
     nodes->addNodes("rzeczowniki_pl2.txt", Node::pl);
     nodes->addNodes("rzeczowniki_en.txt", Node::en);
@@ -23,17 +27,16 @@ int main(int argc, char* argv[]) {
     
     nodes->countSizeMax();
     nodes->setMainComp();
-    int i = 15;
-    if (argc > 1){
-        i = atoi(argv[1]);
-    }
+    int i = atoi(argv[1]);
+    std::string file;
+    file = argv[2];
     nodes->setMarkersCount(i);
     nodes->setMarkers();
     nodes->countPaths();
     cout<<"paths"<<endl;
-    int word = 33756;
-    nodes->printSample(word); //domator
-    nodes->countCos(word);
+//    nodes->printSample(word); //domator
+//    nodes->countCos(word);
+    nodes->countAllCos(file);
     nodes->clearMarkers();
     delete nodes;
     return 0;
