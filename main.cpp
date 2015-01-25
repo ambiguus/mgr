@@ -14,27 +14,27 @@ int main(int argc, char* argv[]) {
     nodes->addLinksInside("hiponimia_en.txt");
     nodes->addLinksInside("hiponimia_pl.txt");
     nodes->addLinksTrans("syn_miedzy.txt");
-    nodes->setMarkersCount(10);
-//    nodes->printSample(328924); //show biznes
 
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
-//    nodes->printSample(328924);
-    
     nodes->countSizeMax();
     nodes->setMainComp();
-    int i = 15;
+    int i = 300;
+    int nTop = 15;
     if (argc > 1){
         i = atoi(argv[1]);
+    }
+    if (argc > 2){
+        nTop = atoi(argv[2]);
     }
     nodes->setMarkersCount(i);
     nodes->setMarkers();
     nodes->countPaths();
-    cout<<"paths"<<endl;
-    int word = 33756;
-    nodes->printSample(word); //domator
-    nodes->countCos(word);
-    nodes->clearMarkers();
+    nodes->pathsToArray(nTop);
+    nodes->topMarkersAll("test",nTop);
+    //nodes->compareTopMarkers(nTop, 33756);
+    //nodes->clearMarkers();
+
     delete nodes;
     return 0;
 }

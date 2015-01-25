@@ -13,6 +13,7 @@
 #include <ctime>
 #include <algorithm>
 #include <set>
+#include <map>
 
 class NodesFactory{
 public:
@@ -38,12 +39,12 @@ public:
     int getSizeMaxPl();
     int getSizeMaxEn();
     double cosine(int* v, int* u, int size);
-    double similarity(int* v, int* u, int size);
-    void countCos(int i);
     void printSample(int id);
     void clearMarkers();
     double distance(int *v, int *u, int size);
-    void compareTopMarkers(int nTop, int source); //nTop - liczba porownywanych najlepszych markerow, source - wezel z ktorym porownujemy wezly drugiej sieci
+    int compareTopMarkers(int nTop, int source); //nTop - liczba porownywanych najlepszych markerow, source - wezel z ktorym porownujemy wezly drugiej sieci
+    void pathsToArray(int nTop);
+    void topMarkersAll(std::string nazwa, int nTop);
     ~NodesFactory();
 
 protected:
@@ -54,8 +55,10 @@ protected:
     std::vector<int> comps_pl_, comps_en_; //wektor: numer komponentu -> liczba wierzcholkow
     int max_comp_pl_, max_comp_en_;
     std::vector<int> keys_pl_, keys_en_;
-    int** paths_pl_;
-    int** paths_en_;
+    std::set<std::pair<short int, int> > * paths_pl_; //zmienione z int**, żeby można było wyszukiwać najbliższe markery
+    std::set<std::pair<short int, int> > * paths_en_;
+    int** topPathsPl_;
+    int** topPathsEn_;
     int size_max_pl_, size_max_en_;
     int count_pl_, count_en_;
 };
