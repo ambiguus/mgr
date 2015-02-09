@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     nodes->countComps(Node::pl);
     nodes->countSizeMax();
     nodes->setMainComp();
-    int i = 300;
+    int i = 100;
     int nTop = 15;
     if (argc > 1){
         i = atoi(argv[1]);
@@ -31,7 +31,8 @@ int main(int argc, char* argv[]) {
     nodes->setMarkers();
     nodes->countPaths();
     nodes->pathsToArray(nTop);
-    nodes->topMarkersAll("test",nTop);
+    nodes->topMarkersAll("pokrycie_300_20",nTop);
+    cout<<"top"<<endl;
     //nodes->compareTopMarkers(nTop, 33756);
     //nodes->clearMarkers();
 

@@ -418,8 +418,7 @@ void NodesFactory::pathsToArray(int nTop){
 int NodesFactory::compareTopMarkers(int nTop, int source) {
     int tRate, tNear, count, trans, tt, key; //max - najlepsza zbieżność, imax - indeks tego najbardziej zbieżnego, tRate - pozycja tłumaczenia, tNear - liczba zbieżnych
     trans = nodes_[source]->getLinksTrans();
-    
-    std::cout<<"tlumaczenie: id="<<trans<<", "<<nodes_[trans]->getSample()<<std::endl;
+//    std::cout<<"tlumaczenie: id="<<trans<<", "<<nodes_[trans]->getSample()<<std::endl;
     char lang = nodes_[source]->getLang();
     source = nodes_[source]->getIndex();
     trans = nodes_[trans]->getIndex();
@@ -496,7 +495,7 @@ void NodesFactory::topMarkersAll(std::string nazwa, int nTop){
     std::ofstream file(nazwa.c_str());
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         if (it->second->getMain()){
-            file<<compareTopMarkers(it->first, nTop)<<std::endl;
+            file<<compareTopMarkers(nTop, it->first)<<std::endl;
         }
     }
 }
