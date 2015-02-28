@@ -1,5 +1,5 @@
 #!/bin/bash
-for ((i=20; $i <= 100; i+=5)) ; do
+for ((i=1; $i <= 30; i+=1)) ; do
         echo "$i"
         ./main $i similarity$i 
 done
