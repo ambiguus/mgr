@@ -17,3 +17,4 @@ plain
 /cmake_install.cmake
 /CMakeFiles/
 nbproject/
+output/
