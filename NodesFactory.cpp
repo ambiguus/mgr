@@ -98,7 +98,7 @@ void NodesFactory::setMarkers() {
     markers_en_ = new int[markers_count_];
     markers_pl_ = new int[markers_count_];
     int set=0, size = nodes_.size();
-    std::cout<<"markery: "<<std::endl;
+//    std::cout<<"markery: "<<std::endl;
     srand(time(NULL));
     while (set < markers_count_){
         std::unordered_map<int, Node*>::iterator it = nodes_.begin();
@@ -108,11 +108,11 @@ void NodesFactory::setMarkers() {
                 if (it->second->getLang() == Node::pl) {
                     markers_pl_[set] = it->first;
                     markers_en_[set] = trans;
-                    std::cout<<set<<"\t"<<it->first<<": "<<it->second->getSample()<<"\t, "<<trans<<": "<<nodes_[trans]->getSample()<<std::endl;
+//                    std::cout<<set<<"\t"<<it->first<<": "<<it->second->getSample()<<"\t, "<<trans<<": "<<nodes_[trans]->getSample()<<std::endl;
                 } else if (it->second->getLang() == Node::en) {
                     markers_en_[set] = it->first;
                     markers_pl_[set] = trans;
-                    std::cout<<set<<"\t"<<trans<<": "<<nodes_[trans]->getSample()<<"\t, "<<it->first<<": "<<it->second->getSample()<<std::endl;
+//                    std::cout<<set<<"\t"<<trans<<": "<<nodes_[trans]->getSample()<<"\t, "<<it->first<<": "<<it->second->getSample()<<std::endl;
                 }
                 // std::cout<<markers_en_[set]<<std::endl;
                 set++;
@@ -228,7 +228,7 @@ void NodesFactory::setMainComp() {
             en++;
             trans = it->second->getLinksTrans();
             if (trans > 0){
-                if (nodes_[trans]->getComp() == max_comp_pl_){
+                if (nodes_[trans]->getComp() == max_comp_pl_ && nodes_[trans]->getLinksTrans() == it->first){ //zdazaja sie podwojne tlumaczenia
                     it->second->setMain(true);
                     nodes_[trans]->setMain(true);
                 }
@@ -239,7 +239,7 @@ void NodesFactory::setMainComp() {
             pl++;
             trans = it->second->getLinksTrans();
             if (trans > 0){
-                if (nodes_[trans]->getComp() == max_comp_en_){
+                if (nodes_[trans]->getComp() == max_comp_en_ && nodes_[trans]->getLinksTrans() == it->first){
                     it->second->setMain(true);
                     nodes_[trans]->setMain(true);
                 }
@@ -341,6 +341,7 @@ void NodesFactory::dijkstraFrom(int source, int z, char lang, int j) {
             paths_en_[i][j] = dist[i];
         }
     }
+    delete dist;
 }
 void NodesFactory::countPair(int i){
     int trans = nodes_[i]->getLinksTrans();
@@ -482,7 +483,8 @@ void NodesFactory::printSample(int id){
     std::cout<<nodes_[id]->getSample()<<std::endl;
     std::cout<<nodes_[id]->getComp()<<std::endl;
 }
-void NodesFactory::setMarkersBySource(int source) {
+//ustala markery w odleglosci radius od source
+void NodesFactory::setMarkersBySource(int source, int radius) {
     char lang = nodes_[source]->getLang();
     int z;
     if (lang == Node::pl){
@@ -502,7 +504,7 @@ void NodesFactory::setMarkersBySource(int source) {
     dist[source] = 0;
     int imin, in, key;
     std::pair<int, int> top;
-    while (!q.empty()){
+    while (!q.empty()){ //dijkstra...
         imin=-1;
         top = *q.begin();
         imin=top.second;
@@ -527,10 +529,12 @@ void NodesFactory::setMarkersBySource(int source) {
         path.insert(std::make_pair(dist[i], i));
     }
     std::vector<int> marks;
-    int kk, cc=0;
-    while (cc < markers_count_){
+    int kk, r=0,cc=0;
+    while (r <= radius && !path.empty()){
         top = *path.begin();
         path.erase(path.begin());
+        r = top.first;
+        if (r <= radius){
             if (lang == Node::pl) {
                 kk = keys_pl_[top.second];
             } else {
@@ -538,28 +542,10 @@ void NodesFactory::setMarkersBySource(int source) {
             }
             if (nodes_[kk]->getMain() && top.second != source) {
                 marks.push_back(kk);
-                std::cout<<"id="<<kk<<", "<<top.first<<nodes_[kk]->getSample()<<std::endl;
+//                std::cout<<"id="<<kk<<", "<<top.first<<nodes_[kk]->getSample()<<std::endl;
                 cc++;
-                source_path_.push_back(top.first);
             }
-
-    }
-    int last = top.first;
-    top = *path.begin();
-    while (top.first == last){
-        path.erase(path.begin());
-        if (lang == Node::pl){
-            kk = keys_pl_[top.second];
-        }else{
-            kk = keys_en_[top.second];
         }
-        if (nodes_[kk]->getMain() && top.second != source){
-            marks.push_back(kk);
-            std::cout<<"id="<<kk<<", "<<top.first<<nodes_[kk]->getSample()<<std::endl;
-            cc++;
-            source_path_.push_back(top.first);
-        }
-        top = *path.begin();
     }
     markers_count_=cc;
     markers_pl_ = new int[markers_count_];
@@ -577,26 +563,28 @@ void NodesFactory::setMarkersBySource(int source) {
             markers_pl_[i] = nodes_[kk]->getLinksTrans();
         }
     }
+    delete dist;
 }
-void NodesFactory::countPathsLang(char lang) {
+void NodesFactory::countPathsLang(int source) {
+    char lang = nodes_[source]->getLang();
+    if (lang == Node::pl){
+        lang = Node::en;
+    }else{
+        lang = Node::pl;
+    }
     if (lang == Node::en) {
-        paths_en_ = new int *[count_en_];
+        paths_en_ = new int*[count_en_];
         for (int i = 0; i < count_en_; ++i) {
             paths_en_[i] = new int[markers_count_];
             for (int j = 0; j < markers_count_; ++j) {
                 paths_en_[i][j] = -1;
             }
         }
-        int k;
-        for (int j=0;j<markers_count_;++j){
-            k = markers_en_[j];
-            std::cout<<markers_en_[j]<<", "<<nodes_[k]->getSample()<<std::endl;
-        }
         for (int j=0;j<markers_count_;++j){
             dijkstraFrom(markers_en_[j],count_en_, Node::en,j);
         }
     }else {
-        paths_pl_ = new int *[count_pl_];
+        paths_pl_ = new int*[count_pl_];
         for (int i = 0; i < count_pl_; ++i) {
             paths_pl_[i] = new int[markers_count_];
             for (int j = 0; j < markers_count_; ++j) {
@@ -608,9 +596,16 @@ void NodesFactory::countPathsLang(char lang) {
         }
     }
 }
-void NodesFactory::getRankingLang(char lang, int source) {
+// ranking - mamy markery najbliższe źródła, szukamy odległości pozostałych węzłów od tych markerów
+int NodesFactory::getRankingLang(int source) {
     int kk;
     double sum, val;
+    char lang = nodes_[source]->getLang();
+    if (lang == Node::en){
+        lang = Node::pl;
+    }else{
+        lang = Node::en;
+    }
     std::set<std::pair<double, int> > rank;
     if (lang == Node::pl){ //niedorobione
         for (int i=0; i<count_pl_;++i){
@@ -618,10 +613,15 @@ void NodesFactory::getRankingLang(char lang, int source) {
             if (nodes_[kk]->getInMax()){
                 sum = 0.0;
                 for (int j=0;j<markers_count_; ++j){
-                    sum += paths_pl_[i][j];
-                    if (paths_pl_[i][j] == 0){
-                        sum++;
+                    val = paths_pl_[i][j];
+                    if (val == 0){
+                        val = 1.0;
                     }
+                    if (val < 0){
+                        sum = 10000000;
+                        break;
+                    }
+                    sum += val;
                 }
                 rank.insert(std::make_pair(sum, kk));
             }
@@ -640,7 +640,6 @@ void NodesFactory::getRankingLang(char lang, int source) {
                         sum = 10000000;
                         break;
                     }
-//                    val /= source_path_[j];
                     sum += val;
                 }
                 if (sum > 0){
@@ -651,32 +650,46 @@ void NodesFactory::getRankingLang(char lang, int source) {
         }
     }
     std::pair<double, int> top;
-    int ind=0, ii;
-    while(top.second != nodes_[source]->getLinksTrans()){
+    int ind=0;
+    while(top.second != nodes_[source]->getLinksTrans() && !rank.empty()){
         ind++;
         top = *rank.begin();
         rank.erase(rank.begin());
-        if (ind < 20){
-            ii = nodes_[top.second]->getIndex();
-            std::cout<<ind<<": "<<top.first<<", id="<<top.second<<", "<<nodes_[top.second]->getSample()<<std::endl;
-            for (int j=0; j<markers_count_;++j){
-                std::cout<<paths_en_[ii][j]<<" ";
+    }
+//    std::cout<<ind<<std::endl;
+    return ind;
+}
+void NodesFactory::getRankingAll(std::string nazwa, int radius){
+    std::ofstream file (nazwa.c_str());
+    int i=0;
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
+        if (it->second->getMain()){
+            if (i > 8800){
+                setMarkersBySource(it->first,radius);
+                countPathsLang(it->first);
+                file<<getRankingLang(it->first)<<std::endl;
+                if (it->second->getLang() == Node::pl){
+                    for(int i = 0; i < count_en_; ++i) {
+                        delete [] paths_en_[i];
+                    }
+                     delete [] paths_en_;
+                }else{
+                    for(int i = 0; i < count_pl_; ++i) {
+                        delete [] paths_pl_[i];
+                    }
+                    delete [] paths_pl_;
+                }
+                clearMarkers();
             }
-            std::cout<<std::endl;
+            i++;
+            std::cout<<i<<std::endl;
         }
     }
-    ii = nodes_[top.second]->getIndex();
-    std::cout<<"tlumaczenie: "<<top.first<<", id="<<top.second<<", "<<nodes_[top.second]->getSample()<<std::endl;
-    for (int j=0; j<markers_count_;++j){
-        std::cout<<paths_en_[ii][j]<<" ";
-    }
-    std::cout<<std::endl;
+    file.close();
 }
 void NodesFactory::clearMarkers() {
     delete markers_en_;
     delete markers_pl_;
-    delete paths_en_;
-    delete paths_pl_;
 }
 NodesFactory::~NodesFactory() {
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){

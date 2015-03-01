@@ -4,6 +4,10 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
+    if (argc < 3){
+        cout<<"za malo parametrow: [1] - plik wynikowy, [2] - zasieg"<<endl;
+        return 0;
+    }
     NodesFactory* nodes = new NodesFactory();
     nodes->addNodes("rzeczowniki_pl2.txt", Node::pl);
     nodes->addNodes("rzeczowniki_en.txt", Node::en);
@@ -12,19 +16,18 @@ int main(int argc, char* argv[]) {
     nodes->addLinksTrans("syn_miedzy.txt");
     nodes->setMarkersCount(10);
 //    nodes->printSample(328924); //show biznes
-    cout<<"markery"<<endl;
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
-    cout<<"comps"<<endl;
-    nodes->printSample(33756); //domator
+//    int id=33756;
+//    nodes->printSample(id); //domator
     nodes->countSizeMax();
     nodes->setMainComp();
-    nodes->setMarkersCount(20);
-    nodes->setMarkersBySource(33756);
-    nodes->countPathsLang(Node::en);
-    cout<<"paths"<<endl;
-    nodes->getRankingLang(Node::en, 33756);
-    cout<<"ranking"<<endl;
+//    nodes->setMarkersBySource(id,3);
+//    nodes->countPathsLang(id);
+//    cout<<"paths"<<endl;
+//    nodes->getRankingLang(id);
+//    nodes->clearMarkers();
+    nodes->getRankingAll(argv[1], atoi(argv[2]));
     delete nodes;
     return 0;
 }

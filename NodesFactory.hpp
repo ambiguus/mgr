@@ -47,9 +47,10 @@ public:
     void clearMarkers();
     void countAvgCos();
     double distance(int *v, int *u, int size);
-    void setMarkersBySource(int source);
-    void countPathsLang(char lang); // lang - jezyk, w ktorym liczymy sciezki
-    void getRankingLang(char lang, int source);
+    void setMarkersBySource(int source, int radius);
+    void countPathsLang(int source); // lang - jezyk, w ktorym liczymy sciezki
+    int getRankingLang(int source);
+    void getRankingAll(std::string nazwa, int radius);
     ~NodesFactory();
 
 protected:
@@ -67,6 +68,6 @@ protected:
     int** paths_en_;
     int size_max_pl_, size_max_en_;
     int count_pl_, count_en_;
-    std::vector<int> source_path_;
+//    std::vector<int> source_path_;
 };
 #endif
