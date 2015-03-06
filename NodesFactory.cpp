@@ -484,7 +484,7 @@ void NodesFactory::printSample(int id){
     std::cout<<nodes_[id]->getComp()<<std::endl;
 }
 //ustala markery w odleglosci radius od source
-void NodesFactory::setMarkersBySource(int source, int radius) {
+int NodesFactory::setMarkersBySource(int source, int radius) {
     char lang = nodes_[source]->getLang();
     int z;
     if (lang == Node::pl){
@@ -564,6 +564,7 @@ void NodesFactory::setMarkersBySource(int source, int radius) {
         }
     }
     delete dist;
+    return markers_count_;
 }
 void NodesFactory::countPathsLang(int source) {
     char lang = nodes_[source]->getLang();
@@ -661,18 +662,19 @@ int NodesFactory::getRankingLang(int source) {
 }
 void NodesFactory::getRankingAll(std::string nazwa, int radius){
     std::ofstream file (nazwa.c_str());
-    int i=0;
+    int markers=0, complete=0, all=0;
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         if (it->second->getMain()){
-            if (i > 8800){
-                setMarkersBySource(it->first,radius);
+            markers = setMarkersBySource(it->first,radius);
+            if (markers > 0){
+                complete++;
                 countPathsLang(it->first);
                 file<<getRankingLang(it->first)<<std::endl;
                 if (it->second->getLang() == Node::pl){
                     for(int i = 0; i < count_en_; ++i) {
                         delete [] paths_en_[i];
                     }
-                     delete [] paths_en_;
+                    delete [] paths_en_;
                 }else{
                     for(int i = 0; i < count_pl_; ++i) {
                         delete [] paths_pl_[i];
@@ -681,12 +683,29 @@ void NodesFactory::getRankingAll(std::string nazwa, int radius){
                 }
                 clearMarkers();
             }
-            i++;
-            std::cout<<i<<std::endl;
+            all++;
         }
     }
+    std::cout<<"promien: "<<radius<<", wezlow z markerami: "<<complete<<"/"<<all<<std::endl;
     file.close();
 }
+
+void NodesFactory::countDistances(int radius){
+    int i=0, markers=0, complete=0, all=0;
+    for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
+        if (it->second->getMain()){
+            markers = setMarkersBySource(it->first,radius);           
+            if (markers > 0){
+                complete++;
+            }
+            all++;
+            clearMarkers();
+        }
+        i++;
+    }
+    std::cout<<"promien: "<<radius<<", wezlow z markerami: "<<complete<<"/"<<all<<std::endl;
+}
+
 void NodesFactory::clearMarkers() {
     delete markers_en_;
     delete markers_pl_;
