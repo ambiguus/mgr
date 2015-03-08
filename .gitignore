@@ -1,4 +1,8 @@
 .idea/
+output/
+sim*
+*.txt
+*.csv
 CMakeLists.txt
 Node.o
 NodesFactory.o
@@ -10,10 +14,11 @@ ranking*
 *.svg
 skrypt*
 paths/
+plain
+*.gnumeric
+/compile_commands.json
 /CMakeCache.txt
 /cmake_install.cmake
-/compile_commands.json
 /CMakeFiles/
-/plain
-/rank_euklides.gnumeric
-/nbproject/
+nbproject/
+/output/

@@ -3,11 +3,11 @@
 #include "NodesFactory.hpp"
 using namespace std;
 
-inline double interwal (const timespec &poczatek, const timespec &koniec)
-{
-    return (koniec.tv_sec + koniec.tv_nsec * 1e-9) - (poczatek.tv_sec + poczatek.tv_nsec * 1e-9);
-}
 int main(int argc, char* argv[]) {
+    if (argc < 3){
+        cout<<"za malo parametrow: [1] - plik wynikowy, [2] - zasieg"<<endl;
+        return 0;
+    }
     NodesFactory* nodes = new NodesFactory();
     nodes->addNodes("rzeczowniki_pl2.txt", Node::pl);
     nodes->addNodes("rzeczowniki_en.txt", Node::en);
@@ -16,25 +16,18 @@ int main(int argc, char* argv[]) {
     nodes->addLinksTrans("syn_miedzy.txt");
     nodes->setMarkersCount(10);
 //    nodes->printSample(328924); //show biznes
-
     nodes->countComps(Node::en);
     nodes->countComps(Node::pl);
-//    nodes->printSample(328924);
-    
+//    int id=33756;
+//    nodes->printSample(id); //domator
     nodes->countSizeMax();
     nodes->setMainComp();
-    int i = 15;
-    if (argc > 1){
-        i = atoi(argv[1]);
-    }
-    nodes->setMarkersCount(i);
-    nodes->setMarkers();
-    nodes->countPaths();
-    cout<<"paths"<<endl;
-    int word = 33756;
-    nodes->printSample(word); //domator
-    nodes->countCos(word);
-    nodes->clearMarkers();
+//    nodes->setMarkersBySource(id,3);
+//    nodes->countPathsLang(id);
+//    cout<<"paths"<<endl;
+//    nodes->getRankingLang(id);
+//    nodes->clearMarkers();
+    nodes->getRankingAll(argv[1], atoi(argv[2]));
     delete nodes;
     return 0;
 }
