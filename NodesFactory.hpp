@@ -52,6 +52,9 @@ public:
     int getRankingLang(int source);
     void getRankingAll(std::string nazwa, int radius);
     void countDistances(int radius);
+    int getRankingById(int source);
+    void getMarriages(std::string nazwa);
+    void getPairs(std::string nazwa, int radius);
     ~NodesFactory();
 
 protected:
@@ -69,6 +72,9 @@ protected:
     int** paths_en_;
     int size_max_pl_, size_max_en_;
     int count_pl_, count_en_;
+    std::vector<int>* ranking_pl_;
+    std::vector<int>* ranking_en_;
+    int ranking_radius_;
 //    std::vector<int> source_path_;
 };
 #endif
