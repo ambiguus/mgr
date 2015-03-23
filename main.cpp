@@ -27,8 +27,7 @@ int main(int argc, char* argv[]) {
 //    cout<<"paths"<<endl;
 //    nodes->getRankingLang(id);
 //    nodes->clearMarkers();
-//    nodes->getRankingAll(argv[1], atoi(argv[2]));
-    nodes->getPairs(argv[1], atoi(argv[2]), 100);
+    nodes->getRankingAll(argv[1], atoi(argv[2]));
     delete nodes;
     return 0;
 }
