@@ -56,7 +56,6 @@ public:
     int getRankingById(int source, std::ostream &output);
     void getMarriages(std::string nazwa);
     void getPairs(std::string nazwa, int radius, int ranking_radius);
-    void getRankingsFromFile(std::string input, std::string output, int ranking_radius);
     ~NodesFactory();
 
 protected:

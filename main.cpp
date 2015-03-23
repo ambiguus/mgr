@@ -28,8 +28,7 @@ int main(int argc, char* argv[]) {
 //    nodes->getRankingLang(id);
 //    nodes->clearMarkers();
 //    nodes->getRankingAll(argv[1], atoi(argv[2]));
-//    nodes->getPairs(argv[1], atoi(argv[2]), 1000);
-    nodes->getRankingsFromFile("rankingi_makreryzrodla1000", "pary_1000_from_file", 1000);
+    nodes->getPairs(argv[1], atoi(argv[2]), 100);
     delete nodes;
     return 0;
 }
