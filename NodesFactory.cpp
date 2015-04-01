@@ -534,7 +534,7 @@ int NodesFactory::setMarkersBySource(int source, int radius) {
         top = *path.begin();
         path.erase(path.begin());
         r = top.first;
-        if (r <= radius){
+        if (r == radius){
             if (lang == Node::pl) {
                 kk = keys_pl_[top.second];
             } else {
@@ -652,15 +652,32 @@ int NodesFactory::getRankingLang(int source) {
     }
     std::pair<double, int> top;
     int ind=0;
+//    int first=0;
     while(top.second != nodes_[source]->getLinksTrans() && !rank.empty()){
         ind++;
         top = *rank.begin();
+//        if (ind == 1){
+//            first = top.second;
+//        }
         rank.erase(rank.begin());
     }
+//    if (ind == 2 && first > 0){
+//        int trans = nodes_[source]->getLinksTrans();
+//        std::cout<<source<<": "<<nodes_[source]->getSample()<<std::endl;
+//        std::cout<<"poprawne tlumaczenie: "<<trans<<": "<<nodes_[trans]->getSample()<<std::endl;
+//        std::cout<<"zaproponowane: "<<first<<": "<<nodes_[first]->getSample()<<std::endl;
+//        std::cout<<"markery: "<<std::endl;
+//        for (int i=0; i<markers_count_; ++i){
+//            trans = markers_pl_[i];
+//            std::cout<<i<<": "<<trans<<", "<<nodes_[trans]->getSample()<<"; ";
+//            trans = markers_en_[i];
+//            std::cout<<trans<<", "<<nodes_[trans]->getSample()<<std::endl;
+//        }
+//    }
 //    std::cout<<ind<<std::endl;
     return ind;
 }
-void NodesFactory::getRankingAll(std::string nazwa, int radius){
+void NodesFactory::getRankingAll(std::string nazwa, int radius){ 
     std::ofstream file (nazwa.c_str());
     int markers=0, complete=0, all=0;
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
