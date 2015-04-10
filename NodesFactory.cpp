@@ -534,7 +534,7 @@ int NodesFactory::setMarkersBySource(int source, int radius) {
         top = *path.begin();
         path.erase(path.begin());
         r = top.first;
-        if (r == radius){
+        if (r <= radius){
             if (lang == Node::pl) {
                 kk = keys_pl_[top.second];
             } else {
@@ -547,6 +547,27 @@ int NodesFactory::setMarkersBySource(int source, int radius) {
             }
         }
     }
+    while (cc == 0){
+        radius++;
+        while (r <= radius && !path.empty()){
+            top = *path.begin();
+            path.erase(path.begin());
+            r = top.first;
+            if (r <= radius){
+                if (lang == Node::pl) {
+                    kk = keys_pl_[top.second];
+                } else {
+                    kk = keys_en_[top.second];
+                }
+                if (nodes_[kk]->getMain() && top.second != source) {
+                    marks.push_back(kk);
+    //                std::cout<<"id="<<kk<<", "<<top.first<<nodes_[kk]->getSample()<<std::endl;
+                    cc++;
+                }
+            }
+        }
+    }
+    
     markers_count_=cc;
     markers_pl_ = new int[markers_count_];
     markers_en_ = new int[markers_count_];
@@ -564,7 +585,7 @@ int NodesFactory::setMarkersBySource(int source, int radius) {
         }
     }
     delete dist;
-    return markers_count_;
+    return radius;
 }
 void NodesFactory::countPathsLang(int source) {
     char lang = nodes_[source]->getLang();
@@ -598,7 +619,7 @@ void NodesFactory::countPathsLang(int source) {
     }
 }
 // ranking - mamy markery najbliższe źródła, szukamy odległości pozostałych węzłów od tych markerów
-int NodesFactory::getRankingLang(int source) {
+int NodesFactory::getRankingLang(int source, int radius) {
     int kk;
     double sum, val;
     char lang = nodes_[source]->getLang();
@@ -616,7 +637,7 @@ int NodesFactory::getRankingLang(int source) {
                 for (int j=0;j<markers_count_; ++j){
                     val = paths_pl_[i][j];
                     if (val == 0){
-                        val = 1.0;
+                        val = 100000.0;
                     }
                     if (val < 0){
                         sum = 10000000;
@@ -651,42 +672,78 @@ int NodesFactory::getRankingLang(int source) {
         }
     }
     std::pair<double, int> top;
-    int ind=0;
-//    int first=0;
+    int ii;
+    std::vector<int> same_values;
+    int ind=0, best, near, index;
+    //przejrzymy początek
+    bool ended = true;
+    top = *rank.begin();
+    best = top.first;
+    std::set<std::pair<double, int> >::iterator it = rank.begin();
+    it++; //sprawdzamy czy drugi też jest taki jak pierwszy i zaczynamy zabawę
+    if ((*it).first == best){
+        same_values.push_back(top.second);
+        rank.erase(rank.begin());
+        ended = false;
+    }
+    while (!ended && !rank.empty()){
+        top = *rank.begin();
+        if (top.first == best){
+            same_values.push_back(top.second); //bierzemy tylko te które mają taką samą wartość jak pierwszy w rankingu
+            rank.erase(rank.begin());
+            
+        }else{// jesli pierwsze maja te sama wartosc, to promujemy te, ktore maja najwiecej markerow w tej samej odleglosci co source
+            for (std::vector<int>::iterator iter = same_values.begin(); iter != same_values.end(); ++iter){
+                ii = *iter;
+                index = nodes_[ii]->getIndex();
+                lang = nodes_[ii]->getLang();
+                near = 0;
+               
+                if (lang == Node::pl){
+                    for (int i=0; i<markers_count_; ++i){
+                        if (paths_pl_[index][i] == radius){
+                            near += 2;
+                        }
+                        if (paths_pl_[index][i] < radius){
+                            near++;
+                        }
+                    }
+                }else{
+                    for (int i=0; i<markers_count_; ++i){
+                        if (paths_en_[index][i] == radius){
+                            near += 2;
+                        }
+                        if (paths_en_[index][i] < radius){
+                            near++;
+                        }
+                    }
+                }
+                rank.insert(std::make_pair(best - near, ii));
+            }
+            std::cout<<same_values.size()<<std::endl;
+            ended = true;
+        }
+    }
+    top.second = 0;
     while(top.second != nodes_[source]->getLinksTrans() && !rank.empty()){
         ind++;
         top = *rank.begin();
-//        if (ind == 1){
-//            first = top.second;
-//        }
         rank.erase(rank.begin());
     }
-//    if (ind == 2 && first > 0){
-//        int trans = nodes_[source]->getLinksTrans();
-//        std::cout<<source<<": "<<nodes_[source]->getSample()<<std::endl;
-//        std::cout<<"poprawne tlumaczenie: "<<trans<<": "<<nodes_[trans]->getSample()<<std::endl;
-//        std::cout<<"zaproponowane: "<<first<<": "<<nodes_[first]->getSample()<<std::endl;
-//        std::cout<<"markery: "<<std::endl;
-//        for (int i=0; i<markers_count_; ++i){
-//            trans = markers_pl_[i];
-//            std::cout<<i<<": "<<trans<<", "<<nodes_[trans]->getSample()<<"; ";
-//            trans = markers_en_[i];
-//            std::cout<<trans<<", "<<nodes_[trans]->getSample()<<std::endl;
-//        }
-//    }
-//    std::cout<<ind<<std::endl;
     return ind;
 }
 void NodesFactory::getRankingAll(std::string nazwa, int radius){ 
     std::ofstream file (nazwa.c_str());
-    int markers=0, complete=0, all=0;
+    int markers=0, complete=0, all=0, r, ind;
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         if (it->second->getMain()){
-            markers = setMarkersBySource(it->first,radius);
+            r = setMarkersBySource(it->first, radius);
+            markers = markers_count_;
             if (markers > 0){
                 complete++;
                 countPathsLang(it->first);
-                file<<getRankingLang(it->first)<<std::endl;
+                ind = getRankingLang(it->first, r);
+                file<<ind<<std::endl;
                 if (it->second->getLang() == Node::pl){
                     for(int i = 0; i < count_en_; ++i) {
                         delete [] paths_en_[i];
@@ -711,7 +768,8 @@ void NodesFactory::countDistances(int radius){
     int i=0, markers=0, complete=0, all=0;
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         if (it->second->getMain()){
-            markers = setMarkersBySource(it->first,radius);           
+            setMarkersBySource(it->first,radius);  
+            markers = markers_count_;
             if (markers > 0){
                 complete++;
             }

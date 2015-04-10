@@ -49,7 +49,7 @@ public:
     double distance(int *v, int *u, int size);
     int setMarkersBySource(int source, int radius);
     void countPathsLang(int source); // lang - jezyk, w ktorym liczymy sciezki
-    int getRankingLang(int source);
+    int getRankingLang(int source, int radius);
     void getRankingAll(std::string nazwa, int radius);
     void countDistances(int radius);
     ~NodesFactory();
