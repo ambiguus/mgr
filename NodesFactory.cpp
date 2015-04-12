@@ -720,7 +720,6 @@ int NodesFactory::getRankingLang(int source, int radius) {
                 }
                 rank.insert(std::make_pair(best - near, ii));
             }
-            std::cout<<same_values.size()<<std::endl;
             ended = true;
         }
     }
@@ -734,7 +733,8 @@ int NodesFactory::getRankingLang(int source, int radius) {
 }
 void NodesFactory::getRankingAll(std::string nazwa, int radius){ 
     std::ofstream file (nazwa.c_str());
-    int markers=0, complete=0, all=0, r, ind;
+    int markers=0, complete=0, all=0, r, ind, size, ii=0;
+    size = nodes_.size();
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
         if (it->second->getMain()){
             r = setMarkersBySource(it->first, radius);
@@ -759,6 +759,10 @@ void NodesFactory::getRankingAll(std::string nazwa, int radius){
             }
             all++;
         }
+        if (ii % 100 == 0){
+                std::cout<<100.0*ii/size<<"%"<<std::endl;
+            }
+        ii++;
     }
     std::cout<<"promien: "<<radius<<", wezlow z markerami: "<<complete<<"/"<<all<<std::endl;
     file.close();
