@@ -772,7 +772,7 @@ int NodesFactory::getRankingById(int source, std::ostream &output) {
 void NodesFactory::getMarriages(std::string nazwa) {
     int* paired_en_ = new int[count_en_];
     int* paired_pl_ = new int[count_pl_];
-    int  stable=100, stabled=0, k, best;
+    int  stable=0, stabled=0, k, best;
     int man, ii, iman, found, paired=0, j, unpaired=0, first=0, count_first=0, count_first_both=0;
     for (int i=0; i<count_pl_; ++i){
         paired_pl_[i] = 0;
@@ -784,7 +784,7 @@ void NodesFactory::getMarriages(std::string nazwa) {
             best = nodes_[k]->getLinksTrans();
             best = nodes_[best]->getIndex();
             first = ranking_en_[i].front();
-            if (first == best){
+            if (first == best){ // sprawdzamy czy rankingi poczatkowe daja dobre wyniki
                 count_first++;
                 first = ranking_pl_[best].front();
                 if (first == i){
@@ -795,7 +795,7 @@ void NodesFactory::getMarriages(std::string nazwa) {
             if (first == i){
                 count_first++;
             }
-            if (stabled < stable && nodes_[k]->getMain()){
+            if (stabled < stable && nodes_[k]->getMain()){ //ustalam czesc par, ktore beda mialy na sztywno ustalonych partnerow
                 if (paired_pl_[best] == 0){
                     paired_en_[i] = best;
                     paired_pl_[best] = i;
@@ -881,12 +881,140 @@ void NodesFactory::getMarriages(std::string nazwa) {
             sweetie = keys_en_[paired_pl_[i]];
             if (key > 0 && sweetie > 0){
                 file<<key<<"\t"<<sweetie<<": "<<nodes_[key]->getSample()<<"\t"<<nodes_[sweetie]->getSample()<<std::endl;
-                if (nodes_[key]->ge
-                tMain()){
+                if (nodes_[key]->getMain()){
                     all++;
                     if (nodes_[key]->getLinksTrans() == sweetie){
                         count++;
                     }
+                }
+            }
+        }
+        ranking_pl_[i].clear();
+    }
+    std::cout<<"na pierwszym miejscu ma poprawne tłumaczenie: "<<count_first<<std::endl;
+    std::cout<<"na pierwszym miejscu oboje się mają: "<<count_first_both<<std::endl;
+    std::cout<<"liczba dobrze sparowanych: "<<count<<"/"<<all<<std::endl;
+    std::cout<<"liczba niesparowanych en: "<<unpaired<<std::endl;
+    delete[] ranking_pl_;
+    delete[] ranking_en_;
+}
+
+void NodesFactory::getMarriagesMMDC(std::string nazwa) {
+    std::vector<int>* paired_pl_ = new std::vector<int>[count_pl_];
+    std::vector<int>* paired_en_ = new std::vector<int>[count_en_];
+    
+    int k, best;
+    int man, ii, iman, found, paired=0, j, unpaired=0, first=0, count_first=0, count_first_both=0;
+    
+    for (int i=0; i<count_en_; ++i){ //zliczamy na ile poczatkowe rankingi byly poprawne
+        k = keys_en_[i];
+        if (nodes_[k]->getLinksTrans() > 0){
+            best = nodes_[k]->getLinksTrans();
+            best = nodes_[best]->getIndex();
+            first = ranking_en_[i].front();
+            if (first == best){
+                count_first++;
+                first = ranking_pl_[best].front();
+                if (first == i){
+                    count_first_both += 2;
+                }
+            }
+            first = ranking_pl_[best].front();
+            if (first == i){
+                count_first++;
+            }
+        }
+    }
+    std::cout<<"looking"<<std::endl;
+    
+    //algorytm laczenia w pary
+    for (unsigned int trial=0; trial < 90; ++trial){
+        paired=0;
+        while (paired < count_en_){
+            for (int i=0; i<count_en_; ++i){
+//                std::cout<<"for"<<i<<std::endl;
+                if (paired_en_[i].size() <= trial){
+//                    std::cout<<"zmiesci sie"<<std::endl;
+                    if (ranking_en_[i].size() <= 0){
+//                        std::cout<<"ale za maly ranking"<<std::endl;
+                        paired_en_[i].push_back(-1);
+                        paired++;
+                        unpaired++;
+//                        std::cout<<"ok"<<std::endl;
+                    }else{
+//                        std::cout<<"szuka zony"<<std::endl;
+                        best = ranking_en_[i].front();
+                        ranking_en_[i].pop_front();
+//                        std::cout<<"best"<<best<<std::endl;
+                        if (std::find(paired_en_[i].begin(), paired_en_[i].end(), best) == paired_en_[i].end()){ // nie startujemy do dziewczyny, ktora jest juz nasza zona
+//                            std::cout<<"find"<<std::endl;
+                            if (paired_pl_[best].size() <= trial){
+//                                std::cout<<"laczuy"<<std::endl;
+                                paired_en_[i].push_back(best);
+                                paired_pl_[best].push_back(i);
+                                paired++;
+                            }else{
+//                                std::cout<<"fight"<<std::endl;
+                                man = paired_pl_[best][trial];
+//                                std::cout<<man<<std::endl;
+                                ii = ranking_radius_;
+                                iman = ranking_radius_;
+                                j=0;
+                                found = 0; //sprawdzamy na jakim miejscu sa kandydaci u kobiety
+                                for (std::list<int>::iterator it=ranking_pl_[best].begin(); it != ranking_pl_[best].end(); ++it){
+                                    if (*it == i){
+                                        ii = j;
+                                        found++;
+                                    }else if (*it == man){
+                                        iman = j;
+                                        found++;
+                                    }
+                                    j++;
+                                }
+                                if (ii < iman){
+                                    //become a pair
+                                    paired_en_[i].push_back(best);
+                                    paired_pl_[best][trial] = i;
+                                    paired_en_[man].erase(paired_en_[man].begin()+trial);
+                                    ranking_en_[man].push_front(best); //czy podbijamy pozniej do dziewczyny, ktora dala nam kosza?
+//                                    std::cout<<"zamiana par"<<std::endl;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+//            std::cout<<paired*100.0/count_en_<<std::endl;
+        }
+        std::cout<<"trial: "<<trial<<std::endl;
+    }
+    //do przepisania na sprawdzanie na wektorach
+    int key, sweetie, all=0, count=0;
+    std::cout<<"paired"<<std::endl;
+    std::ofstream file(nazwa.c_str());
+    for (int i=0; i<count_en_; ++i){ //sprawdzamy poprawnosc parowania
+        key = keys_en_[i];
+        if (paired_en_[i].size() > 0){
+            if (key > 0 && nodes_[key]->getMain() > 0){
+                sweetie = nodes_[key]->getLinksTrans();
+                sweetie = nodes_[sweetie]->getIndex();
+                all++;
+                if (std::find(paired_en_[i].begin(), paired_en_[i].end(), sweetie) != paired_en_[i].end()){
+                    count++;
+                }
+            }
+        }
+        ranking_en_[i].clear();
+    }
+    for (int i=0; i<count_pl_; ++i){
+        key = keys_pl_[i];
+        if (paired_pl_[i].size() > 0){
+            if (key > 0 && nodes_[key]->getMain() > 0){
+                sweetie = nodes_[key]->getLinksTrans();
+                sweetie = nodes_[sweetie]->getIndex();
+                all++;
+                if (std::find(paired_pl_[i].begin(), paired_pl_[i].end(), sweetie) != paired_pl_[i].end()){
+                    count++;
                 }
             }
         }
@@ -936,7 +1064,7 @@ void NodesFactory::getPairs(std::string nazwa, int radius, int ranking_radius){
         }
     }
     std::cout<<"paths complete"<<std::endl;
-    getMarriages("pary_1000");
+    getMarriagesMMDC("pary_1000_mmdc");
 }
 
 void NodesFactory::getRankingsFromFile(std::string input, std::string output, int ranking_radius){
@@ -969,7 +1097,7 @@ void NodesFactory::getRankingsFromFile(std::string input, std::string output, in
     std::cout<<"pl: "<<pl<<"/"<<count_pl_<<std::endl;
     std::cout<<"en: "<<en<<"/"<<count_en_<<std::endl;
     ifile.close();
-    getMarriages(output);
+    getMarriagesMMDC(output);
 }
 
 void NodesFactory::getRankingAll(std::string nazwa, int radius){
