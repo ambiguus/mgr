@@ -584,6 +584,7 @@ int NodesFactory::setMarkersBySource(int source, int radius) {
             markers_pl_[i] = nodes_[kk]->getLinksTrans();
         }
     }
+    marks.clear();
     delete dist;
     return radius;
 }
@@ -619,7 +620,7 @@ void NodesFactory::countPathsLang(int source) {
     }
 }
 // ranking - mamy markery najbliższe źródła, szukamy odległości pozostałych węzłów od tych markerów
-int NodesFactory::getRankingLang(int source, int radius) {
+int NodesFactory::getRankingLang(int source, int radius, std::ostream &output) {
     int kk;
     double sum, val;
     char lang = nodes_[source]->getLang();
@@ -723,27 +724,41 @@ int NodesFactory::getRankingLang(int source, int radius) {
             ended = true;
         }
     }
-    top.second = 0;
-    while(top.second != nodes_[source]->getLinksTrans() && !rank.empty()){
+    bool found_trans = !nodes_[source]->getMain();
+    output<<source;
+    ind=0;
+    while(ind < ranking_radius_ && !rank.empty()){
         ind++;
         top = *rank.begin();
+        output<<"\t"<<top.second;
+        if (!found_trans && (top.second == nodes_[source]->getLinksTrans())){
+            found_trans = true;
+        }
         rank.erase(rank.begin());
+    }
+    output<<std::endl;
+    if (!found_trans){
+        while(top.second != nodes_[source]->getLinksTrans() && !rank.empty()){
+            ind++;
+            top = *rank.begin();
+            rank.erase(rank.begin());
+        }
     }
     return ind;
 }
 void NodesFactory::getRankingAll(std::string nazwa, int radius){ 
+    ranking_radius_ = 1000;
     std::ofstream file (nazwa.c_str());
-    int markers=0, complete=0, all=0, r, ind, size, ii=0;
+    int markers=0, complete=0, all=0, r, size, ii=0;
     size = nodes_.size();
     for (std::unordered_map<int, Node*>::iterator it=nodes_.begin(); it != nodes_.end(); ++it){
-        if (it->second->getMain()){
+        if (it->second->getInMax() && !it->second->getMain()){
             r = setMarkersBySource(it->first, radius);
             markers = markers_count_;
             if (markers > 0){
                 complete++;
                 countPathsLang(it->first);
-                ind = getRankingLang(it->first, r);
-                file<<ind<<std::endl;
+                getRankingLang(it->first, r, file);
                 if (it->second->getLang() == Node::pl){
                     for(int i = 0; i < count_en_; ++i) {
                         delete [] paths_en_[i];

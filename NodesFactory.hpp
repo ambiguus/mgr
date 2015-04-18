@@ -13,6 +13,7 @@
 #include <ctime>
 #include <algorithm>
 #include <set>
+#include <list>
 
 class NodesFactory{
 public:
@@ -49,9 +50,12 @@ public:
     double distance(int *v, int *u, int size);
     int setMarkersBySource(int source, int radius);
     void countPathsLang(int source); // lang - jezyk, w ktorym liczymy sciezki
-    int getRankingLang(int source, int radius);
+    int getRankingLang(int source, int radius, std::ostream &output);
     void getRankingAll(std::string nazwa, int radius);
     void countDistances(int radius);
+    int getRankingById(int source, std::ostream &output);
+    void getMarriages(std::string nazwa);
+    void getPairs(std::string nazwa, int radius, int ranking_radius);
     ~NodesFactory();
 
 protected:
@@ -69,6 +73,7 @@ protected:
     int** paths_en_;
     int size_max_pl_, size_max_en_;
     int count_pl_, count_en_;
+    int ranking_radius_;
 //    std::vector<int> source_path_;
 };
 #endif
