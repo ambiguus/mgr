@@ -899,10 +899,9 @@ void NodesFactory::getMarriages(std::string nazwa) {
     delete[] ranking_en_;
 }
 
-void NodesFactory::getMarriagesMMDC(std::string nazwa) {
+void NodesFactory::getMarriagesMMDC(std::string nazwa, int length) {
     std::vector<int>* paired_pl_ = new std::vector<int>[count_pl_];
     std::vector<int>* paired_en_ = new std::vector<int>[count_en_];
-    
     int k, best;
     int man, ii, iman, found, paired=0, j, unpaired=0, first=0, count_first=0, count_first_both=0;
     
@@ -928,63 +927,126 @@ void NodesFactory::getMarriagesMMDC(std::string nazwa) {
     std::cout<<"looking"<<std::endl;
     
     //algorytm laczenia w pary
-    for (unsigned int trial=0; trial < 90; ++trial){
+    bool en = true;
+    for (unsigned int trial=0; trial < (unsigned int)length; ++trial){
         paired=0;
-        while (paired < count_en_){
-            for (int i=0; i<count_en_; ++i){
-//                std::cout<<"for"<<i<<std::endl;
-                if (paired_en_[i].size() <= trial){
-//                    std::cout<<"zmiesci sie"<<std::endl;
-                    if (ranking_en_[i].size() <= 0){
-//                        std::cout<<"ale za maly ranking"<<std::endl;
-                        paired_en_[i].push_back(-1);
-                        paired++;
-                        unpaired++;
-//                        std::cout<<"ok"<<std::endl;
-                    }else{
-//                        std::cout<<"szuka zony"<<std::endl;
-                        best = ranking_en_[i].front();
-                        ranking_en_[i].pop_front();
-//                        std::cout<<"best"<<best<<std::endl;
-                        if (std::find(paired_en_[i].begin(), paired_en_[i].end(), best) == paired_en_[i].end()){ // nie startujemy do dziewczyny, ktora jest juz nasza zona
-//                            std::cout<<"find"<<std::endl;
-                            if (paired_pl_[best].size() <= trial){
-//                                std::cout<<"laczuy"<<std::endl;
-                                paired_en_[i].push_back(best);
-                                paired_pl_[best].push_back(i);
-                                paired++;
-                            }else{
-//                                std::cout<<"fight"<<std::endl;
-                                man = paired_pl_[best][trial];
-//                                std::cout<<man<<std::endl;
-                                ii = ranking_radius_;
-                                iman = ranking_radius_;
-                                j=0;
-                                found = 0; //sprawdzamy na jakim miejscu sa kandydaci u kobiety
-                                for (std::list<int>::iterator it=ranking_pl_[best].begin(); it != ranking_pl_[best].end(); ++it){
-                                    if (*it == i){
-                                        ii = j;
-                                        found++;
-                                    }else if (*it == man){
-                                        iman = j;
-                                        found++;
-                                    }
-                                    j++;
-                                }
-                                if (ii < iman){
-                                    //become a pair
+        if (en){
+            while (paired < count_en_){
+                for (int i=0; i<count_en_; ++i){
+    //                std::cout<<"for"<<i<<std::endl;
+                    if (paired_en_[i].size() <= trial){
+    //                    std::cout<<"zmiesci sie"<<std::endl;
+                        if (ranking_en_[i].size() <= 0){
+    //                        std::cout<<"ale za maly ranking"<<std::endl;
+                            paired_en_[i].push_back(-1);
+                            paired++;
+                            unpaired++;
+    //                        std::cout<<"ok"<<std::endl;
+                        }else{
+    //                        std::cout<<"szuka zony"<<std::endl;
+                            best = ranking_en_[i].front();
+                            ranking_en_[i].pop_front();
+    //                        std::cout<<"best"<<best<<std::endl;
+                            if (std::find(paired_en_[i].begin(), paired_en_[i].end(), best) == paired_en_[i].end()){ // nie startujemy do dziewczyny, ktora jest juz nasza zona
+    //                            std::cout<<"find"<<std::endl;
+                                if (paired_pl_[best].size() <= trial){
+    //                                std::cout<<"laczuy"<<std::endl;
                                     paired_en_[i].push_back(best);
-                                    paired_pl_[best][trial] = i;
-                                    paired_en_[man].erase(paired_en_[man].begin()+trial);
-                                    ranking_en_[man].push_front(best); //czy podbijamy pozniej do dziewczyny, ktora dala nam kosza?
-//                                    std::cout<<"zamiana par"<<std::endl;
+                                    paired_pl_[best].push_back(i);
+                                    paired++;
+                                }else{
+    //                                std::cout<<"fight"<<std::endl;
+                                    man = paired_pl_[best][trial];
+    //                                std::cout<<man<<std::endl;
+                                    ii = ranking_radius_;
+                                    iman = ranking_radius_;
+                                    j=0;
+                                    found = 0; //sprawdzamy na jakim miejscu sa kandydaci u kobiety
+                                    for (std::list<int>::iterator it=ranking_pl_[best].begin(); it != ranking_pl_[best].end(); ++it){
+                                        if (*it == i){
+                                            ii = j;
+                                            found++;
+                                        }else if (*it == man){
+                                            iman = j;
+                                            found++;
+                                        }
+                                        j++;
+                                    }
+                                    if (ii < iman){
+                                        //become a pair
+                                        paired_en_[i].push_back(best);
+                                        paired_pl_[best][trial] = i;
+                                        paired_en_[man].pop_back();
+                                        ranking_en_[man].push_front(best); //czy podbijamy pozniej do dziewczyny, ktora dala nam kosza?
+    //                                    std::cout<<"zamiana par"<<std::endl;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    //            std::cout<<paired*100.0/count_en_<<std::endl;
+            }
+            std::cout<<"en"<<std::endl;
+            en = false;
+        }else{
+            while (paired < count_pl_){
+                for (int i=0; i<count_pl_; ++i){
+                    if (paired_pl_[i].size() <= trial){
+                        if (ranking_pl_[i].size() <= 0){
+//                            std::cout<<"maly ranking"<<std::endl;
+                            paired_pl_[i].push_back(-1);
+                            paired++;
+                            unpaired++;
+                        }else{
+                            best = ranking_pl_[i].front();
+                            ranking_pl_[i].pop_front();
+//                            std::cout<<"best "<<best<<std::endl;
+                            if (std::find(paired_pl_[i].begin(), paired_pl_[i].end(), best) == paired_pl_[i].end()){ // nie startujemy do dziewczyny, ktora jest juz nasza zona
+                                if (paired_en_[best].size() <= trial){
+//                                    std::cout<<"become pair"<<std::endl;
+                                    paired_pl_[i].push_back(best);
+                                    paired_en_[best].push_back(i);
+                                    paired++;
+                                }else{
+//                                    std::cout<<"sprawdzamy"<<std::endl;
+                                    man = paired_en_[best][trial];
+                                    ii = ranking_radius_;
+                                    iman = ranking_radius_;
+                                    j=0;
+                                    found = 0; //sprawdzamy na jakim miejscu sa kandydaci u kobiety
+//                                    std::cout<<"man "<<man<<std::endl;
+                                    for (std::list<int>::iterator it=ranking_en_[best].begin(); it != ranking_en_[best].end(); ++it){
+                                        if (*it == i){
+                                            ii = j;
+                                            found++;
+                                        }else if (*it == man){
+                                            iman = j;
+                                            found++;
+                                        }
+                                        j++;
+                                    }
+//                                    std::cout<<"sprawdzanie"<<std::endl;
+                                    if (ii < iman){
+//                                        std::cout<<"laczenie"<<std::endl;
+                                        //become a pair
+                                        paired_pl_[i].push_back(best);
+//                                        std::cout<<"a"<<std::endl;
+                                        paired_en_[best][trial] = i;
+//                                        std::cout<<"b"<<std::endl;
+                                        paired_pl_[man].pop_back();
+//                                        std::cout<<"c"<<std::endl;
+                                        ranking_pl_[man].push_front(best); //czy podbijamy pozniej do dziewczyny, ktora dala nam kosza?
+//                                        std::cout<<"po laczeniu"<<std::endl;
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-//            std::cout<<paired*100.0/count_en_<<std::endl;
+            std::cout<<"pl"<<std::endl;
+            en = true;
         }
         std::cout<<"trial: "<<trial<<std::endl;
     }
@@ -1064,7 +1126,7 @@ void NodesFactory::getPairs(std::string nazwa, int radius, int ranking_radius){
         }
     }
     std::cout<<"paths complete"<<std::endl;
-    getMarriagesMMDC("pary_1000_mmdc");
+    getMarriagesMMDC("pary_1000_mmdc", 10);
 }
 
 void NodesFactory::getRankingsFromFile(std::string input, std::string output, int ranking_radius){
@@ -1083,14 +1145,14 @@ void NodesFactory::getRankingsFromFile(std::string input, std::string output, in
                 ifile>>kr;
                 ir = nodes_[kr]->getIndex();
                 ranking_pl_[index].push_back(ir);
-            }
+                }
             pl++;
         }else{
             for (int i=0; i<ranking_radius_; ++i){
                 ifile>>kr;
                 ir = nodes_[kr]->getIndex();
                 ranking_en_[index].push_back(ir);
-            }
+                }
             en++;
         }
     }
